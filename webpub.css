@@ -4,10 +4,23 @@ body {
 }
 
 .nav-menu {
-    display: flex;
-    gap: 5%;
     background-color: grey;
-    text-decoration: none;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
     margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+
+.nav-items {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-items:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
 }
