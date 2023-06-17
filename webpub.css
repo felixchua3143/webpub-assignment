@@ -1,4 +1,13 @@
-body{
+body {
     height: 100vh;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 5%;
+    background-color: grey;
+    text-decoration: none;
+    list-style-type: none;
     margin: 0;
 }
