@@ -14,12 +14,11 @@ body {
     font-family: Nunito;
 }
 
-.nav-items {
-    color: black;
+.nav-items{
     text-decoration: none;
+    color: black;
 }
-
-.nav-items:hover {
+.nav-items:hover{
     text-decoration: underline;
     text-decoration-color: red;
     text-decoration-thickness: 2px;
