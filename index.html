@@ -31,12 +31,19 @@
             background-color: blue;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 5%;
         }
 
         .nav-item{
-            background-color: aqua;
+            color: black;
             text-decoration: none;
+        }
+
+        .nav-item:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2%;
         }
 
         </style>
@@ -47,7 +54,7 @@
         
         <nav class="nav-bar">
 
-            <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v2).png"> 
+            <a class="logo-link" href="#index"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v2).png"> </a>
             
             <a class="nav-item" href="#home"> Home </a>
             <a class="nav-item" href="#shop"> Shop </a>
