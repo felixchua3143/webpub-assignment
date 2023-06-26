@@ -3,23 +3,14 @@ body {
     margin: 0;
 }
 
-.nav-menu {
+.nav-bar {
     background-color: grey;
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    margin: 0;
-    padding: 0;
-    font-family: Nunito;
+    gap: 5%
 }
-
 .nav-items{
     text-decoration: none;
-    color: black;
-}
-.nav-items:hover{
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-thickness: 2px;
+    color: inherit;
+    font-family: 'Nunito', sans-serif;
 }
