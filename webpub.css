@@ -2,13 +2,3 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-.nav-bar{
-    background-color: grey;
-}
-
-.nav-menu{
-    display: flex;
-    justify-content: center;
-    gap: 5%
-}
