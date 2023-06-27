@@ -18,10 +18,25 @@
 
         <style>
             
-            .box{
+            .smallbox{
                 width: 450px;
                 height: 280px;
                 background-color: gray;
+            }
+
+            .longbox{
+                width: 940px;
+                height: 200px;
+                background-color: rgb(241, 107, 241);
+            }
+
+            #longboxfont{
+                margin-left: auto; 
+                margin-right: auto; 
+                text-align: center;
+                font-size: 1.7em;
+                align-items: center;
+
             }
             
             .center{
@@ -67,15 +82,35 @@
         
         <p style="text-align: center; font-size: 35px; font-family: arial;"> Shop Nightcore </p>
         
+        <table align="center" cellpadding="15px">
+            <tr>
+                <td>
+                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
+                        <p class="center" style="padding-top: 100px;"> Quality keyboards, mice, and headphones</p>
+                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM PERIPHERALS</p> 
+                        
+                        <div class="button" style="margin-left:auto; margin-right:auto;"> SHOP NOW </div>
+                    </div>
+                </td>
 
-        <div class="box" style="margin-left: auto; margin-right: auto;">
-            <p class="center" style="padding-top: 100px;"> Quality keyboards, mice, and headphones</p>
-            <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM PERIPHERALS</p>
-            
-            <div class="button" style="margin-left:auto; margin-right:auto;"> SHOP NOW </div>
-        
-        </div>
+                <td>
+                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
+                        <p class="center" style="padding-top: 100px;"> Monitors and monitor arms </p>
+                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM DISPLAYS</p>
+                        
+                        <div class="button" style="margin-left:auto; margin-right:auto;"> SHOP NOW </div>
+                    </div>
+                </td>
+            </tr>
 
+            <tr>
+                <td colspan="2">
+                    <div class="longbox" id="longboxfont" style="padding-top: 20px;"><br/>Systems </div>
+                </td>
+            </tr>
+
+
+        </table>
         
 
     </body>
