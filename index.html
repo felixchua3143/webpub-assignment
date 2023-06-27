@@ -29,6 +29,11 @@
             background-color: rgb(255, 255, 255);
         }
 
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
         .logo{
             height: 10vh;
         }
@@ -58,23 +63,27 @@
             display: flex;
             flex-wrap: nowrap;
             align-content: flex-start;
-            overflow-x: auto;
+            overflow-x: hidden;
             overflow-y: hidden;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
         }
 
         .image-wrapper{
-            display: flex;
-            gap: 0;
+            scroll-snap-align: start;
+        }
+
+        button{
+            position: relative;
+            left: 97%;
+            bottom: 50%;
+            background: none;
+            border: none;
+            font-size: xx-large;
         }
 
         .sales{
             height: 58.5vh;
-        }
-
-        .snapper-next{
-            position: relative;
         }
 
         .small-wrapper{
@@ -116,19 +125,19 @@
 
                 <img class="sales" src="images/Dreamcore carousel 1.jpg"> 
 
+                <button> <a class="next" href="#image-1">  &larr; </a> </button>    
+
+                <button> <a class="next" href="#image-2">  &rarr; </a> </button>
+
             </div>
-
-            <a class="snapper-prev" href="#image-1"></a>
-
-            <a class="snapper-next" href="#image-2"> Go to next slide </a>
 
             <div class="image-wrapper" id="image-2">
 
                 <img class="sales" src="images/Dreamcore carousel 2.jpg"> 
 
-                <a class="snapper-prev" href="#image-1"> </a>
+                <button> <a class="next" href="#image-1">  &larr; </a> </button>    
 
-                <a class="snapper-next" href="#image-3"> </a>
+                <button> <a class="next" href="#image-3">  &rarr; </a> </button>
 
             </div>
 
@@ -136,9 +145,9 @@
 
                 <img class="sales" src="images/Dreamcore carousel 3.jpg">
                 
-                <a class="snapper-prev" href="#image-2"> </a>
+                <button> <a class="next" href="#image-2">  &larr; </a> </button>    
 
-                <a class="snapper-next" href="#image-4"> </a>
+                <button> <a class="next" href="#image-4">  &rarr; </a> </button>
 
             </div>
             
@@ -146,9 +155,7 @@
 
                 <img class="sales" src="images/Dreamcore carousel 4.jpg"> 
 
-                <a class="snapper-prev" href="#image-3"> </a>
-
-                <a class="snapper-next" href="#image-5"> </a>
+                
 
             </div>
 
@@ -156,9 +163,7 @@
 
                 <img class="sales" src="images/Dreamcore carousel 5.jpg"> 
 
-                <a class="snapper-prev" href="#image-4"> </a>
-
-                <a class="snapper-next" href="#image-6"> </a>
+                
 
             </div>
 
@@ -166,9 +171,7 @@
 
                 <img class="sales" src="images/Dreamcore carousel 6.jpg"> 
 
-                <a class="snapper-prev" href="#image-5"> </a>
 
-                <a class="snapper-next" href="#image-7"> </a>
 
             </div>
 
@@ -176,9 +179,7 @@
 
                 <img class="sales" src="images/Dreamcore carousel 7.jpg"> 
 
-                <a class="snapper-prev" href="#image-6"> </a>
-
-                <a class="snapper-next" href="#image-8"> </a>
+                
 
             </div>
 
@@ -186,9 +187,6 @@
 
                 <img class="sales" src="images/Dreamcore carousel 8.jpg"> 
 
-                <a class="snapper-prev" href="#image-7"> </a>
-
-                <a class="snapper-next" href="#image-8"> </a>
 
             </div>
 
