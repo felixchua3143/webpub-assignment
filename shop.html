@@ -18,64 +18,65 @@
 
         <style>
 
-            .smallbox{
-                width: 450px;
-                height: 280px;
-                background-color: gray;
+            .big-wrapper{
+                margin-top: 3%;
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                gap: 5%;
             }
 
-            .longbox{
-                width: 905px;
-                height: 200px;
-                background-color: rgb(241, 107, 241);
-            }
-
-            #longboxfont{
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 1.4em;
-
-
-            }
-
-            .center{
-                text-align: center;
-                font-size: xx-large;
-                font-family: arial;
-            }
-
-            .button{
-                width: 150px;
-                height: 30px;
-                border: 3px solid purple;
-                border-radius: 25px;
+            .peripherals, .monitors, .systems{
+                display: grid;
+                align-items: center;
+                justify-items: center;
                 cursor: pointer;
-                opacity: 1;
-                text-align:center;
-                padding-top:15px;
-                color:purple;
-                font-weight: bold;
-                margin-left: auto;
-                margin-right: auto;
+                box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+                /* Thank you Dennise, for the box shadow code! */;
             }
 
-            .buttonlongbox{
-                width: 150px;
-                height: 30px;
-                border: 3px solid gray;
-                border-radius: 25px;
-                cursor: pointer;
-                opacity: 1;
-                text-align:center;
-                padding-top:15px;
-                color:gray;
-                font-weight: bold;
-                margin-left: auto;
-                margin-right: auto;
-
+            .peripherals, .monitors{
+                background-color: grey;
+                width: 30vw;
             }
 
+            .peripherals:hover, .monitors:hover, .systems:hover{
+                opacity: 0.7;
+                transition: all 100ms ease-in;
+            }
 
+            .peripherals-text, .monitors-text, .systems-text{
+                font-size: x-large;
+            }
+
+            .peripherals-link, .monitors-link, .systems-link{
+                color: purple;
+            }
+
+            .peripherals-button, .monitors-button, .systems-button{
+                border: 2px solid purple;
+                border-radius: 15px;
+                background-color: inherit;
+                height: 5vh;
+                width: 20vh;
+                cursor: inherit;
+            }
+
+            .peripherals-button:hover, .monitors-button:hover, .systems-button:hover{
+                box-shadow: 0px 5px 15px;
+            }
+
+            .long-wrapper{
+                display: flex;
+                height: 30vh;
+                justify-content: center;
+                margin-top: 3%;
+            }
+
+            .systems{
+                background-color: pink;
+                width: 65vw;
+            }
 
         </style>
 
@@ -95,41 +96,41 @@
 
         </nav>
 
-        <p style="text-align: center; font-size: 35px; font-family: arial;"> Shop Nightcore </p>
+        <section class="big-wrapper">
 
-        <table align="center" cellpadding="15px" border="0">
-            <tr>
-                <td>
-                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
-                        <p class="center" style="padding-top: 100px;"> Quality keyboards, mice, and headphones</p>
-                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM PERIPHERALS</p>
+            <div class="peripherals">
 
-                        <div class="button"> SHOP NOW </div>
-                    </div>
-                </td>
+                <p class="peripherals-text" id="peripherals-top-text"> Quality keyboards, mice, and headphones </p>
 
-                <td>
-                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
-                        <p class="center" style="padding-top: 100px;"> Monitors and monitor arms </p>
-                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM DISPLAYS</p>
+                <p class="peripherals-text"> DREAM PERIPHERALS</p>
 
-                        <div class="button"> SHOP NOW </div>
-                    </div>
-                </td>
-            </tr>
+                <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW </button> </a>
 
-            <tr>
-                <td colspan="2">
-                   <div class="longbox" style="padding:15px;">
-                        <p style="text-align: center; padding-top: 40px; font-size: 1.7em; "> SYSTEMS </p>
-                        <div class="buttonlongbox"> SHOP NOW </div>
-                    </div>
-                </td>
-            </tr>
+            </div>
 
+            <div class="monitors">
 
-        </table>
+                <p class="monitors-text"> Monitors and monitor arms </p>
 
+                <p class="monitors-text"> DREAM MONITORS </p>
+
+                <a class="monitors-link">  <button class="monitors-button"> SHOP NOW </button> </a>
+
+            </div>
+
+        </section>
+
+        <section class="long-wrapper">
+
+            <div class="systems">
+
+                <p class="systems-text"> SYSTEMS </p>
+
+                <a class="systems-link" href="#systems"> <button class="systems-button"> SHOP NOW </button> </a>
+
+            </div>
+
+        </section>
 
     </body>
 
@@ -255,6 +256,98 @@
             .buttong:hover{
                 color: gray;
                 box-shadow: 0 5px 15px gray;
+            }
+
+
+
+        <p style="text-align: center; font-size: 35px; font-family: arial;"> Shop Nightcore </p>
+
+        <table align="center" cellpadding="15px" border="0">
+            <tr>
+                <td>
+                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
+                        <p class="center" style="padding-top: 100px;"> Quality keyboards, mice, and headphones</p>
+                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM PERIPHERALS</p>
+
+                        <div class="button"> SHOP NOW </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="smallbox" style="margin-left: auto; margin-right: auto;">
+                        <p class="center" style="padding-top: 100px;"> Monitors and monitor arms </p>
+                        <p style="text-align: center; padding-top:8px; font-size: 1.7em;">DREAM DISPLAYS</p>
+
+                        <div class="button"> SHOP NOW </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                   <div class="longbox" style="padding:15px;">
+                        <p style="text-align: center; padding-top: 40px; font-size: 1.7em; "> SYSTEMS </p>
+                        <div class="buttonlongbox"> SHOP NOW </div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+
+         .smallbox{
+                width: 450px;
+                height: 280px;
+                background-color: gray;
+            }
+
+            .longbox{
+                width: 905px;
+                height: 200px;
+                background-color: rgb(241, 107, 241);
+            }
+
+            #longboxfont{
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1.4em;
+            }
+
+            .center{
+                text-align: center;
+                font-size: xx-large;
+                font-family: arial;
+            }
+
+            .button{
+                width: 150px;
+                height: 30px;
+                border: 3px solid purple;
+                border-radius: 25px;
+                cursor: pointer;
+                opacity: 1;
+                text-align:center;
+                padding-top:15px;
+                color:purple;
+                font-weight: bold;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .buttonlongbox{
+                width: 150px;
+                height: 30px;
+                border: 3px solid gray;
+                border-radius: 25px;
+                cursor: pointer;
+                opacity: 1;
+                text-align:center;
+                padding-top:15px;
+                color:gray;
+                font-weight: bold;
+                margin-left: auto;
+                margin-right: auto;
+
             }
 
 -->
