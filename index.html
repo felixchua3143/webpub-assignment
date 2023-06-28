@@ -64,6 +64,237 @@
             flex-wrap: nowrap;
             align-content: flex-start;
             overflow-x: hidden;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .image-wrapper{
+            scroll-snap-align: start;
+        }
+
+        button{
+            position: relative;
+            left: 97%;
+            bottom: 50%;
+            background: none;
+            border: none;
+            font-size: xx-large;
+        }
+
+        .sales{
+            height: 58.5vh;
+        }
+
+        .small-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+
+        .category{
+            height: 15vh;
+            cursor: pointer;
+        }
+
+        .category:hover{
+            opacity: 0.5;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <nav class="nav-bar">
+
+            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+            
+            <a class="nav-item" href="index.html"> Home </a>
+            <a class="nav-item" href="shop.html"> Shop </a>
+            <a class="nav-item" href="#blog"> Blog </a>
+            <a class="nav-item" href="contact-us.html"> Contact Us </a>
+            <a class="nav-item" href="about-us.html"> About Us </a>
+            
+        </nav>
+
+        <section class="big-wrapper">
+
+            <div class="image-wrapper" id="image-1">
+
+                <img class="sales" src="images/Dreamcore carousel 1.jpg">
+
+                <button> <a class="next" href="#image-1">  &larr; </a> </button>
+
+                <button> <a class="next" href="#image-2">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-2">
+
+                <img class="sales" src="images/Dreamcore carousel 2.jpg">
+
+                <button> <a class="next" href="#image-1">  &larr; </a> </button>
+
+                <button> <a class="next" href="#image-3">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-3">
+
+                <img class="sales" src="images/Dreamcore carousel 3.jpg">
+                
+                <button> <a class="next" href="#image-2">  &larr; </a> </button>    
+
+                <button> <a class="next" href="#image-4">  &rarr; </a> </button>
+
+            </div>
+            
+            <div class="image-wrapper" id="image-4">
+
+                <img class="sales" src="images/Dreamcore carousel 4.jpg">
+
+
+
+            </div>
+
+            <div class="image-wrapper" id="image-5">
+
+                <img class="sales" src="images/Dreamcore carousel 5.jpg">
+
+
+
+            </div>
+
+            <div class="image-wrapper" id="image-6">
+
+                <img class="sales" src="images/Dreamcore carousel 6.jpg">
+
+
+
+            </div>
+
+            <div class="image-wrapper" id="image-7">
+
+                <img class="sales" src="images/Dreamcore carousel 7.jpg">
+
+
+
+            </div>
+
+            <div class="image-wrapper" id="image-8">
+
+                <img class="sales" src="images/Dreamcore carousel 8.jpg">
+
+
+            </div>
+
+        </section>
+
+        <section class="small-wrapper">
+
+            <div class="small-image">
+
+                <a class="category-links" href="index.html"> <img class="category" src="images/dream-builds.png"> </a>
+
+            </div>
+
+            <div class="small-image">
+
+                <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png"> </a>
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/workstations.png">
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/monitors.png">
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/accssories.png">
+
+            </div>
+
+        </section>
+
+    </body>
+
+</html>
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title> index/home </title>
+
+        <meta name="description" content="computers">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="webpub.css">
+
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo{
+            height: 10vh;
+        }
+
+        .nav-bar{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .nav-item{
+            color: black;
+            text-decoration: none;
+            font-size: x-large;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .nav-item:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+        }
+
+        .big-wrapper{
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            overflow-x: hidden;
             overflow-y: auto;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
@@ -114,17 +345,17 @@
     </head>
 
     <body>
-        
+
         <nav class="nav-bar">
 
             <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
-            
+
             <a class="nav-item" href="index.html"> Home </a>
             <a class="nav-item" href="shop.html"> Shop </a>
             <a class="nav-item" href="#blog"> Blog </a>
             <a class="nav-item" href="contact-us.html"> Contact Us </a>
             <a class="nav-item" href="about-us.html"> About Us </a>
-            
+
         </nav>
 
         <section class="big-wrapper">
@@ -158,7 +389,7 @@
                 <button class="next"> <a href="#image-4">  &rarr; </a> </button>
 
             </div>
-            
+
             <div class="image-wrapper" id="image-4">
 
                 <img class="sales" src="images/Dreamcore carousel 4.jpg">
