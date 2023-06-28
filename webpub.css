@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .logo{
@@ -9,7 +9,7 @@ body {
 }
 
 .nav-bar{
-    background-color: blue;
+    background-color: purple;
     display: flex;
     justify-content: center;
     align-items: center;

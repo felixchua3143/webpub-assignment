@@ -18,10 +18,20 @@
 
         <style>
 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             height: 100vh;
             margin: 0;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
         }
 
         .logo{
@@ -49,14 +59,54 @@
             text-decoration-thickness: 2px;
         }
 
-        .image-container{
+        .big-wrapper{
             display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
             overflow-x: hidden;
+            overflow-y: auto;
             scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .image-wrapper{
+            scroll-snap-align: start;
+        }
+
+        .next, .prev{
+            position: relative;
+            bottom: 50%;
+            background: none;
+            border: none;
+            font-size: xxx-large;
+            color: rgb(255, 0, 255);
+        }
+
+        .next{
+            left: 91%;
+        }
+
+        .prev{
+            left: 1%;
         }
 
         .sales{
             height: 65vh;
+        }
+
+        .small-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+
+        .category{
+            height: 15vh;
+            cursor: pointer;
+        }
+
+        .category:hover{
+            opacity: 0.5;
         }
 
         </style>
@@ -67,7 +117,7 @@
         
         <nav class="nav-bar">
 
-            <a class="logo-link" href="#index"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
             
             <a class="nav-item" href="index.html"> Home </a>
             <a class="nav-item" href="shop.html"> Shop </a>
@@ -77,76 +127,124 @@
             
         </nav>
 
-        <div class="image-container">
+        <section class="big-wrapper">
 
-            <div class="image-1">
+            <div class="image-wrapper" id="image-1">
 
-                <img class="sales" src="images/Dreamcore carousel 1.jpg"> 
+                <img class="sales" src="images/Dreamcore carousel 1.jpg">
 
-            </div>
+                <button class="prev"> <a href="#image-8">  &larr; </a> </button>
 
-            <div class="image-2">
-
-                <img class="sales" src="images/Dreamcore carousel 2.jpg"> 
+                <button class="next"> <a href="#image-2">  &rarr; </a> </button>
 
             </div>
 
-            <div class="image-3">
+            <div class="image-wrapper" id="image-2">
 
-                <img class="sales" src="images/Dreamcore carousel 3.jpg"> 
+                <img class="sales" src="images/Dreamcore carousel 2.jpg">
+
+                <button class="prev"> <a href="#image-1">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-3">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-3">
+
+                <img class="sales" src="images/Dreamcore carousel 3.jpg">
+
+                <button class="prev"> <a href="#image-2">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-4">  &rarr; </a> </button>
 
             </div>
             
-            
+            <div class="image-wrapper" id="image-4">
 
-        </div>
+                <img class="sales" src="images/Dreamcore carousel 4.jpg">
+
+                <button class="prev"> <a href="#image-3">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-5">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-5">
+
+                <img class="sales" src="images/Dreamcore carousel 5.jpg">
+
+                <button class="prev"> <a href="#image-4">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-6">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-6">
+
+                <img class="sales" src="images/Dreamcore carousel 6.jpg">
+
+                <button class="prev"> <a href="#image-5">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-7">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-7">
+
+                <img class="sales" src="images/Dreamcore carousel 7.jpg">
+
+                <button class="prev"> <a href="#image-6">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-8">  &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-8">
+
+                <img class="sales" src="images/Dreamcore carousel 8.jpg">
+
+                <button class="prev"> <a href="#image-7">  &larr; </a> </button>
+
+                <button class="next"> <a href="#image-1">  &rarr; </a> </button>
+
+            </div>
+
+        </section>
+
+        <section class="small-wrapper">
+
+            <div class="small-image">
+
+                <a class="category-links" href="index.html"> <img class="category" src="images/dream-builds.png"> </a>
+
+            </div>
+
+            <div class="small-image">
+
+                <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png"> </a>
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/workstations.png">
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/monitors.png">
+
+            </div>
+
+            <div class="small-image">
+
+                <img class="category" src="images/accssories.png">
+
+            </div>
+
+        </section>
 
     </body>
 
 </html>
-
-<!-- 
-
-            <div class="image-2">
-
-                <img class="sales" src="images/Dreamcore carousel 2.jpg"> 
-
-            </div>
-
-            <div class="image-3">
-
-                <img class="sales" src="images/Dreamcore carousel 3.jpg"> 
-
-            </div>
-
-            <div class="image-4">
-
-                <img class="sales" src="images/Dreamcore carousel 4.jpg"> 
-
-            </div>
-
-            <div class="image-5">
-
-                <img class="sales" src="images/Dreamcore carousel 5.jpg"> 
-
-            </div>
-
-            <div class="image-6">
-
-                <img class="sales" src="images/Dreamcore carousel 6.jpg"> 
-
-            </div>
-
-            <div class="image-7">
-
-                <img class="sales" src="images/Dreamcore carousel 7.jpg"> 
-
-            </div>
-
-            <div class="image-8">
-
-                <img class="sales" src="images/Dreamcore carousel 8.jpg"> 
-
-            </div>
-
--->
