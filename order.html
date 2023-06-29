@@ -18,6 +18,13 @@
 
         <style>
 
+            .big-wrapper{
+                height: 80vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             .order-table, td{
                 border: 2px solid black;
             }
@@ -27,7 +34,7 @@
     </head>
 
     <body>
-        
+
         <nav class="nav-bar">
 
             <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
@@ -40,104 +47,109 @@
 
         </nav>
 
-        <form class="order-form" action="#form" method="post">
+        <section class="big-wrapper">
 
-            <table class="order-table">
+            <form class="order-form" action="#form" method="post">
 
-                <th> Billing Details </th>
+                <table class="order-table">
 
-                <tr>
+                    <th> Billing Details </th>
 
-                    <td> <label for="first-name"> First Name*: </label> </td>
+                    <tr>
 
-                    <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan">  </td>
+                        <td> <label for="first-name"> First Name*: </label> </td>
 
-                </tr>
+                        <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="last-name"> Last Name*: </label> </td>
+                    <tr>
 
-                    <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow"> </td>
+                        <td> <label for="last-name"> Last Name*: </label> </td>
 
-                </tr>
+                        <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow"> </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="email"> Email*: </label> </td>
+                    <tr>
 
-                    <td> <input type="email" id="email" required autocomplete="on" placeholder="e.g Alan_chow@nyp.edu.sg"> </td>
+                        <td> <label for="email"> Email*: </label> </td>
 
-                </tr>
+                        <td> <input type="email" id="email" required autocomplete="on" placeholder="e.g Alan_chow@nyp.edu.sg"> </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="phone-number"> Phone Number*: </label> </td>
+                    <tr>
 
-                    <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783"> </td>
+                        <td> <label for="phone-number"> Phone Number*: </label> </td>
 
-                </tr>
+                        <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783"> </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="street-address"> Street Address*: </label> </td>
+                    <tr>
 
-                    <td> <input type="text" id="street-address" required autocomplete="on" placeholder="House number and street name">  </td>
+                        <td> <label for="street-address"> Street Address*: </label> </td>
 
-                </tr>
+                        <td> <input type="text" id="street-address" required autocomplete="on" placeholder="House number and street name">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="town/city"> Town/City (optional): </label> </td>
+                    <tr>
 
-                    <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
+                        <td> <label for="town/city"> Town/City (optional): </label> </td>
 
-                </tr>
+                        <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="town/city"> Postal Code*: </label> </td>
+                    <tr>
 
-                    <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
+                        <td> <label for="town/city"> Postal Code*: </label> </td>
 
-                </tr>
+                        <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
+                    <tr>
 
-                    <td> <input type="radio" name="payment-button" id="dbt-button">  </td>
+                        <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
 
-                </tr>
+                        <td> <input type="radio" name="payment-button" id="dbt-button">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="credit-button"> Credit Card </label> </td>
+                    <tr>
 
-                    <td> <input type="radio" name="payment-button" id="credit-button">  </td>
+                        <td> <label for="credit-button"> Credit Card </label> </td>
 
-                </tr>
+                        <td> <input type="radio" name="payment-button" id="credit-button">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="grab-button"> Grab Pay </label> </td>
+                    <tr>
 
-                    <td> <input type="radio" name="payment-button" id="grab-button">  </td>
+                        <td> <label for="grab-button"> Grab Pay </label> </td>
 
-                </tr>
+                        <td> <input type="radio" name="payment-button" id="grab-button">  </td>
 
-                <tr>
+                    </tr>
 
-                    <td> <label for="submit"> Submit </label> </td>
+                    <tr>
 
-                    <td> <input type="submit" id="submit" value="Submit"> </td>
+                        <td> <label for="submit"> Submit </label> <label for="reset"> Reset </label> </td>
 
-                </tr>
+                        <td> <input type="submit" id="submit" value="Submit"> <input type="reset" id="reset" value="Reset"> </td>
+
+                    </tr>
 
 
-            </table>
+                </table>
 
-        </form>
+            </form>
 
-    </body>
+        </body>
+
+        </section>
+
 </html>
