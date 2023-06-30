@@ -16,10 +16,25 @@
 
         <link rel="stylesheet" href="webpub.css">
 
+        <style>
+
+            .big-wrapper{
+                height: 80vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .order-table, td{
+                border: 2px solid black;
+            }
+
+        </style>
+
     </head>
 
     <body>
-        
+
         <nav class="nav-bar">
 
             <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
@@ -32,20 +47,109 @@
 
         </nav>
 
-        <form action="#form" method="post">
+        <section class="big-wrapper">
 
-            <table>
+            <form class="order-form" action="#form" method="post">
 
-                <tr>
+                <table class="order-table">
 
-                    <td> <label> Name: </label></td>
-                    <td> <input type="text" id  ="name">  </td>
+                    <th> Billing Details </th>
 
-                </tr>
+                    <tr>
 
-            </table>
+                        <td> <label for="first-name"> First Name*: </label> </td>
 
-        </form>
+                        <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan">  </td>
 
-    </body>
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="last-name"> Last Name*: </label> </td>
+
+                        <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow"> </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="email"> Email*: </label> </td>
+
+                        <td> <input type="email" id="email" required autocomplete="on" placeholder="e.g Alan_chow@nyp.edu.sg"> </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="phone-number"> Phone Number*: </label> </td>
+
+                        <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783"> </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="street-address"> Street Address*: </label> </td>
+
+                        <td> <input type="text" id="street-address" required autocomplete="on" placeholder="House number and street name">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="town/city"> Town/City (optional): </label> </td>
+
+                        <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="town/city"> Postal Code*: </label> </td>
+
+                        <td> <input type="text" id="town/city" required autocomplete="on" placeholder="">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
+
+                        <td> <input type="radio" name="payment-button" id="dbt-button">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="credit-button"> Credit Card </label> </td>
+
+                        <td> <input type="radio" name="payment-button" id="credit-button">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="grab-button"> Grab Pay </label> </td>
+
+                        <td> <input type="radio" name="payment-button" id="grab-button">  </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td> <label for="submit"> Submit </label> <label for="reset"> Reset </label> </td>
+
+                        <td> <input type="submit" id="submit" value="Submit"> <input type="reset" id="reset" value="Reset"> </td>
+
+                    </tr>
+
+
+                </table>
+
+            </form>
+
+        </body>
+
+        </section>
+
 </html>
