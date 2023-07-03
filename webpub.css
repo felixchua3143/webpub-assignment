@@ -17,6 +17,11 @@ body {
     height: 10vh;
 }
 
+.logo:hover{
+    scale: 1.1;
+    transition: all 250ms ease;
+}
+
 .nav-bar{
     background-color: #99ddcc;
     display: flex;
@@ -32,12 +37,14 @@ body {
     text-decoration: none;
     font-size: xx-large;
     font-family: 'Merriweather Sans', sans-serif;
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
     /* Thank you Dennise, for the box shadow code! */
 }
 
 .nav-item:hover{
+    color: grey;
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 2px;
+    transition: all 250ms ease;
 }
