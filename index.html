@@ -39,6 +39,8 @@
             object-fit: fill;
         }
 
+        /*
+
         .next{
             left: 94%;
         }
@@ -46,6 +48,8 @@
         .prev{
             left: 0.7%;
         }
+
+        */
 
         .small-wrapper{
             display: flex;
@@ -61,6 +65,23 @@
         .category:hover{
             opacity: 0.5;
             transition: all 100ms ease-in;
+        }
+
+        .arrows {
+            display: flex;
+            padding: 0 16px; /* adds horizontal spacing from the edge */
+            position: relative; /* fixes position relative to the parent element */
+            top: -50%; /* this centers the arrows into the center of the image */
+            justify-content: space-between; /* this adds the space between the arrows */
+            z-index: 10; /* keeps arrows above image */
+
+            /*
+
+                there is an awkward space between the scroll bar and the image,
+                i think i know a better way to do this, you can ask me if you want
+                my version of your carousel.
+
+             */
         }
 
         </style>
@@ -87,9 +108,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 1.jpg">
 
-                    <button class="prev"> <a href="#image-1">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-2">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows, no other changes were made -->
+                        <button class="prev"> <a href="#image-1">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-2">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -97,9 +119,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 2.jpg">
 
-                    <button class="prev"> <a href="#image-1">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-3">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-1">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-3">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -107,9 +130,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 3.jpg">
 
-                    <button class="prev"> <a href="#image-2">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-4">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-2">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-4">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -117,9 +141,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 4.jpg">
 
-                    <button class="prev"> <a href="#image-3">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-5">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-3">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-5">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -127,9 +152,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 5.jpg">
 
-                    <button class="prev"> <a href="#image-4">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-6">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-4">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-6">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -137,9 +163,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 6.jpg">
 
-                    <button class="prev"> <a href="#image-5">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-7">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-5">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-7">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -147,9 +174,10 @@
 
                     <img class="sales" src="images/Dreamcore carousel 7.jpg">
 
-                    <button class="prev"> <a href="#image-6">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-8">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-6">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-8">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
@@ -157,21 +185,14 @@
 
                     <img class="sales" src="images/Dreamcore carousel 8.jpg">
 
-                    <button class="prev"> <a href="#image-7">  &larr; </a> </button>
-
-                    <button class="next"> <a href="#image-8">  &rarr; </a> </button>
+                    <div class="arrows"> <!-- i added this to all the arrows -->
+                        <button class="prev"> <a href="#image-7">  &larr; </a> </button>
+                        <button class="next"> <a href="#image-8">  &rarr; </a> </button>
+                    </div>
 
                 </div>
 
             </section>
-
-
-    </body>
-
-</html>
-
-<!--
-
 
             <section class="small-wrapper">
 
@@ -207,4 +228,6 @@
 
             </section>
 
--->
+    </body>
+
+</html>
