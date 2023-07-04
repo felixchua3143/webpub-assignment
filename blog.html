@@ -16,6 +16,45 @@
 
         <link rel="stylesheet" href="webpub.css">
 
+        <style>
+
+            header{
+                text-align: center;
+                font-size: xxx-large;
+                margin-top: 1%;
+            }
+
+            .big-wrapper{
+                height: 100vh;
+                display: grid;
+                justify-content: center;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+
+            .wrapper{
+                height: 100vh;
+                width: 50vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1%;
+            }
+
+            .blog-wrapper{
+                background-color: lightgrey;
+            }
+
+            #blog-wrapper-1{
+                grid-column: span 2;
+            }
+
+            .blog-image:hover{
+                opacity: 0.5;
+                transition: all 250ms ease;
+            }
+
+        </style>
+
     </head>
 
     <body>
@@ -32,9 +71,57 @@
 
         </nav>
 
+        <header>
+
+            <p class="header-text"> The NightCore Blog </p>
+
+        </header>
+
         <section class="big-wrapper">
 
+            <main class="wrapper">
 
+                <div class="blog-wrapper" id="blog-wrapper-1">
+
+                    <img class="blog-image" src="images/blog-image-1.jpg">
+
+
+
+                </div>
+
+                <div class="blog-wrapper" id="blog-wrapper-2">
+
+                    <img class="blog-image">
+
+
+
+                </div>
+
+                <div class="blog-wrapper" id="blog-wrapper-3">
+
+                    <img class="blog-image">
+
+
+
+                </div>
+
+                <div class="blog-wrapper" id="blog-wrapper-4">
+
+                    <img class="blog-image">
+
+
+
+                </div>
+
+                <div class="blog-wrapper" id="blog-wrapper-5">
+
+                    <img class="blog-image">
+
+
+
+                </div>
+
+            </main>
 
         </section>
         
