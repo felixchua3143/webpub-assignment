@@ -16,9 +16,6 @@
         <link rel="stylesheet" href="webpub.css">
 
         <style>
-            body {
-                color: rgb(195, 195, 195);
-            }
 
             .PC_building{
                 display: block;
@@ -28,11 +25,18 @@
                 height: 40%;
             }
 
+            .big-wrapper{
+                height: 100vh;
+            }
+
+            .wrapper{
+                display: grid;
+            }
+
             table{
-                border: 10px solid;
+                margin: 1%;
+                border: 10px solid black;
                 padding: 5px;
-                margin-left: auto;
-                margin-right: auto;
                 border-spacing: 20px;
 
             }
@@ -54,34 +58,43 @@
 
         </nav>
 
-        <table>
-            <caption><h1>About Us</h1></caption>
-            <tr>
-                <td valign="top"><h1>What Makes NightCore different?</h1></td>
-                <td>At NightCore, our mission is to inspire a love for </br> technology, enable individuals, and push the boundaries </br> of what's possible and impossible. We achieve this by </br> dedicating ourselves to creating superior products, fostering </br> a culture of tech education, and forming innovative partnerships.</br></br>
-                    We consider ourselves artisans, utilizing custom computers as our canvas </br> for creative expression. Our aim is to expand your horizons, solve </br> your challenges, and transform your aspirations into tangible reality.</br></br>
-                    Dreamcore embodies the principles of craftsmanship, empowering users, and </br> delivering extraordinary experiences. Take the opportunity to acquaint yourself </br> with our company, explore our core values, and witness our commitment to breaking </br> conventional norms.
-                </td>
-            </tr>
-        </table>
+        <section class="big-wrapper">
 
-        <img class="PC_building" alt="PC building" src="images/building-a-pc.png">
+            <main class="wrapper">
 
-        <table>
-            <caption><h1>This is what makes NightCore unique</h1></caption>
-            <tr>
-                <td>
-                    <h3>Superior Craftsmanship</h3>
-                    <p>A craftsman's true measure is found in their unwavering dedication to </br>
-                       mastery. At Dreamcore, we tirelessly refine and enhance our skills,</br>
-                       continuously surpassing the value of our previous creations with each</br>
-                       product iteration. This deep-rooted passion drives us, and now we </br>
-                       extend it to you, our valued audience.
-                    </p>
-                </td>
-                <td>
-                    <img src="images/aesthetic pc.jpg"
-            </tr>
+                <table>
+                    <caption><h1>About Us</h1></caption>
+                    <tr>
+                        <td valign="top"><h1>What Makes NightCore different?</h1></td>
+                        <td>At NightCore, our mission is to inspire a love for <br/> technology, enable individuals, and push the boundaries <br/> of what's possible and impossible. We achieve this by <br/> dedicating ourselves to creating superior products, fostering <br/> a culture of tech education, and forming innovative partnerships.<br/><br/>
+                            We consider ourselves artisans, utilizing custom computers as our canvas <br/> for creative expression. Our aim is to expand your horizons, solve <br/> your challenges, and transform your aspirations into tangible reality.<br/><br/>
+                            Dreamcore embodies the principles of craftsmanship, empowering users, and <br/> delivering extraordinary experiences. Take the opportunity to acquaint yourself <br/> with our company, explore our core values, and witness our commitment to breaking <br/> conventional norms.
+                        </td>
+                    </tr>
+                </table>
+
+                <img class="PC_building" alt="PC building" src="images/building-a-pc.png">
+
+                <table>
+                    <caption><h1>This is what makes NightCore unique</h1></caption>
+                    <tr>
+                        <td>
+                            <h3>Superior Craftsmanship</h3>
+                            <p>A craftsman's true measure is found in their unwavering dedication to <br/>
+                                mastery. At Dreamcore, we tirelessly refine and enhance our skills,<br/>
+                                continuously surpassing the value of our previous creations with each<br/>
+                                product iteration. This deep-rooted passion drives us, and now we <br/>
+                                extend it to you, our valued audience.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="images/aesthetic pc.jpg">
+                    </tr>
+                </table>
+
+            </main>
+
+        </section>
 
     </body>
 
