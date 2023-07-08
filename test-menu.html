@@ -2,34 +2,115 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> NightCore Home </title>
+    <title> NightCore Home </title>
 
-        <meta name="description" content="computers">
+    <meta name="description" content="computers">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-    <body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: inherit;
+        }
 
-            <nav class="nav-bar">
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 0.1fr 1fr 0.1fr;
+        }
 
-                <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+        .logo {
+            margin-top: 7%;
+            height: 10vh;
+        }
 
-                <a class="nav-item" href="index.html"> Home </a>
-                <a class="nav-item" href="shop.html"> Shop </a>
-                <a class="nav-item" href="blog.html"> Blog </a>
-                <a class="nav-item" href="contact-us.html"> Contact Us </a>
-                <a class="nav-item" href="about-us.html"> About Us </a>
+        .logo:hover {
+            scale: 1.1;
+            transition: all 250ms ease;
+        }
 
-            </nav>
+        .nav-bar {
+            background-color: #99ddcc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+            /* Thank you Dennise, for the box shadow code! */
+            ;
+        }
 
-    </body>
+        .nav-item {
+            color: black;
+            text-decoration: none;
+            font-size: xx-large;
+            font-family: 'Merriweather Sans', sans-serif;
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+            /* Thank you Dennise, for the box shadow code! */
+        }
+
+        .nav-item:hover, .email:hover {
+            color: grey;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;
+            transition: all 250ms ease;
+        }
+
+        .bottom-nav-bar{
+            background-color: #99ddcc;
+            grid-row: 4;
+        }
+
+        .footer-text{
+            text-align: center;
+        }
+
+    </style>
+
+<body>
+
+        <nav class="nav-bar">
+
+        <a class="logo-link" href="index.html">
+
+            <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png">
+
+        </a>
+
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
+
+        </nav>
+
+        <footer class="bottom-nav-bar">
+
+            <p class="footer-text">
+
+                Contact us through our company number: +653324234234 <br/>
+                Or through our email: <a class="email" href="mailto:felixchua3141@gmail.com"> felixchua3141@gmail.com </a>
+
+            </p>
+
+        </footer>
+
+</body>
 
 </html>
