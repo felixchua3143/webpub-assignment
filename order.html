@@ -2,173 +2,192 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> Order Form </title>
+    <title> Order Form </title>
 
-        <meta name="description" content="">
+    <meta name="description" content="">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-        <style>
+    <style>
+        .big-wrapper {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-            .big-wrapper{
-                height: 80vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        .order-form {
+            display: flex;
+        }
 
-            .order-form{
-                display: flex;
-            }
+        .order-table,
+        td,
+        th {
+            width: 60vw;
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
 
-            .order-table, td, th{
-                width: 60vw;
-                border-bottom: 1px solid black;
-                border-collapse: collapse;
-                text-align: center;
-            }
+        tr {
+            border-bottom: inherit;
+        }
 
-            tr{
-                border-bottom: inherit;
-            }
+        td {
+            padding: 1%;
+        }
 
-            td{
-                padding: 1%;
-            }
+        label:hover {
+            text-decoration: underline;
+        }
+    </style>
 
-            label:hover{
-                text-decoration: underline;
-            }
+</head>
 
-        </style>
+<body>
 
-    </head>
+    <nav class="nav-bar">
 
-    <body>
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v4).png"> </a>
 
-        <nav class="nav-bar">
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
 
-            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+    </nav>
 
-            <a class="nav-item" href="index.html"> Home </a>
-            <a class="nav-item" href="shop.html"> Shop </a>
-            <a class="nav-item" href="blog.html"> Blog </a>
-            <a class="nav-item" href="contact-us.html"> Contact Us </a>
-            <a class="nav-item" href="about-us.html"> About Us </a>
+    <section class="big-wrapper">
 
-        </nav>
+        <form class="order-form" action="#form" method="post">
 
-        <section class="big-wrapper">
+            <table class="order-table">
 
-            <form class="order-form" action="#form" method="post">
+                <th colspan="5"> Billing Details </th>
 
-                <table class="order-table">
+                <tr>
 
-                    <th colspan="5"> Billing Details </th>
+                    <td> <label for="first-name"> First Name*: </label> </td>
 
-                    <tr>
+                    <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan"
+                            size="40"> </td>
 
-                        <td> <label for="first-name"> First Name*: </label> </td>
+                </tr>
 
-                        <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan" size="40">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="last-name"> Last Name*: </label> </td>
 
-                    <tr>
+                    <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow" size="40">
+                    </td>
 
-                        <td> <label for="last-name"> Last Name*: </label> </td>
+                </tr>
 
-                        <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow" size="40"> </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="email"> Email*: </label> </td>
 
-                    <tr>
+                    <td> <input type="email" id="email" required autocomplete="on"
+                            placeholder="e.g Alan_chow@nyp.edu.sg" size="40"> </td>
 
-                        <td> <label for="email"> Email*: </label> </td>
+                </tr>
 
-                        <td> <input type="email" id="email" required autocomplete="on" placeholder="e.g Alan_chow@nyp.edu.sg" size="40"> </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="phone-number"> Phone Number*: </label> </td>
 
-                    <tr>
+                    <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783"
+                            size="40"> </td>
 
-                        <td> <label for="phone-number"> Phone Number*: </label> </td>
+                </tr>
 
-                        <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783" size="40"> </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="street-address"> Street Address*: </label> </td>
 
-                    <tr>
+                    <td> <input type="text" id="street-address" required autocomplete="on"
+                            placeholder="House number and street name" size="40"> </td>
 
-                        <td> <label for="street-address"> Street Address*: </label> </td>
+                </tr>
 
-                        <td> <input type="text" id="street-address" required autocomplete="on" placeholder="House number and street name" size="40">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="town/city"> Town/City (optional): </label> </td>
 
-                    <tr>
+                    <td> <input type="text" id="town/city" autocomplete="on" placeholder="" size="40"> </td>
 
-                        <td> <label for="town/city"> Town/City (optional): </label> </td>
+                </tr>
 
-                        <td> <input type="text" id="town/city" autocomplete="on" placeholder="" size="40">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="town/city"> Postal Code*: </label> </td>
 
-                    <tr>
+                    <td> <input type="text" id="town/city" required autocomplete="on" placeholder="" size="40"> </td>
 
-                        <td> <label for="town/city"> Postal Code*: </label> </td>
+                </tr>
 
-                        <td> <input type="text" id="town/city" required autocomplete="on" placeholder="" size="40">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
 
-                    <tr>
+                    <td> <input type="radio" name="payment-button" id="dbt-button"> </td>
 
-                        <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
+                </tr>
 
-                        <td> <input type="radio" name="payment-button" id="dbt-button">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="credit-button"> Credit Card </label> </td>
 
-                    <tr>
+                    <td> <input type="radio" name="payment-button" id="credit-button"> </td>
 
-                        <td> <label for="credit-button"> Credit Card </label> </td>
+                </tr>
 
-                        <td> <input type="radio" name="payment-button" id="credit-button">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="grab-button"> Grab Pay </label> </td>
 
-                    <tr>
+                    <td> <input type="radio" name="payment-button" id="grab-button"> </td>
 
-                        <td> <label for="grab-button"> Grab Pay </label> </td>
+                </tr>
 
-                        <td> <input type="radio" name="payment-button" id="grab-button">  </td>
+                <tr>
 
-                    </tr>
+                    <td> <label for="submit"> Submit / </label> <label for="reset"> Reset </label> </td>
 
-                    <tr>
+                    <td> <input type="submit" id="submit" value="Submit"> <input type="reset" id="reset" value="Reset">
+                    </td>
 
-                        <td> <label for="submit"> Submit / </label> <label for="reset"> Reset </label> </td>
+                </tr>
 
-                        <td> <input type="submit" id="submit" value="Submit"> <input type="reset" id="reset" value="Reset"> </td>
 
-                    </tr>
+            </table>
 
+        </form>
 
-                </table>
+    </section>
 
-            </form>
+    <footer class="bottom-nav-bar">
 
-        </body>
+        <p class="footer-text">
 
-        </section>
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
 
 </html>
