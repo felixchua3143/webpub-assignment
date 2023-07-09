@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: white;
 }
@@ -51,9 +51,9 @@ body {
 
 .bottom-nav-bar {
     background-color: #99ddcc;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+    position: sticky;
+    bottom: 0%;
+    width: auto;
     box-shadow: -8px -8px 8px 8px rgba(0, 0, 0, 0.2);
     /* Thank you Dennise, for the box shadow code! */
 }
