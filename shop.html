@@ -2,144 +2,171 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> NightCore Shop </title>
+    <title> NightCore Shop </title>
 
-        <meta name="description" content="">
+    <meta name="description" content="">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-        <style>
+    <style>
+        .header-text {
+            font-size: xx-large;
+            margin-top: 2%;
+            text-align: center;
+        }
 
-            .header-text{
-                font-size: xx-large;
-                margin-top: 2%;
-                text-align: center;
-            }
+        .big-wrapper {
+            margin-top: 2%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+        }
 
-            .big-wrapper{
-                margin-top: 2%;
-                height: 30vh;
-                display: flex;
-                justify-content: center;
-                gap: 5%;
-            }
+        .peripherals,
+        .monitors,
+        .systems {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+            /* Thank you Dennise, for the box shadow code! */
+            ;
+        }
 
-            .peripherals, .monitors, .systems{
-                display: grid;
-                align-items: center;
-                justify-items: center;
-                box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-                /* Thank you Dennise, for the box shadow code! */;
-            }
+        .peripherals,
+        .monitors {
+            background-color: grey;
+            width: 30vw;
+        }
 
-            .peripherals, .monitors{
-                background-color: grey;
-                width: 30vw;
-            }
+        .peripherals:hover,
+        .monitors:hover,
+        .systems:hover {
+            opacity: 0.7;
+            transition: all 100ms ease-in;
+        }
 
-            .peripherals:hover, .monitors:hover, .systems:hover{
-                opacity: 0.7;
-                transition: all 100ms ease-in;
-            }
+        .peripherals-text,
+        .monitors-text,
+        .systems-text {
+            font-size: x-large;
+        }
 
-            .peripherals-text, .monitors-text, .systems-text{
-                font-size: x-large;
-            }
+        .peripherals-link,
+        .monitors-link,
+        .systems-link {
+            color: purple;
+        }
 
-            .peripherals-link, .monitors-link, .systems-link{
-                color: purple;
-            }
+        .peripherals-button,
+        .monitors-button,
+        .systems-button {
+            border: 2px solid purple;
+            border-radius: 15px;
+            background-color: inherit;
+            height: 5vh;
+            width: 20vh;
+            cursor: inherit;
+        }
 
-            .peripherals-button, .monitors-button, .systems-button{
-                border: 2px solid purple;
-                border-radius: 15px;
-                background-color: inherit;
-                height: 5vh;
-                width: 20vh;
-                cursor: inherit;
-            }
+        .peripherals-button:hover,
+        .monitors-button:hover,
+        .systems-button:hover {
+            box-shadow: 0px 5px 15px;
+            transition: all 100ms ease-in;
+        }
 
-            .peripherals-button:hover, .monitors-button:hover, .systems-button:hover{
-                box-shadow: 0px 5px 15px;
-                transition: all 100ms ease-in;
-            }
+        .long-wrapper {
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            margin-top: 3%;
+        }
 
-            .long-wrapper{
-                display: flex;
-                height: 30vh;
-                justify-content: center;
-                margin-top: 3%;
-            }
+        .systems {
+            background-color: pink;
+            width: 65vw;
+        }
+    </style>
 
-            .systems{
-                background-color: pink;
-                width: 65vw;
-            }
+</head>
 
-        </style>
+<body>
 
-    </head>
+    <nav class="nav-bar">
 
-    <body>
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v4).png"> </a>
 
-        <nav class="nav-bar">
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
 
-            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+    </nav>
 
-            <a class="nav-item" href="index.html"> Home </a>
-            <a class="nav-item" href="shop.html"> Shop </a>
-            <a class="nav-item" href="blog.html"> Blog </a>
-            <a class="nav-item" href="contact-us.html"> Contact Us </a>
-            <a class="nav-item" href="about-us.html"> About Us </a>
+    <p class="header-text"> Shop Nightcore </p>
 
-        </nav>
+    <section class="big-wrapper">
 
-        <p class="header-text"> Shop Nightcore </p>
+        <div class="peripherals">
 
-        <section class="big-wrapper">
+            <p class="peripherals-text" style="text-align: center;" id="peripherals-top-text"> Quality keyboards, mice,
+                and headphones </p>
 
-            <div class="peripherals">
+            <p class="peripherals-text"> DREAM PERIPHERALS</p>
 
-                <p class="peripherals-text" style="text-align: center;" id="peripherals-top-text"> Quality keyboards, mice, and headphones </p>
+            <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW </button>
+            </a>
 
-                <p class="peripherals-text"> DREAM PERIPHERALS</p>
+        </div>
 
-                <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW </button> </a>
+        <div class="monitors">
 
-            </div>
+            <p class="monitors-text"> Monitors and monitor arms </p>
 
-            <div class="monitors">
+            <p class="monitors-text"> DREAM MONITORS </p>
 
-                <p class="monitors-text"> Monitors and monitor arms </p>
+            <a class="monitors-link" href="monitors.html"> <button class="monitors-button"> SHOP NOW </button> </a>
 
-                <p class="monitors-text"> DREAM MONITORS </p>
+        </div>
 
-                <a class="monitors-link" href="monitors.html">  <button class="monitors-button"> SHOP NOW </button> </a>
+    </section>
 
-            </div>
+    <section class="long-wrapper">
 
-        </section>
+        <div class="systems">
 
-        <section class="long-wrapper">
+            <p class="systems-text"> SYSTEMS </p>
 
-            <div class="systems">
+            <a class="systems-link" href="#systems"> <button class="systems-button"> SHOP NOW </button> </a>
 
-                <p class="systems-text"> SYSTEMS </p>
+        </div>
 
-                <a class="systems-link" href="#systems"> <button class="systems-button"> SHOP NOW </button> </a>
+    </section>
 
-            </div>
+    <footer class="bottom-nav-bar">
 
-        </section>
+        <p class="footer-text">
 
-    </body>
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
 
 </html>

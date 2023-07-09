@@ -2,158 +2,170 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> NightCore Blog </title>
+    <title> NightCore Blog </title>
 
-        <meta name="description" content="">
+    <meta name="description" content="">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-        <style>
+    <style>
+        header {
+            text-align: center;
+            font-size: x-large;
+            margin-top: 1%;
+        }
 
-            header{
-                text-align: center;
-                font-size: x-large;
-                margin-top: 1%;
-            }
+        .big-wrapper {
+            display: grid;
+            justify-content: center;
+            margin-top: 1%;
+        }
 
-            .big-wrapper{
-                display: grid;
-                justify-content: center;
-                margin-top: 1%;
-            }
+        .wrapper {
+            height: 100vh;
+            width: 65vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1%;
+        }
 
-            .wrapper{
-                height: 100vh;
-                width: 65vw;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1%;
-            }
+        .blog-wrapper {
+            background-color: lightgrey;
+        }
 
-            .blog-wrapper{
-                background-color: lightgrey;
-            }
+        #blog-wrapper-1 {
+            grid-column: span 2;
+        }
 
-            #blog-wrapper-1{
-                grid-column: span 2;
-            }
+        .blog-image {
+            width: 100%;
+            height: auto;
+        }
 
-            .blog-image{
-                width: 100%;
-                height: auto;
-            }
+        .blog-image:hover {
+            opacity: 0.5;
+            transition: all 250ms ease;
+        }
 
-            .blog-image:hover{
-                opacity: 0.5;
-                transition: all 250ms ease;
-            }
+        .blog-link,
+        .blog-text {
+            margin: 1%;
+            text-align: center;
+        }
 
-            .blog-link, .blog-text{
-                margin: 1%;
-                text-align: center;
-            }
+        .blog-link {
+            font-size: xx-large;
+            display: block;
+            margin-bottom: 0%;
+        }
 
-            .blog-link{
-                font-size: xx-large;
-                display: block;
-                margin-bottom: 0%;
-            }
+        .blog-link:hover {
+            opacity: 0.5;
+            transition: all 250ms ease;
+        }
+    </style>
 
-            .blog-link:hover{
-                opacity: 0.5;
-                transition: all 250ms ease;
-            }
+</head>
 
-        </style>
+<body>
 
-    </head>
+    <nav class="nav-bar">
 
-    <body>
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v4).png"> </a>
 
-        <nav class="nav-bar">
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
 
-            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+    </nav>
 
-            <a class="nav-item" href="index.html"> Home </a>
-            <a class="nav-item" href="shop.html"> Shop </a>
-            <a class="nav-item" href="blog.html"> Blog </a>
-            <a class="nav-item" href="contact-us.html"> Contact Us </a>
-            <a class="nav-item" href="about-us.html"> About Us </a>
+    <header>
 
-        </nav>
+        <p class="header-text"> The NightCore Blog </p>
 
-        <header>
+    </header>
 
-            <p class="header-text"> The NightCore Blog </p>
+    <section class="big-wrapper">
 
-        </header>
+        <main class="wrapper">
 
-        <section class="big-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper-1">
 
-            <main class="wrapper">
+                <img class="blog-image" src="images/blog-image-1.jpg">
 
-                <div class="blog-wrapper" id="blog-wrapper-1">
+                <a class="blog-link" href="#blog-1"> fasf </a>
 
-                    <img class="blog-image" src="images/blog-image-1.jpg">
+                <p class="blog-text"> fafdfdsfsd </p>
 
-                    <a class="blog-link" href="#blog-1"> fasf </a>
+            </div>
 
-                    <p class="blog-text"> fafdfdsfsd </p>
+            <div class="blog-wrapper" id="blog-wrapper-2">
 
-                </div>
+                <img class="blog-image" src="images/blog-image-2.jpg">
 
-                <div class="blog-wrapper" id="blog-wrapper-2">
+                <a class="blog-link" href="#blog-2"> fasf </a>
 
-                    <img class="blog-image" src="images/blog-image-2.jpg">
+                <p class="blog-text"> fafdfdsfsd </p>
 
-                    <a class="blog-link" href="#blog-2"> fasf </a>
+            </div>
 
-                    <p class="blog-text"> fafdfdsfsd </p>
+            <div class="blog-wrapper" id="blog-wrapper-3">
 
-                </div>
+                <img class="blog-image" src="images/blog-image-3.jpg">
 
-                <div class="blog-wrapper" id="blog-wrapper-3">
+                <a class="blog-link" href="#blog-3"> fasf </a>
 
-                    <img class="blog-image" src="images/blog-image-3.jpg">
+                <p class="blog-text"> fafdfdsfsd </p>
 
-                    <a class="blog-link" href="#blog-3"> fasf </a>
+            </div>
 
-                    <p class="blog-text"> fafdfdsfsd </p>
+            <div class="blog-wrapper" id="blog-wrapper-4">
 
-                </div>
+                <img class="blog-image" src="images/blog-image-4.jpg">
 
-                <div class="blog-wrapper" id="blog-wrapper-4">
+                <a class="blog-link" href="#blog-4"> fasf </a>
 
-                    <img class="blog-image" src="images/blog-image-4.jpg">
+                <p class="blog-text"> fafdfdsfsd </p>
 
-                    <a class="blog-link" href="#blog-4"> fasf </a>
+            </div>
 
-                    <p class="blog-text"> fafdfdsfsd </p>
+            <div class="blog-wrapper" id="blog-wrapper-5">
 
-                </div>
+                <img class="blog-image" src="images/blog-image-5.jpg">
 
-                <div class="blog-wrapper" id="blog-wrapper-5">
+                <a class="blog-link" href="#blog-5"> fasf </a>
 
-                    <img class="blog-image" src="images/blog-image-5.jpg">
+                <p class="blog-text"> fafdfdsfsd </p>
 
-                    <a class="blog-link" href="#blog-5"> fasf </a>
+            </div>
 
-                    <p class="blog-text"> fafdfdsfsd </p>
+        </main>
 
-                </div>
+    </section>
 
-            </main>
+    <footer class="bottom-nav-bar">
 
-        </section>
-        
-    </body>
+        <p class="footer-text">
+
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
 
 </html>

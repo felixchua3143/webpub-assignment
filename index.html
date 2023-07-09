@@ -2,29 +2,29 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> NightCore Home </title>
+    <title> NightCore Home </title>
 
-        <meta name="description" content="computers">
+    <meta name="description" content="computers">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-        <style>
-
+    <style>
         .big-wrapper {
             display: flex;
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
 
-        .next, .prev{
+        .next,
+        .prev {
             position: relative;
             bottom: 50%;
             background: none;
@@ -33,7 +33,7 @@
             color: rgb(255, 0, 255);
         }
 
-        .sales{
+        .sales {
             height: 64.5vh;
             width: 100vw;
             object-fit: fill;
@@ -42,11 +42,16 @@
 
         .arrows {
             display: flex;
-            padding: 0 16px; /* adds horizontal spacing from the edge */
-            position: relative; /* fixes position relative to the parent element */
-            top: -50%; /* this centers the arrows into the center of the image */
-            justify-content: space-between; /* this adds the space between the arrows */
-            z-index: 10; /* keeps arrows above image */
+            padding: 0 16px;
+            /* adds horizontal spacing from the edge */
+            position: relative;
+            /* fixes position relative to the parent element */
+            top: -50%;
+            /* this centers the arrows into the center of the image */
+            justify-content: space-between;
+            /* this adds the space between the arrows */
+            z-index: 10;
+            /* keeps arrows above image */
 
             /*
 
@@ -57,166 +62,178 @@
              */
         }
 
-        .small-wrapper{
+        .small-wrapper {
             display: flex;
             justify-content: center;
             margin-top: 1%;
         }
 
-        .category{
+        .category {
             height: 15vh;
             cursor: pointer;
         }
 
-        .category:hover{
+        .category:hover {
             opacity: 0.5;
             transition: all 100ms ease-in;
         }
+    </style>
 
-        </style>
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <nav class="nav-bar">
 
-            <nav class="nav-bar">
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v4).png"> </a>
 
-                <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo" src="images/nightcore-computers-logo(v4).png"> </a>
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
 
-                <a class="nav-item" href="index.html"> Home </a>
-                <a class="nav-item" href="shop.html"> Shop </a>
-                <a class="nav-item" href="blog.html"> Blog </a>
-                <a class="nav-item" href="contact-us.html"> Contact Us </a>
-                <a class="nav-item" href="about-us.html"> About Us </a>
+    </nav>
 
-            </nav>
+    <section class="big-wrapper">
 
-            <section class="big-wrapper">
+        <div class="image-wrapper" id="image-1">
 
-                <div class="image-wrapper" id="image-1">
+            <img class="sales" src="images/Dreamcore carousel 1.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 1.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows, no other changes were made -->
+                <button class="prev"> <a href="#image-1"> &larr; </a> </button>
+                <button class="next"> <a href="#image-2"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows, no other changes were made -->
-                        <button class="prev"> <a href="#image-1">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-2">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-2">
 
-                <div class="image-wrapper" id="image-2">
+            <img class="sales" src="images/Dreamcore carousel 2.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 2.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-1"> &larr; </a> </button>
+                <button class="next"> <a href="#image-3"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-1">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-3">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-3">
 
-                <div class="image-wrapper" id="image-3">
+            <img class="sales" src="images/Dreamcore carousel 3.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 3.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-2"> &larr; </a> </button>
+                <button class="next"> <a href="#image-4"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-2">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-4">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-4">
 
-                <div class="image-wrapper" id="image-4">
+            <img class="sales" src="images/Dreamcore carousel 4.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 4.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-3"> &larr; </a> </button>
+                <button class="next"> <a href="#image-5"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-3">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-5">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-5">
 
-                <div class="image-wrapper" id="image-5">
+            <img class="sales" src="images/Dreamcore carousel 5.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 5.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-4"> &larr; </a> </button>
+                <button class="next"> <a href="#image-6"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-4">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-6">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-6">
 
-                <div class="image-wrapper" id="image-6">
+            <img class="sales" src="images/Dreamcore carousel 6.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 6.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-5"> &larr; </a> </button>
+                <button class="next"> <a href="#image-7"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-5">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-7">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-7">
 
-                <div class="image-wrapper" id="image-7">
+            <img class="sales" src="images/Dreamcore carousel 7.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 7.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-6"> &larr; </a> </button>
+                <button class="next"> <a href="#image-8"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-6">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-8">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+        <div class="image-wrapper" id="image-8">
 
-                <div class="image-wrapper" id="image-8">
+            <img class="sales" src="images/Dreamcore carousel 8.jpg">
 
-                    <img class="sales" src="images/Dreamcore carousel 8.jpg">
+            <div class="arrows"> <!-- i added this to all the arrows -->
+                <button class="prev"> <a href="#image-7"> &larr; </a> </button>
+                <button class="next"> <a href="#image-8"> &rarr; </a> </button>
+            </div>
 
-                    <div class="arrows"> <!-- i added this to all the arrows -->
-                        <button class="prev"> <a href="#image-7">  &larr; </a> </button>
-                        <button class="next"> <a href="#image-8">  &rarr; </a> </button>
-                    </div>
+        </div>
 
-                </div>
+    </section>
 
-            </section>
+    <section class="small-wrapper">
 
-            <section class="small-wrapper">
+        <div class="small-image">
 
-                <div class="small-image">
+            <a class="category-links" href="index.html"> <img class="category" src="images/dream-builds.png"> </a>
 
-                    <a class="category-links" href="index.html"> <img class="category" src="images/dream-builds.png"> </a>
+        </div>
 
-                </div>
+        <div class="small-image">
 
-                <div class="small-image">
+            <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png"> </a>
 
-                    <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png"> </a>
+        </div>
 
-                </div>
+        <div class="small-image">
 
-                <div class="small-image">
+            <img class="category" src="images/workstations.png">
 
-                    <img class="category" src="images/workstations.png">
+        </div>
 
-                </div>
+        <div class="small-image">
 
-                <div class="small-image">
+            <a class="monitors-link" href="monitors.html"> <img class="category" src="images/monitors.png"> </a>
 
-                    <a class="monitors-link" href="monitors.html"> <img class="category" src="images/monitors.png"> </a>
+        </div>
 
-                </div>
+        <div class="small-image">
 
-                <div class="small-image">
+            <a href="peripherals.html"> <img class="category" src="images/accssories.png"> </a>
 
-                    <a href="peripherals.html"> <img class="category" src="images/accssories.png"> </a>
+        </div>
 
-                </div>
+    </section>
 
-            </section>
+    <footer class="bottom-nav-bar">
 
-    </body>
+        <p class="footer-text">
+
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
 
 </html>
