@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather Sans', sans-serif;
@@ -12,27 +12,28 @@ body {
     background-color: white;
 }
 
-.logo{
+.logo {
     margin-top: 7%;
     height: 10vh;
 }
 
-.logo:hover{
+.logo:hover {
     scale: 1.1;
     transition: all 250ms ease;
 }
 
-.nav-bar{
+.nav-bar {
     background-color: #99ddcc;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     gap: 5%;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-    /* Thank you Dennise, for the box shadow code! */;
+    /* Thank you Dennise, for the box shadow code! */
+    ;
 }
 
-.nav-item{
+.nav-item {
     color: black;
     text-decoration: none;
     font-size: xx-large;
@@ -40,7 +41,29 @@ body {
     /* Thank you Dennise, for the box shadow code! */
 }
 
-.nav-item:hover{
+.nav-item:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    transition: all 250ms ease;
+}
+
+.bottom-nav-bar {
+    background-color: #99ddcc;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    box-shadow: -8px -8px 8px 8px rgba(0, 0, 0, 0.2);
+    /* Thank you Dennise, for the box shadow code! */
+}
+
+.footer-text {
+    text-align: center;
+    font-family: inherit;
+}
+
+.email-link:hover {
     color: grey;
     text-decoration: underline;
     text-decoration-color: black;
