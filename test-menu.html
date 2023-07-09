@@ -17,14 +17,6 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Merriweather Sans', sans-serif;
-            text-decoration: none;
-            color: inherit;
-        }
-
         body {
             height: 100vh;
             margin: 0;
@@ -33,58 +25,28 @@
             grid-template-rows: 0.1fr 1fr 0.1fr;
         }
 
-        .logo {
-            margin-top: 7%;
-            height: 10vh;
-        }
-
-        .logo:hover {
-            scale: 1.1;
-            transition: all 250ms ease;
-        }
-
-        .nav-bar {
+        .bottom-nav-bar {
             background-color: #99ddcc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5%;
-            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-            /* Thank you Dennise, for the box shadow code! */
-            ;
+            grid-row: 4;
         }
 
-        .nav-item {
-            color: black;
-            text-decoration: none;
-            font-size: xx-large;
-            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-            /* Thank you Dennise, for the box shadow code! */
+        .footer-text {
+            text-align: center;
+            font-family: inherit;
         }
 
-        .nav-item:hover, .email:hover {
+        .email-link:hover {
             color: grey;
             text-decoration: underline;
             text-decoration-color: black;
             text-decoration-thickness: 2px;
             transition: all 250ms ease;
         }
-
-        .bottom-nav-bar{
-            background-color: #99ddcc;
-            grid-row: 4;
-        }
-
-        .footer-text{
-            text-align: center;
-            font-family: inherit;
-        }
-
     </style>
 
 <body>
 
-        <nav class="nav-bar">
+    <nav class="nav-bar">
 
         <a class="logo-link" href="index.html">
 
@@ -98,18 +60,18 @@
         <a class="nav-item" href="contact-us.html"> Contact Us </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
 
-        </nav>
+    </nav>
 
-        <footer class="bottom-nav-bar">
+    <footer class="bottom-nav-bar">
 
-            <p class="footer-text">
+        <p class="footer-text">
 
-                Contact us through our company number: +653324234234 <br/>
-                Or through our email: <a class="email" href="mailto:felixchua3141@gmail.com"> felixchua3141@gmail.com </a>
+            Contact us through our company number: +653324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:felixchua3141@gmail.com"> felixchua3141@gmail.com </a>
 
-            </p>
+        </p>
 
-        </footer>
+    </footer>
 
 </body>
 
