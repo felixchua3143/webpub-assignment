@@ -17,10 +17,48 @@
 
     <style>
 
+        .big-wrapper{
+            height: fit-content;
+            display: grid;
+        }
+
+        .wrapper{
+            display: grid;
+            justify-content: center;
+        }
+
         .header-text{
             margin-top: 2%;
+            margin-bottom: 1%;
             font-size: xx-large;
             text-align: center;
+        }
+
+        .social-wrapper{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            width: 50vw;
+            height:fit-content;
+        }
+
+        .social-icon{
+            height: 35vh;
+        }
+
+        .tik-tok{
+            grid-column: span 2;
+        }
+
+        .social-text{
+            text-align: center;
+        }
+
+        .social-link:hover{
+            color:grey;
+            text-decoration: underline;
+            transition: all 100ms ease;
         }
 
     </style>
@@ -43,13 +81,52 @@
 
     </nav>
 
+    <header class="header-text"> Social Media </header>
+
+
     <section class="big-wrapper">
 
         <main class="wrapper">
 
-            <header class="header-text"> Social Media </header>
+            <section class="social-wrapper">
 
+                <div class="facebook">
 
+                    <a class="social-link" href="#facebook">
+
+                        <img class="social-icon" id="facebook-icon" src="images/facebook.png">
+
+                    </a>
+
+                    <p class="social-text"> Check us on our <a class="social-link" href="#facebook"> Facebook! </a> </p>
+
+                </div>
+
+                <div class="instagram">
+
+                    <a class="social-link" href="#instagram">
+
+                        <img class="social-icon" id="instagram-icon" src="images/instagram.png">
+
+                    </a>
+
+                    <p class="social-text"> Check us on our <a class="social-link" href="#instagram"> Instagram </a> </p>
+
+                </div>
+
+                <div class="tik-tok">
+
+                    <a class="social-icon" href="#tik-tok">
+
+                        <img class="social-icon" id="tik-tok-icon" src="images/tik-tok.png">
+
+                    </a>
+
+                    <p class="social-text"> Check us on our <a class="social-link" href="#tik-tok"> TikTok </a> </p>
+
+                </div>
+
+            </section>
 
         </main>
 

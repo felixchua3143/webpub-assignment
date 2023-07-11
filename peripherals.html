@@ -18,19 +18,22 @@
 
 
     <style>
-        .header-wrapper {
-            display: flex;
-            margin-top: 4%;
-            margin-bottom: 5%;
-            margin-left: 18%;
+
+        .header-image{
+            width: 100vw;
         }
 
-        .header-text {
+        .title-wrapper {
+            margin-top: 4%;
+            margin-bottom: 5%;
+            margin-left: 17.7%;
+        }
+
+        .title-text {
             font-size: xx-large;
         }
 
         .big-wrapper{
-            width: 100vw;
             display: flex;
             justify-content: center;
         }
@@ -56,19 +59,6 @@
             transition: all 0.2s ease;
         }
 
-        .picture{
-            display: flex;
-            background-image: linear-gradient(to right, rgb(134, 134, 134), rgb(204, 204, 204));
-            height: 25vh;
-        }
-
-        #picheaderbig{
-            font-size: 45px;
-            margin-left: 15%;
-            margin-top:auto;
-            margin-bottom:auto;
-        }
-
     </style>
 
 </head>
@@ -89,16 +79,39 @@
 
     </nav>
 
-    <div class="picture">
-        <div id="picheaderbig"> NIGHT PERIPHERALS
-            <div style="font-size: 25px;"> Quality keyboards, mice, headphones </div>
-        </div>
-    </div>
-
-
     <section class="header-wrapper">
 
-        <p class="header-text"> SHOP PERIPHERALS </p>
+        <img class="header-image" src="images/monitor-header(edited).png">
+
+    </section>
+
+    <section class="title-wrapper">
+
+        <p class="title-text"> SHOP PERIPHERALS </p>
+
+    </section>
+
+    <footer class="bottom-nav-bar">
+
+        <p class="footer-text">
+
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!--
+
+    <section class="title-wrapper">
+
+        <p class="title-text"> SHOP PERIPHERALS </p>
 
     </section>
 
@@ -142,23 +155,32 @@
 
     </section>
 
-    <footer class="bottom-nav-bar">
 
-        <p class="footer-text">
+    <div class="picture">
 
-            Contact us through our company number: (+65) 3324234234 <br />
-            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
-                nightcoreservices.abc.xyz </a>
+        <div id="picheaderbig">
 
-        </p>
+            NIGHT PERIPHERALS
 
-    </footer>
+            <div style="font-size: 0.56em;"> Quality keyboards, mice, headphones </div>
 
-</body>
+        </div>
 
-</html>
+    </div>
 
-<!--
+    .picture{
+            display: flex;
+            height: 25vh;
+            background-image: url("images/mointor-header.jpg");
+            object-fit: cover;
+        }
+
+        #picheaderbig{
+            font-size: 2.8em;
+            margin-left: 15%;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
 
     <p style="font-size: x-large; text-align: center; padding-top: 15px;"> Shop Peripherals </p>
 
