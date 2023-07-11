@@ -20,35 +20,55 @@
     <style>
         .header-wrapper {
             display: flex;
-            justify-content: center;
-            margin-top: 1%;
-            margin-bottom: 1%;
+            margin-top: 4%;
+            margin-bottom: 5%;
+            margin-left: 18%;
         }
 
         .header-text {
-            font-size: xxx-large;
+            font-size: xx-large;
         }
 
-        .big-wrapper {
+        .big-wrapper{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
             display: grid;
             justify-items: center;
+            width: 65vw;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 1%;
             margin-bottom: 3%;
         }
 
         .productbox {
-            height: 40vh;
+            height: 50vh;
             width: 30vh;
             margin-top: 2%;
             margin-bottom: 2%;
-            background-color: gray;
+            background-color: rgb(190, 185, 185);
         }
 
         .productbox:hover {
             opacity: 0.5;
             transition: all 0.2s ease;
         }
+
+        .picture{
+            display: flex;
+            background-image: linear-gradient(to right, rgb(134, 134, 134), rgb(204, 204, 204));
+            height: 25vh;
+        }
+
+        #picheaderbig{
+            font-size: 45px;
+            margin-left: 15%;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
     </style>
 
 </head>
@@ -64,49 +84,61 @@
         <a class="nav-item" href="shop.html"> Shop </a>
         <a class="nav-item" href="blog.html"> Blog </a>
         <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="social-media.html"> Social Media </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
 
     </nav>
 
+    <div class="picture">
+        <div id="picheaderbig"> NIGHT PERIPHERALS
+            <div style="font-size: 25px;"> Quality keyboards, mice, headphones </div>
+        </div>
+    </div>
+
+
     <section class="header-wrapper">
 
-        <p class="header-text"> SHOP NIGHTCORE </p>
+        <p class="header-text"> SHOP PERIPHERALS </p>
 
     </section>
 
     <section class="big-wrapper">
 
-        <div class="productbox">
+        <main class="wrapper">
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
 
-        <div class="productbox">
+            </div>
 
-        </div>
+            <div class="productbox">
+
+            </div>
+
+        </main>
 
     </section>
 
