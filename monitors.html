@@ -18,27 +18,51 @@
 
     <style>
 
-        .header-wrapper {
+        .header-wrapper{
+            background-image: url("images/monitor-header\(edited\).png");
+            background-size: cover;
+            height: 30vh;
+        }
+
+        .header-text-wrapper{
+            display: grid;
+            height: 30vh;
+            padding-left: 15%;
+            color: whitesmoke;
+        }
+
+        .big-header-text{
+            font-size: 2.8em;
+            align-self: end;
+        }
+
+        .small-header-text{
+            font-size: 1.5em;
+            align-self: baseline;
+        }
+
+        .title-wrapper {
             margin-top: 4%;
             margin-bottom: 5%;
             margin-left: 17.7%;
         }
 
-        .header-text {
+        .title-text {
             font-size: xx-large;
         }
 
         .big-wrapper{
             display: flex;
             justify-content: center;
+            height: fit-content;
         }
 
         .wrapper {
             display: grid;
             justify-items: center;
+            height: fit-content;
             width: 65vw;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin-bottom: 3%;
         }
 
         .productbox {
@@ -47,6 +71,7 @@
             margin-top: 2%;
             margin-bottom: 2%;
             background-color: rgb(190, 185, 185);
+            display: grid;
         }
 
         .productbox:hover {
@@ -54,17 +79,19 @@
             transition: all 0.2s ease;
         }
 
-        .picture{
-            display: flex;
-            background-image: linear-gradient(to right, rgb(134, 134, 134), rgb(204, 204, 204));
-            height: 25vh;
+        .product-image{
+            object-fit: contain;
+            align-self: baseline;
+            height: 30vh;
         }
 
-        #picheaderbig{
-            font-size: 2.8em;
-            margin-left: 15%;
-            margin-top:auto;
-            margin-bottom:auto;
+        .product-name-text{
+            font-size: x-large;
+        }
+
+        .product-name-text, .product-price-text{
+            margin-left: 1%;
+            margin-right: 1%;
         }
     </style>
 
@@ -86,21 +113,21 @@
 
     </nav>
 
-    <div class="picture">
+    <section class="header-wrapper">
 
-        <div id="picheaderbig">
+        <div class="header-text-wrapper">
 
-            NIGHT MONITORS
+            <p class="big-header-text"> NIGHT MONITORS </p>
 
-            <div style="font-size: 0.56em;"> Quality keyboards, mice, headphones </div>
+            <p class="small-header-text"> Quality keyboards, mice, headphones </p>
 
         </div>
 
-    </div>
+    </section>
 
-    <section class="header-wrapper">
+    <section class="title-wrapper">
 
-        <p class="header-text"> SHOP MONITORS </p>
+        <p class="title-text"> SHOP MONITORS </p>
 
     </section>
 
@@ -108,35 +135,83 @@
 
         <main class="wrapper">
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-1">
+
+                <img class="product-image" id="product-image-1" src="images/monitor-item-1.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-2">
+
+                <img class="product-image" id="product-image-2" src="images/monitor-item-2.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-3">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-3.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-4">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-3.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-5">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-4-5-6-7-8.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-6">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-4-5-6-7-8.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-7">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-4-5-6-7-8.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
-            <div class="productbox">
+            <div class="productbox" id="product-item-8">
+
+                <img class="product-image" id="product-image-3" src="images/monitor-item-4-5-6-7-8.png">
+
+                <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
+
+                <p class="product-price-text"> fasdfasd </p>
 
             </div>
 
