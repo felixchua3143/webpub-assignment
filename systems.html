@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 <html>
 
@@ -18,18 +18,39 @@
 
     <style>
         .header-wrapper {
-            display: flex;
-            margin-top: 4%;
-            margin-bottom: 5%;
-            margin-left: 18%;
+            background-image: url("images/system-header\(edited\)\(v2\).png");
+            background-size: cover;
+            height: 30vh;
         }
 
-        .header-text {
+        .header-text-wrapper {
+            display: grid;
+            height: 30vh;
+            padding-left: 15%;
+            color: whitesmoke;
+        }
+
+        .big-header-text {
+            font-size: 2.8em;
+            align-self: end;
+        }
+
+        .small-header-text {
+            font-size: 1.5em;
+            align-self: baseline;
+        }
+
+        .title-wrapper {
+            margin-top: 4%;
+            margin-bottom: 5%;
+            margin-left: 17.7%;
+        }
+
+        .title-text {
             font-size: xx-large;
         }
 
-        .big-wrapper{
-            width: 100vw;
+        .big-wrapper {
             display: flex;
             justify-content: center;
         }
@@ -42,32 +63,32 @@
             margin-bottom: 3%;
         }
 
-        .productbox {
+        .product-box {
             height: 50vh;
             width: 30vh;
             margin-top: 2%;
             margin-bottom: 2%;
-            background-color: rgb(190, 185, 185);
-
         }
 
-        .productbox:hover {
+        .product-box:hover {
             opacity: 0.5;
             transition: all 0.2s ease;
         }
 
-        .picture{
-            display: flex;
-            background-image: linear-gradient(to right, rgb(134, 134, 134), rgb(204, 204, 204));
-            height: 25vh;
+        .product-image {
+            object-fit: contain;
+            align-self: baseline;
+            height: 30vh;
         }
 
+        .product-name-text {
+            font-size: x-large;
+        }
 
-        #picheaderbig{
-            font-size: 50px;
-            margin-left: 15%;
-            margin-top:auto;
-            margin-bottom:auto;
+        .product-name-text,
+        .product-price-text {
+            margin-left: 1%;
+            margin-right: 1%;
         }
     </style>
 
@@ -78,7 +99,7 @@
     <nav class="nav-bar">
 
         <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v4).png"> </a>
+                src="images/nightcore-computers-logo(v5).png"> </a>
 
         <a class="nav-item" href="index.html"> Home </a>
         <a class="nav-item" href="shop.html"> Shop </a>
@@ -89,52 +110,100 @@
 
     </nav>
 
-    <div class="picture">
-        <div id="picheaderbig"> NIGHTCORE PCs
-            <div style="font-size: 25px;"> Redfining the custom PC experience </div>
-        </div>
-    </div>
-
     <section class="header-wrapper">
 
-        <p class="header-text"> SHOP MONITORS </p>
+        <div class="header-text-wrapper">
+
+            <p class="big-header-text"> NIGHT SYSTEMS </p>
+
+            <p class="small-header-text"> Quality keyboards, mice, headphones </p>
+
+        </div>
 
     </section>
 
+    <section class="title-wrapper">
+
+        <p class="title-text"> SHOP SYSTEMS </p>
+
+    </section>
 
     <section class="big-wrapper">
 
         <main class="wrapper">
 
-            <div class="productbox">
+            <div class="product-box" id="product-box-1">
+
+                <a class="product-link" href="#product-link-1">
+
+                    <div class="product-box" id="product-box-1">
+
+                        <img class="product-image" id="product-image-1" src="images/systems-item-1.png">
+
+                        <p class="product-name-text"> LaterShock Fast A E-Sports Battlestation </p>
+
+                        <p class="product-price-text"> $1899 </p>
+
+                    </div>
+
+                </a>
 
             </div>
 
-            <div class="productbox">
+            <div class="product-box" id="product-box-2">
+
+                <a class="product-link" href="#product-link-2">
+
+                    <div class="product-box" id="product-box-2">
+
+                        <img class="product-image" id="product-image-2" src="images/systems-item-2.png">
+
+                        <p class="product-name-text"> NightCore Onion
+
+
+                        <p class="product-price-text">$1650</p>
+
+                    </div>
+
+                </a>
 
             </div>
 
-            <div class="productbox">
+            <div class="product-box" id="product-box-3">
+
+                <a class="product-link" href="#product-link-3">
+
+                    <div class="product-box" id="product-box-3">
+
+                        <img class="product-image" id="product-image-3" src="images/systems-item-3.png">
+
+                        <p class="product-name-text"> NightCore Ghost
+                            <div style="font-size: small; padding-top: 15px; padding-bottom: 20px;"> Our Custom PC that is perfect as your essential battlestation. Our best selling custom PC.</div>
+                        </p>
+
+                        <p class="product-price-text"> $2000 </p>
+
+                    </div>
+
+                </a>
 
             </div>
 
-            <div class="productbox">
+            <div class="product-box" id="product-box-4">
 
-            </div>
+                <a class="product-link" href="#product-link-4">
 
-            <div class="productbox">
+                    <div class="product-box" id="product-box-4">
 
-            </div>
+                        <img class="product-image" id="product-image-4" src="images/systems-item-4.png">
 
-            <div class="productbox">
+                        <p class="product-name-text"> LaterShock Chewing Gum </p>
 
-            </div>
+                        <p class="product-price-text"> $2100 </p>
 
-            <div class="productbox">
+                    </div>
 
-            </div>
-
-            <div class="productbox">
+                </a>
 
             </div>
 

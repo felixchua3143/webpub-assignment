@@ -23,8 +23,13 @@
             text-align: center;
         }
 
-        .big-wrapper {
+        .big-wrapper{
+            height: fit-content;
+        }
+
+        .wrapper {
             margin-top: 2%;
+            margin-bottom: 2%;
             height: 30vh;
             display: flex;
             justify-content: center;
@@ -42,9 +47,9 @@
             ;
         }
 
-        .peripherals,
-        .monitors {
-            background-color: grey;
+        .peripherals{
+            background-image: url("images/peripherals-pic-grey.png");
+            background-size: cover;
             width: 30vw;
         }
 
@@ -59,18 +64,19 @@
         .monitors-text,
         .systems-text {
             font-size: x-large;
+            color: white;
         }
 
         .peripherals-link,
         .monitors-link,
         .systems-link {
-            color: purple;
+            color: #5E17EB;
         }
 
         .peripherals-button,
         .monitors-button,
         .systems-button {
-            border: 2px solid purple;
+            border: 2px solid #5E17EB;
             border-radius: 15px;
             background-color: inherit;
             height: 5vh;
@@ -107,7 +113,7 @@
     <nav class="nav-bar">
 
         <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v4).png"> </a>
+                src="images/nightcore-computers-logo(v5).png"> </a>
 
         <a class="nav-item" href="index.html"> Home </a>
         <a class="nav-item" href="shop.html"> Shop </a>
@@ -122,39 +128,43 @@
 
     <section class="big-wrapper">
 
-        <div class="peripherals">
+        <section class="wrapper">
 
-            <p class="peripherals-text" style="text-align: center;" id="peripherals-top-text"> Quality keyboards, mice,
-                and headphones </p>
+            <div class="peripherals">
 
-            <p class="peripherals-text"> NIGHT PERIPHERALS</p>
+                <p class="peripherals-text" style="text-align: center;" id="peripherals-top-text"> Quality keyboards, mice,
+                    and headphones </p>
 
-            <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW </button>
-            </a>
+                <p class="peripherals-text"> NIGHT PERIPHERALS</p>
 
-        </div>
+                <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW </button>
+                </a>
 
-        <div class="monitors">
+            </div>
 
-            <p class="monitors-text"> Monitors and monitor arms </p>
+            <div class="monitors">
 
-            <p class="monitors-text"> NIGHT MONITORS </p>
+                <p class="monitors-text"> Monitors and monitor arms </p>
 
-            <a class="monitors-link" href="monitors.html"> <button class="monitors-button"> SHOP NOW </button> </a>
+                <p class="monitors-text"> NIGHT MONITORS </p>
 
-        </div>
+                <a class="monitors-link" href="monitors.html"> <button class="monitors-button"> SHOP NOW </button> </a>
 
-    </section>
+            </div>
 
-    <section class="long-wrapper">
+        </section>
 
-        <div class="systems">
+        <section class="long-wrapper">
 
-            <p class="systems-text"> SYSTEMS </p>
+            <div class="systems">
 
-            <a class="systems-link" href="systems.html"> <button class="systems-button" style="color:gray; border-color: gray;" > SHOP NOW </button> </a>
+                <p class="systems-text"> SYSTEMS </p>
 
-        </div>
+                <a class="systems-link" href="systems.html"> <button class="systems-button" style="color:gray; border-color: gray;" > SHOP NOW </button> </a>
+
+            </div>
+
+        </section>
 
     </section>
 
