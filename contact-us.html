@@ -17,36 +17,43 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-
         .big-wrapper {
             display: grid;
             justify-content: center;
+            height: fit-content;
         }
 
         .wrapper {
+            width: 50vw;
+            margin-top: 4%;
+        }
+
+        .contact-text {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            height: fit-content;
-            width: 50vw;
-            gap: 5%;
+            margin-bottom: 3%;
         }
 
         .header-text {
             margin-top: 2%;
             font-size: xx-large;
             text-align: center;
-            grid-column: span 2;
+            grid-column: 1;
         }
 
-        .contact-text {
-            display: grid;
+        .contact-words {
+            grid-column: 2;
         }
 
-        .phone-link,
-        .email-link {
+        .links {
             display: inline-block;
-            color:blue;
+            color: blue;
             width: 100%;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+            transition: all 100ms ease;
         }
 
         .image-space {
@@ -54,21 +61,32 @@
             height: fit-content;
         }
 
-        #image-space-1{
-            grid-column: span 2;
+        .image-space img {
+            height: 50vh;
+            width: 100%;
             object-fit: cover;
         }
 
-        .image-space:hover{
+        .small-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5%;
+            margin-top: 2%;
+        }
+
+        #image-space-1 {
+            grid-column: span 2;
+        }
+
+        .image-space:hover {
             scale: 1.05;
             transition: all 250ms ease;
         }
 
-        .changes-in-opening-hours{
-            font-size:small;
-            color:grey;
+        .changes-in-opening-hours {
+            font-size: small;
+            color: grey;
         }
-
     </style>
 
 </head>
@@ -93,19 +111,22 @@
 
         <main class="wrapper">
 
-            <header class="header-text" style="color:purple"> Contact Us </header>
-
             <section class="contact-text" id="showroom-text">
 
-                <p>For more information about our products, </p><br/>
-                <p>Come ask our friendly staff at our showroom at: </p><br />
+                <header class="header-text"> Contact Us </header>
 
-                <a class="location-link" href="#location" style="color:blue">mounteverest street 25 #123789</a> <br />
+                <p class="contact-words" style="align-self:center">For more information about our products, </p><br />
+                <p class="contact-words">come ask our friendly staff at our showroom at: <a class="links"
+                        href="#location">mounteverest street 25 #123789</a> </p>
 
-                <br>Or contact us at: <a class="phone-link" href="tel:+6592735376"> +65 92735376 </a> <br />
+                <p class="contact-words">
+                    Or contact us at: <a class="links" href="tel:+6592735376"> +65 92735376 </a>
+                </p>
 
-                <br>Or email us at: <a class="email-link" href="mailto:nightcoreproducts.abc.xyz">nightcoreproducts.abc.xyz
-                </a>
+                <p class="contact-words">
+                    Or email us at: <a class="links" href="mailto:nightcoreproducts.abc.xyz">nightcoreproducts.abc.xyz
+                    </a>
+                </p>
 
             </section>
 
@@ -115,41 +136,51 @@
 
             </section>
 
-            <section class="contact-text" id="service-text">
+            <div class="small-wrapper">
 
-                If you have any issues with products, feel free to make an appointment with us!
-                <br> Our email:<a class="email-link" href="mailto:nightcoreservices.abc.xyz">nightcoreservices.abc.xyz</a>
+                <section class="contact-text" id="service-text">
 
-                <table class="opening-hours">
+                    <p> If you have any issues with products, feel free to make an appointment with us! </p>
 
-                    <tr>
+                    <p style="grid-column: 1">
 
-                        <td> Opening hours: </td>
+                        Our email: <br/> <a class="email-link"
+                            href="mailto:nightcoreservices.abc.xyz">nightcoreservices.abc.xyz</a>
 
-                    </tr>
+                    </p>
 
-                    <tr>
-                        <td> <b> Monday-Friday: </b> 10am-5pm </td>
+                    <table class="opening-hours" style="grid-column: 1">
+
+                        <tr>
+
+                            <td> Opening hours: </td>
+
+                        </tr>
+
+                        <tr>
+                            <td> <b> Monday-Friday: </b> 10am-5pm </td>
                         </tr>
                         <tr>
                             <td><b>Weekends: </b>11am-5pm </td>
                         </tr>
-                            <td style="color:red">*Closed on all public holidays*</td>
+                        <td style="color:red">*Closed on all public holidays*</td>
                         </tr>
-                    <tr class="changes-in-opening-hours">
-                        <td><i>*Opening hours may change a week before public holidays. Please refer to our social media for the latest information*</i></td>
-                    </tr>
+                        <tr class="changes-in-opening-hours">
+                            <td><i>*Opening hours may change a week before public holidays. Please refer to our social
+                                    media for the latest information*</i></td>
+                        </tr>
 
-                </tr>
-                </table>
+                    </table>
 
-            </section>
+                </section>
 
-            <section class="image-space">
+                <section class="image-space">
 
-                <img src="images/service-center-location (2).png" id="image-space-2">
+                    <img src="images/service-center-location (2).png" id="image-space-2">
 
-            </section>
+                </section>
+
+            </div>
 
         </main>
 
