@@ -16,57 +16,50 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-
-        .big-wrapper{
+        .big-wrapper {
             height: fit-content;
             display: grid;
         }
 
-        .wrapper{
-            display: grid;
-            justify-content: center;
-        }
-
-        .header-text{
+        .header-text {
             margin-top: 1.5%;
-            margin-bottom: 1%;
+            margin-bottom: 1.5%;
             font-size: xx-large;
             text-align: center;
         }
 
-        .social-wrapper{
+        .wrapper {
             display: grid;
             justify-items: center;
             align-items: center;
+            justify-self: center;
             grid-template-columns: 1fr 1fr;
             width: 50vw;
-            height:fit-content;
         }
 
-        .social-icon{
+        .social-icon {
             height: 35vh;
             cursor: pointer;
         }
 
-        .social-icon:hover{
+        .social-icon:hover {
             scale: 1.03;
             transition: all 250ms ease;
         }
 
-        .tik-tok{
+        .tik-tok {
             grid-column: span 2;
         }
 
-        .social-text{
+        .social-text {
             text-align: center;
         }
 
-        .social-link:hover{
+        .social-link:hover {
             color: white;
             text-decoration: underline;
             transition: all 100ms ease;
         }
-
     </style>
 
 </head>
@@ -94,45 +87,43 @@
 
         <main class="wrapper">
 
-            <section class="social-wrapper">
+            <div class="facebook">
 
-                <div class="facebook">
+                <a class="social-link" href="#facebook">
 
-                    <a class="social-link" href="#facebook">
+                    <img class="social-icon" id="facebook-icon" src="images/facebook.png">
 
-                        <img class="social-icon" id="facebook-icon" src="images/facebook.png">
+                </a>
 
-                    </a>
+                <p class="social-text"> Check us on our <a class="social-link" href="#facebook"> Facebook! </a> </p>
 
-                    <p class="social-text"> Check us on our <a class="social-link" href="#facebook"> Facebook! </a> </p>
+            </div>
 
-                </div>
+            <div class="instagram">
 
-                <div class="instagram">
+                <a class="social-link" href="#instagram">
 
-                    <a class="social-link" href="#instagram">
+                    <img class="social-icon" id="instagram-icon" src="images/instagram.png">
 
-                        <img class="social-icon" id="instagram-icon" src="images/instagram.png">
+                </a>
 
-                    </a>
+                <p class="social-text"> Check us on our <a class="social-link" href="#instagram"> Instagram! </a> </p>
 
-                    <p class="social-text"> Check us on our <a class="social-link" href="#instagram"> Instagram! </a> </p>
+            </div>
 
-                </div>
+            <div class="tik-tok">
 
-                <div class="tik-tok">
+                <a class="social-link" href="#tik-tok">
 
-                    <a class="social-link" href="#tik-tok">
+                    <img class="social-icon" id="tik-tok-icon" src="images/tik-tok.png">
 
-                        <img class="social-icon" id="tik-tok-icon" src="images/tik-tok.png">
+                </a>
 
-                    </a>
+                <p class="social-text"> Check us on our <a class="social-link" href="#tik-tok"> TikTok! </a> </p>
 
-                    <p class="social-text"> Check us on our <a class="social-link" href="#tik-tok"> TikTok! </a> </p>
+            </div>
 
-                </div>
 
-            </section>
 
         </main>
 

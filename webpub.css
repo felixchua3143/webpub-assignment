@@ -45,15 +45,15 @@ body {
 }
 
 .nav-item:hover {
-    color: grey;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: grey;
+    text-decoration-color: white;
     text-decoration-thickness: 2px;
     transition: all 250ms ease;
 }
 
 .bottom-nav-bar {
-    background-color: #99ddcc;
+    background-color: black;
     position: fixed;
     bottom: 0%;
     width: 100%;
@@ -63,12 +63,13 @@ body {
 .footer-text {
     text-align: center;
     font-family: inherit;
+    color: grey;
 }
 
 .phone-link:hover, .email-link:hover {
-    color: grey;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: white;
     text-decoration-thickness: 2px;
     transition: all 250ms ease;
 }
