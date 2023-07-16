@@ -14,7 +14,7 @@ html{
 body {
     min-height: 100dvh;
     margin: 0;
-    background-color: grey;
+    background-color: whitesmoke;
     overflow: auto;
 }
 
@@ -46,10 +46,14 @@ body {
 
 .nav-item:hover {
     color: white;
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 2px;
     transition: all 250ms ease;
+}
+
+.header-text {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 .bottom-nav-bar {
