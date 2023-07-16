@@ -14,7 +14,7 @@ html{
 body {
     min-height: 100dvh;
     margin: 0;
-    background-color: grey;
+    background-color: whitesmoke;
     overflow: auto;
 }
 
@@ -45,15 +45,19 @@ body {
 }
 
 .nav-item:hover {
-    color: grey;
-    text-decoration: underline;
-    text-decoration-color: grey;
-    text-decoration-thickness: 2px;
+    color: white;
     transition: all 250ms ease;
 }
 
+.header-text {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
 .bottom-nav-bar {
-    background-color: #99ddcc;
+    background-color: black;
     position: fixed;
     bottom: 0%;
     width: 100%;
@@ -63,12 +67,13 @@ body {
 .footer-text {
     text-align: center;
     font-family: inherit;
+    color: grey;
 }
 
 .phone-link:hover, .email-link:hover {
-    color: grey;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: white;
     text-decoration-thickness: 2px;
     transition: all 250ms ease;
 }

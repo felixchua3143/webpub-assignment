@@ -10,12 +10,11 @@
 
     <title> NightCore Peripherals </title>
 
-    <meta name="description" content="">
+    <meta name="description" content>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="webpub.css">
-
 
     <style>
         .header-wrapper {
@@ -53,22 +52,22 @@
 
         .big-wrapper {
             display: flex;
-            justify-content: center;
-            margin-bottom: 6%;
+            flex-direction: column;
+            margin-bottom: 1.5%;
         }
 
         .wrapper {
             display: grid;
             justify-items: center;
-            width: 65vw;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: fit-content;
+            margin-left: 17.7%;
+            column-gap: 5%;
         }
 
         .product-box {
             height: 50vh;
             width: 30vh;
-            margin-top: 2%;
-            margin-bottom: 2%;
         }
 
         .product-box:hover {
@@ -107,6 +106,7 @@
         <a class="nav-item" href="blog.html"> Blog </a>
         <a class="nav-item" href="contact-us.html"> Contact Us </a>
         <a class="nav-item" href="social-media.html"> Social Media </a>
+        <a class="nav-item" href="warranty.html"> Warranty </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
 
     </nav>
@@ -117,94 +117,81 @@
 
             <p class="big-header-text"> NIGHT PERIPHERALS </p>
 
-            <p class="small-header-text"> Quality keyboards, mice, headphones </p>
+            <p class="small-header-text"> Quality keyboards, mice,
+                headphones </p>
 
         </div>
 
     </section>
 
-    <section class="title-wrapper">
-
-        <p class="title-text"> SHOP PERIPHERALS </p>
-
-    </section>
-
     <section class="big-wrapper">
+
+        <section class="title-wrapper">
+
+            <p class="title-text"> SHOP PERIPHERALS </p>
+
+        </section>
 
         <main class="wrapper">
 
-            <div class="product-box" id="product-box-1">
+            <a class="product-link" href="#product-link-1">
 
-                <a class="product-link" href="#product-link-1">
+                <div class="product-box" id="product-box-1">
 
-                    <div class="product-box" id="product-box-1">
+                    <img class="product-image" id="product-image-1" src="images/peripherals-item-1.png">
 
-                        <img class="product-image" id="product-image-1" src="images/peripherals-item-1.png">
+                    <p class="product-name-text"> CommonTech G230 Super Pro
+                    </p>
 
-                        <p class="product-name-text"> CommonTech G230 Super Pro </p>
+                    <p class="product-price-text"> $100 </p>
 
-                        <p class="product-price-text"> $100 </p>
+                </div>
 
-                    </div>
+            </a>
 
-                </a>
+            <a class="product-link" href="#product-link-2">
 
-            </div>
+                <div class="product-box" id="product-box-2">
 
-            <div class="product-box" id="product-box-2">
+                    <img class="product-image" id="product-image-2" src="images/peripherals-item-2.png">
 
-                <a class="product-link" href="#product-link-2">
+                    <p class="product-name-text"> Shaver Naga v2 Pro </p>
 
-                    <div class="product-box" id="product-box-2">
+                    <p class="product-price-text"> $150 </p>
 
-                        <img class="product-image" id="product-image-2" src="images/peripherals-item-2.png">
+                </div>
 
-                        <p class="product-name-text"> Shaver Naga v2 Pro  </p>
+            </a>
 
-                        <p class="product-price-text"> $150 </p>
+            <a class="product-link" href="#product-link-3">
 
-                    </div>
+                <div class="product-box" id="product-box-3">
 
-                </a>
+                    <img class="product-image" id="product-image-3" src="images/peripherals-item-3.png">
 
-            </div>
+                    <p class="product-name-text"> Shaver Uwabami tenkeyless
+                        V3 Lite (Clicky) </p>
 
-            <div class="product-box" id="product-box-3">
+                    <p class="product-price-text"> $250 </p>
 
-                <a class="product-link" href="#product-link-3">
+                </div>
 
-                    <div class="product-box" id="product-box-3">
+            </a>
 
-                        <img class="product-image" id="product-image-3" src="images/peripherals-item-3.png">
+            <a class="product-link" href="#product-link-4">
 
-                        <p class="product-name-text"> Shaver Uwabami tenkeyless V3 Lite (Clicky)  </p>
+                <div class="product-box" id="product-box-4">
 
-                        <p class="product-price-text"> $250 </p>
+                    <img class="product-image" id="product-image-4" src="images/peripherals-item-4.png">
 
-                    </div>
+                    <p class="product-name-text"> Shaver BlackHunter Pro 65%
+                    </p>
 
-                </a>
+                    <p class="product-price-text"> $399 </p>
 
-            </div>
+                </div>
 
-            <div class="product-box" id="product-box-4">
-
-                <a class="product-link" href="#product-link-4">
-
-                    <div class="product-box" id="product-box-4">
-
-                        <img class="product-image" id="product-image-4" src="images/peripherals-item-4.png">
-
-                        <p class="product-name-text"> Shaver BlackHunter Pro 65% </p>
-
-                        <p class="product-price-text"> $399 </p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
+            </a>
 
         </main>
 

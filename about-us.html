@@ -16,7 +16,91 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-        .bigpicture {
+
+        .big-wrapper {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            display: grid;
+            width: 50vw;
+        }
+
+        .top-text{
+            grid-column: 2;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v5).png"> </a>
+
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="social-media.html"> Social Media </a>
+        <a class="nav-item" href="warranty.html"> Warranty </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
+
+    </nav>
+
+    <header class="header-text"> About Us </header>
+
+    <section class="big-wrapper">
+
+        <main class="wrapper">
+
+            <h1>
+                What makes <br/> NightCore different?
+            </h1>
+
+            <p class="top-text">
+                At NightCore, our mission is to inspire a love for <br /> technology, enable individuals, and
+                        push the boundaries <br /> of what's possible and impossible. We achieve this by <br />
+                        dedicating ourselves to creating superior products, fostering <br /> a culture of tech
+                        education, and forming innovative partnerships.<br /><br />
+                        We consider ourselves artisans, utilizing custom computers as our canvas <br /> for creative
+                        expression. Our aim is to expand your horizons, solve <br /> your challenges, and transform your
+                        aspirations into tangible reality.<br /><br />
+                        Nightcore embodies the principles of craftsmanship, empowering users, and <br /> delivering
+                        extraordinary experiences. Take the opportunity to acquaint yourself <br /> with our company,
+                        explore our core values, and witness our commitment to breaking <br /> conventional norms.
+            </p>
+
+        </main>
+
+    </section>
+
+    <footer class="bottom-nav-bar">
+
+        <p class="footer-text">
+
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!--
+
+     .bigpicture {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -34,53 +118,7 @@
             border-radius: 10%;
         }
 
-        .big-wrapper {
-            height: 100vh;
-        }
-
-        .wrapper {
-            display: grid;
-        }
-
-        .header-text {
-            margin-top: 2%;
-            font-size: xx-large;
-            text-align: center;
-            grid-column: span 2;
-        }
-
-        table {
-            margin: auto;
-            border: 0px solid black;
-            padding: 5px;
-            border-spacing: 20px;
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <nav class="nav-bar">
-
-        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v5).png"> </a>
-
-        <a class="nav-item" href="index.html"> Home </a>
-        <a class="nav-item" href="shop.html"> Shop </a>
-        <a class="nav-item" href="blog.html"> Blog </a>
-        <a class="nav-item" href="contact-us.html"> Contact Us </a>
-        <a class="nav-item" href="social-media.html"> Social Media </a>
-        <a class="nav-item" href="about-us.html"> About Us </a>
-
-    </nav>
-
-    <section class="big-wrapper">
-
-        <main class="wrapper">
-
-            <table>
-                <caption class="header-text">About Us</caption>
+      <table>
                 <tr>
                     <td valign="top">
                         <h1>What Makes </br> NightCore different?</h1>
@@ -150,22 +188,5 @@
                     </td>
                 </tr>
             </table>
-        </main>
 
-    </section>
-
-    <footer class="bottom-nav-bar">
-
-        <p class="footer-text">
-
-            Contact us through our company number: (+65) 3324234234 <br />
-            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
-                nightcoreservices.abc.xyz </a>
-
-        </p>
-
-    </footer>
-
-</body>
-
-</html>
+-->

@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-        .big-wrapper {
+
+        .big-wrapper{
             display: grid;
-            justify-content: center;
-            height: fit-content;
         }
 
         .wrapper {
             width: 50vw;
-            margin-top: 4%;
+            margin-top: 2%;
+            justify-self: center;
         }
 
         .contact-text {
@@ -35,20 +35,20 @@
         }
 
         .header-text {
-            margin-top: 2%;
-            font-size: xx-large;
-            text-align: center;
             grid-column: 1;
+            text-align: left;
+            margin: 0;
         }
 
         .contact-words {
             grid-column: 2;
+            text-align: end;
         }
 
         .links {
             display: inline-block;
-            color: blue;
-            width: 100%;
+            color: #5E17EB;
+            width: fit-content;
         }
 
         .links:hover {
@@ -57,30 +57,21 @@
         }
 
         .image-space {
-            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-            height: fit-content;
+            box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+            height: 100%;
+            width: 100%;
         }
 
-        .image-space img {
-            height: 50vh;
-            width: 100%;
-            object-fit: cover;
+        .image-space iframe{
+            height: inherit;
+            width: inherit;
         }
 
         .small-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            column-gap: 5%;
-            margin-top: 2%;
-        }
-
-        #image-space-1 {
-            grid-column: span 2;
-        }
-
-        .image-space:hover {
-            scale: 1.05;
-            transition: all 250ms ease;
+            margin-top: 3%;
+            margin-bottom: 3%;
         }
 
         .changes-in-opening-hours {
@@ -103,6 +94,7 @@
         <a class="nav-item" href="blog.html"> Blog </a>
         <a class="nav-item" href="contact-us.html"> Contact Us </a>
         <a class="nav-item" href="social-media.html"> Social Media </a>
+        <a class="nav-item" href="warranty.html"> Warranty </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
 
     </nav>
@@ -115,9 +107,9 @@
 
                 <header class="header-text"> Contact Us </header>
 
-                <p class="contact-words" style="align-self:center">For more information about our products, </p><br />
-                <p class="contact-words">come ask our friendly staff at our showroom at: <a class="links"
-                        href="#location">mounteverest street 25 #123789</a> </p>
+                <p class="contact-words"> For more information about our products, </p>
+                <p class="contact-words"> come ask our friendly staff at our showroom at: <a class="links"
+                        href="#location"> mounteverest street 25 #123789 </a> </p>
 
                 <p class="contact-words">
                     Or contact us at: <a class="links" href="tel:+6592735376"> +65 92735376 </a>
@@ -132,7 +124,7 @@
 
             <section class="image-space" id="image-space-1">
 
-                <img src="images/service-center-location (2).png">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7866073977066!2d103.85042187585525!3d1.3030163617227586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19b97d8ece41%3A0x5fee250cbe85970f!2sGW%20Mobile%20Pte%20Ltd%20-%20Buy%20-%20Sell%20-%20Repair!5e0!3m2!1sen!2ssg!4v1689173768270!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </section>
 
@@ -144,7 +136,7 @@
 
                     <p style="grid-column: 1">
 
-                        Our email: <br/> <a class="email-link"
+                        Our email: <br/> <a class="links"
                             href="mailto:nightcoreservices.abc.xyz">nightcoreservices.abc.xyz</a>
 
                     </p>
@@ -176,7 +168,7 @@
 
                 <section class="image-space">
 
-                    <img src="images/service-center-location (2).png" id="image-space-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.755939912905!2d103.84146387585506!3d1.3222413616621274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19e0ad2072b9%3A0x10861091956d8345!2sMount%20Elizabeth%20Novena%20Hospital!5e0!3m2!1sen!2ssg!4v1689173296887!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </section>
 

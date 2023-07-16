@@ -53,23 +53,22 @@
 
         .big-wrapper {
             display: flex;
-            justify-content: center;
-            margin-bottom: 2%;
+            flex-direction: column;
+            margin-bottom: 1.5%;
         }
 
         .wrapper {
             display: grid;
             justify-items: center;
-            width: 65vw;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin-bottom: 3%;
+            width: fit-content;
+            margin-left: 17.7%;
+            column-gap: 5%;
         }
 
         .product-box {
             height: 50vh;
             width: 30vh;
-            margin-top: 2%;
-            margin-bottom: 2%;
         }
 
         .product-box:hover {
@@ -108,6 +107,7 @@
         <a class="nav-item" href="blog.html"> Blog </a>
         <a class="nav-item" href="contact-us.html"> Contact Us </a>
         <a class="nav-item" href="social-media.html"> Social Media </a>
+        <a class="nav-item" href="warranty.html"> Warranty </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
 
     </nav>
@@ -124,13 +124,13 @@
 
     </section>
 
-    <section class="title-wrapper">
-
-        <p class="title-text"> SHOP MONITORS </p>
-
-    </section>
-
     <section class="big-wrapper">
+
+        <section class="title-wrapper">
+
+            <p class="title-text"> SHOP MONITORS </p>
+
+        </section>
 
         <main class="wrapper">
 
@@ -148,59 +148,48 @@
 
             </a>
 
-            <div class="product-box" id="product-box-2">
+            <a class="product-link" href="#product-link-2">
 
-                <a class="product-link" href="#product-link-2">
+                <div class="product-box" id="product-box-2">
 
-                    <div class="product-box" id="product-box-2">
+                    <img class="product-image" id="product-image-2" src="images/monitor-item-2.png">
 
-                        <img class="product-image" id="product-image-2" src="images/monitor-item-2.png">
+                    <p class="product-name-text"> ElementOne Mercury 27HGCV 27" / 1080p / 240hZ / 1ms / VA Curved </p>
 
-                        <p class="product-name-text"> ElementOne Mercury 27HGCV 27" / 1080p / 240hZ / 1ms / VA Curved </p>
+                    <p class="product-price-text"> $399 </p>
 
-                        <p class="product-price-text"> $399 </p>
+                </div>
 
-                    </div>
+            </a>
 
-                </a>
+            <a class="product-link" href="#product-link-3">
 
-            </div>
+                <div class="product-box" id="product-box-3">
 
-            <div class="product-box" id="product-box-3">
+                    <img class="product-image" id="product-image-3" src="images/monitor-item-3.png">
 
-                <a class="product-link" href="#product-link-3">
+                    <p class="product-name-text"> ElementOne Mercury 34HGCV 34" / UW / 1440P / 144Hz / 1ms / VA Curved
+                    </p>
 
-                    <div class="product-box" id="product-box-3">
+                    <p class="product-price-text"> $649 </p>
 
-                        <img class="product-image" id="product-image-3" src="images/monitor-item-3.png">
+                </div>
 
-                        <p class="product-name-text"> ElementOne Mercury 34HGCV 34" / UW / 1440P / 144Hz / 1ms / VA Curved </p>
+            </a>
 
-                        <p class="product-price-text"> $649 </p>
+            <a class="product-link" href="#product-link-4">
 
-                    </div>
+                <div class="product-box" id="product-box-4">
 
-                </a>
+                    <img class="product-image" id="product-image-4" src="images/monitor-item-4.png">
 
-            </div>
+                    <p class="product-name-text"> GAM 284FHUE ULTRA </p>
 
-            <div class="product-box" id="product-box-4">
+                    <p class="product-price-text"> $900 </p>
 
-                <a class="product-link" href="#product-link-4">
+                </div>
 
-                    <div class="product-box" id="product-box-4">
-
-                        <img class="product-image" id="product-image-4" src="images/monitor-item-4.png">
-
-                        <p class="product-name-text"> GAM 284FHUE ULTRA   </p>
-
-                        <p class="product-price-text"> $900 </p>
-
-                    </div>
-
-                </a>
-
-            </div>
+            </a>
 
         </main>
 
