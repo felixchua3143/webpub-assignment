@@ -25,40 +25,36 @@
 
         .big-image-wrapper {
             display: flex;
-            overflow-x: hidden;
             scroll-behavior: smooth;
+            height: 60vh;
+            overflow-x: scroll;
+        }
+
+        .image-wrapper{
+            display: flex;
+            min-width: 100vw;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #image-1{
+            background-image: url(images/image-carousel-1.jpg);
+            background-size: cover;
+        }
+
+        #image-2{
+            background-image: url(images/image-carousel-2.jpg);
+            background-size: cover;
         }
 
         .next,
         .prev {
-            position: relative;
-            bottom: 50%;
-            background: none;
-            border: none;
             font-size: xxx-large;
             color: rgb(255, 0, 255);
+            border: none;
+            background: none;
+            height: fit-content;
         }
-
-        .sales {
-            height: 64.5vh;
-            width: 100vw;
-            object-fit: fill;
-        }
-
-
-        .arrows {
-            display: flex;
-            padding: 0 16px;
-            /* adds horizontal spacing from the edge */
-            position: relative;
-            /* fixes position relative to the parent element */
-            top: -50%;
-            /* this centers the arrows into the center of the image */
-            justify-content: space-between;
-            /* this adds the space between the arrows */
-            z-index: 10;
-            /* keeps arrows above image */
-
             /*
 
                 there is an awkward space between the scroll bar and the image,
@@ -66,7 +62,6 @@
                 my version of your carousel.
 
              */
-        }
 
         .small-wrapper {
             display: flex;
@@ -110,89 +105,15 @@
 
             <div class="image-wrapper" id="image-1">
 
-                <img class="sales" src="images/image-carousel 1.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows, no other changes were made -->
-                    <button class="prev"> <a href="#image-1"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-2"> &rarr; </a> </button>
-                </div>
+                <button class="prev"> <a href="#image-1"> &larr; </a> </button>
+                <button class="next"> <a href="#image-2"> &rarr; </a> </button>
 
             </div>
 
             <div class="image-wrapper" id="image-2">
 
-                <img class="sales" src="images/image-carousel-2.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-1"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-3"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-3">
-
-                <img class="sales" src="images/image-carousel-3.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-2"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-4"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-4">
-
-                <img class="sales" src="images/image-carousel-4.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-3"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-5"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-5">
-
-                <img class="sales" src="images/image-carousel-5.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-4"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-6"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-6">
-
-                <img class="sales" src="images/image-carousel-6.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-5"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-7"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-7">
-
-                <img class="sales" src="images/image-carousel-7.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-6"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-8"> &rarr; </a> </button>
-                </div>
-
-            </div>
-
-            <div class="image-wrapper" id="image-8">
-
-                <img class="sales" src="images/image-carousel-8.jpg">
-
-                <div class="arrows"> <!-- i added this to all the arrows -->
-                    <button class="prev"> <a href="#image-7"> &larr; </a> </button>
-                    <button class="next"> <a href="#image-8"> &rarr; </a> </button>
-                </div>
+                <button class="prev"> <a href="#image-1"> &larr; </a> </button>
+                <button class="next"> <a href="#image-3"> &rarr; </a> </button>
 
             </div>
 

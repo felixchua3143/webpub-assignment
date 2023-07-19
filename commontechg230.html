@@ -16,22 +16,209 @@
 
         <link rel="stylesheet" href="webpub.css">
 
+        <style>
+            body{
+                background-color: rgb(255, 255, 255);
+            }
+
+            .pictureplace{
+                margin-left: auto;
+                margin-top: 10%;
+            }
+
+            .productdesc{
+                Font-size: 20px;
+                margin-top: 25px;
+            }
+
+            .title-for-detail{
+                font-weight:bold;
+                font-size: 20px;
+                margin-top: 25px;
+            }
+
+
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .protitle{
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .addtocart-button {
+            border: 2px solid cyan;
+            border-radius: 10px;
+            background-color: cyan;
+            height: 6vh;
+            width: 35vh;
+            cursor: inherit;
+            color:black;
+            transition: 0.3s;
+            }
+
+            .addtocart-button:hover{
+                background-color:black;
+                color: cyan;
+                border: 2px solid cyan;
+            }
+
+            .specstitle{
+                font-weight:bold;
+                font-size:25;
+            }
+
+            .container {
+                display: flex;
+                width: 80%;
+                max-height:80vh;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 20px;
+            }
+
+            .container .left {
+                width: 50%;
+            }
+
+            .container .left img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .container .right {
+                width: 50%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+
+        </style>
     </head>
-</head>
 
-<body>
 
-    <nav class="nav-bar">
+    <body>
 
-        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v5).png"> </a>
+        <nav class="nav-bar">
 
-        <a class="nav-item" href="index.html"> Home </a>
-        <a class="nav-item" href="shop.html"> Shop </a>
-        <a class="nav-item" href="blog.html"> Blog </a>
-        <a class="nav-item" href="contact-us.html"> Contact Us </a>
-        <a class="nav-item" href="social-media.html"> Social Media </a>
-        <a class="nav-item" href="warranty.html"> Warranty </a>
-        <a class="nav-item" href="about-us.html"> About Us </a>
+            <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                    src="images/nightcore-computers-logo(v5).png"> </a>
 
-    </nav>
+            <a class="nav-item" href="index.html"> Home </a>
+            <a class="nav-item" href="shop.html"> Shop </a>
+            <a class="nav-item" href="blog.html"> Blog </a>
+            <a class="nav-item" href="contact-us.html"> Contact Us </a>
+            <a class="nav-item" href="social-media.html"> Social Media </a>
+            <a class="nav-item" href="warranty.html"> Warranty </a>
+            <a class="nav-item" href="about-us.html"> About Us </a>
+
+        </nav>
+
+
+
+        <div class="container">
+            <div class="left">
+                <img class="product-image" class="picture" src="images/peripherals-item-1.png" style="padding-right:30px;">
+            </div>
+            <div class="right">
+                <div class="protitle"> Commontech g230</div>
+                   <div class="productdesc"> High Performance Gaming Mouse</div>
+                   <div class="productdesc"> $100 </div>
+
+
+                   <button class="addtocart-button"> ADD TO CART</button>
+                   <div class="productdesc"> Engineered for advanced gaming<br/> performance. G502 HERO features<br/> HERO 25K gaming sensor with sub-<br/>micron precision tracking,<br/> customizable LIGHTSYNC RGB,<br/> onboard profiles, repositionable<br/> weights and more.</div>
+                   <div class="productdesc">
+                        <details style="width: 500px;">
+                            <summary style="background: rgb(205 205 205); height: 40px; padding-top:20px; border-radius: 10px 10px 0px 0px;">SPECS & DETAILS</summary>
+                            <div style="max-width: 500px;background: rgb(205 205 205); padding:10px; padding-left:10px; padding-right: 10px; border-radius: 0px 0px 10px 10px;">
+                                <div class="title-for-detail" > DIMENSIONS</div>
+                                    Height: 11.42 in (290 mm)<br/>
+                                    Width: 2.95 in (75 mm)<br/>
+                                    Depth: 1.57 in (40 mm)<br/>
+                                    Weight: 4.27 oz (121 g), mouse only<br/>
+                                    Optional extra weights: up to 18 g (0.18 x 0.13oz (5x 3.6 g))<br/>
+                                    Cable length: 6.89 ft (2.1 m)<br/>
+                                <div class="title-for-detail">    TECHNICAL SPECIFICATIONS</div>
+                                <div class="title-for-detail">   TRACKING</div>
+                                    Sensor: HERO<br/>
+                                    Resolution: 100  25,600 dpi<br/>
+                                    Zero smoothing/acceleration/filtering<br/>
+                                    Max. acceleration: >1.41 oz (40 g) 1Tested on Logitech G240 Gaming Mouse Pad<br/>
+                                    Max. speed: >400 IPS 2Tested on Logitech G240 Gaming Mouse Pad<br/>
+                                <div class="title-for-detail">    RESPONSIVENESS</div>
+                                    USB data format: 16 bits/axis<br/>
+                                    USB report rate: 1000Hz (1ms)<br/>
+                                    Microprocessor: 32-bit ARM<br/>
+                                <div class="title-for-detail">    DURABILITY</div>
+                                    PTFE Feet: >250 kilometers 3Tested on Logitech G240 Gaming Mouse Pad<br/>
+                                <div class="title-for-detail">    OTHER FEATURES</div>
+                                    Onboard memory: Up to 5 profiles (requires firmware 127.1.7)<br/>
+                                    LIGHTSYNC RGB: 1 zone<br/>
+                                <div class="title-for-detail">   WARRANTY INFORMATION</div>
+                                    2-Year Limited Hardware Warranty<br/>
+                                <div class="title-for-detail">    PART NUMBER</div>
+                                    910-005469
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+            </div>
+
+
+
+    </body>
+
+</html>
+
+<!-- <table class="pictureplace" border="1">
+            <tr>
+                <td>
+                    <img class="product-image" class="picture" src="images/peripherals-item-1.png">
+                </td>
+                <td>
+                   <div class="protitle"> Commontechg230</div>
+                   <div class="productdesc"> High Performance Gaming Mouse</div>
+                   <div class="productdesc"> $100 </div>
+                   </div>
+
+                   <button class="addtocart-button"> ADD TO CART</button>
+                   <div class="productdesc"> Engineered for advanced gaming<br/> performance. G502 HERO features<br/> HERO 25K gaming sensor with sub-<br/>micron precision tracking,<br/> customizable LIGHTSYNC RGB,<br/> onboard profiles, repositionable<br/> weights and more.</div>
+                   <div class="productdesc">
+                    <details style="width: 500px;">
+                        <summary style="background: gray;">HELLO</summary>
+                        <div style="max-width: 500px;">
+                            <div class="title-for-detail"> DIMENSIONS </div>
+                                Height: 11.42 in (290 mm)<br/>
+                                Width: 2.95 in (75 mm)<br/>
+                                Depth: 1.57 in (40 mm)<br/>
+                                Weight: 4.27 oz (121 g), mouse only<br/>
+                                Optional extra weights: up to 18 g (0.18 x 0.13oz (5x 3.6 g))<br/>
+                                Cable length: 6.89 ft (2.1 m)<br/>
+                            <div class="title-for-detail">    TECHNICAL SPECIFICATIONS</div>
+                            <div class="title-for-detail">   TRACKING</div>
+                                Sensor: HERO<br/>
+                                Resolution: 100  25,600 dpi<br/>
+                                Zero smoothing/acceleration/filtering<br/>
+                                Max. acceleration: >1.41 oz (40 g) 1Tested on Logitech G240 Gaming Mouse Pad<br/>
+                                Max. speed: >400 IPS 2Tested on Logitech G240 Gaming Mouse Pad<br/>
+                            <div class="title-for-detail">    RESPONSIVENESS</div>
+                                USB data format: 16 bits/axis<br/>
+                                USB report rate: 1000Hz (1ms)<br/>
+                                Microprocessor: 32-bit ARM<br/>
+                            <div class="title-for-detail">    DURABILITY</div>
+                                PTFE Feet: >250 kilometers 3Tested on Logitech G240 Gaming Mouse Pad<br/>
+                            <div class="title-for-detail">    OTHER FEATURES</div>
+                                Onboard memory: Up to 5 profiles (requires firmware 127.1.7)<br/>
+                                LIGHTSYNC RGB: 1 zone<br/>
+                            <div class="title-for-detail">   WARRANTY INFORMATION</div>
+                                2-Year Limited Hardware Warranty<br/>
+                            <div class="title-for-detail">    PART NUMBER</div>
+                                910-005469
+                        </div>
+                    </details>
+                </td>
+            </tr>
+        </table> -->

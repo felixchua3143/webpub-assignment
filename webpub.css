@@ -58,7 +58,6 @@ body {
 
 .bottom-nav-bar {
     background-color: black;
-    position: fixed;
     bottom: 0%;
     width: 100%;
     box-shadow: -8px -8px 8px 8px rgba(0, 0, 0, 0.2);
