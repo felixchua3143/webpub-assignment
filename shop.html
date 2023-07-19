@@ -2,21 +2,21 @@
 
 <html>
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title> NightCore Shop </title>
+        <title> NightCore Shop </title>
 
-    <meta name="description" content="">
+        <meta name="description" content>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="webpub.css">
+        <link rel="stylesheet" href="webpub.css">
 
-    <style>
+        <style>
 
         .wrapper {
             margin-top: 2%;
@@ -50,6 +50,19 @@
             width: 30vw;
         }
 
+        .monitors-wrap {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .monitors-wrap:hover {
+            backdrop-filter: blur(8px);
+        }
+
         .systems {
             background-color: #5E17EB;
             width: 65vw;
@@ -58,7 +71,7 @@
         .peripherals:hover,
         .monitors:hover,
         .systems:hover {
-            opacity: 0.7;
+
             transition: all 100ms ease-in;
         }
 
@@ -102,84 +115,96 @@
 
     </style>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <nav class="nav-bar">
+        <nav class="nav-bar">
 
-        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v5).png"> </a>
+            <a class="logo-link" href="index.html"> <img class="logo"
+                    alt="NightCore Computers Logo"
+                    src="images/nightcore-computers-logo(v5).png"> </a>
 
-        <a class="nav-item" href="index.html"> Home </a>
-        <a class="nav-item" href="shop.html"> Shop </a>
-        <a class="nav-item" href="blog.html"> Blog </a>
-        <a class="nav-item" href="contact-us.html"> Contact Us </a>
-        <a class="nav-item" href="social-media.html"> Social Media </a>
-        <a class="nav-item" href="warranty.html"> Warranty </a>
-        <a class="nav-item" href="about-us.html"> About Us </a>
+            <a class="nav-item" href="index.html"> Home </a>
+            <a class="nav-item" href="shop.html"> Shop </a>
+            <a class="nav-item" href="blog.html"> Blog </a>
+            <a class="nav-item" href="contact-us.html"> Contact Us </a>
+            <a class="nav-item" href="social-media.html"> Social Media </a>
+            <a class="nav-item" href="warranty.html"> Warranty </a>
+            <a class="nav-item" href="about-us.html"> About Us </a>
 
-    </nav>
+        </nav>
 
-    <header class="header-text"> Shop Nightcore </header>
+        <header class="header-text"> Shop Nightcore </header>
 
-    <main class="big-wrapper">
+        <main class="big-wrapper">
 
-        <section class="wrapper">
+            <section class="wrapper">
 
-            <div class="peripherals">
+                <div class="peripherals">
 
-                <p class="peripherals-text" style="text-align: center;" id="peripherals-top-text"> Quality keyboards,
-                    mice,
-                    and headphones </p>
+                    <p class="peripherals-text" style="text-align: center;"
+                        id="peripherals-top-text"> Quality keyboards,
+                        mice,
+                        and headphones </p>
 
-                <p class="peripherals-text"> NIGHT PERIPHERALS</p>
+                    <p class="peripherals-text"> NIGHT PERIPHERALS</p>
 
-                <a class="peripherals-link" href="peripherals.html"> <button class="peripherals-button"> SHOP NOW
-                    </button>
-                </a>
+                    <a class="peripherals-link" href="peripherals.html"> <button
+                            class="peripherals-button"> SHOP NOW
+                        </button>
+                    </a>
 
-            </div>
+                </div>
 
-            <div class="monitors">
+                <div class="monitors">
 
-                <p class="monitors-text"> Monitors and monitor arms </p>
+                    <div class="monitors-wrap" href="#">
 
-                <p class="monitors-text"> NIGHT MONITORS </p>
+                        <p class="monitors-text"> Monitors and monitor arms </p>
 
-                <a class="monitors-link" href="monitors.html"> <button class="monitors-button"> SHOP NOW </button> </a>
+                        <p class="monitors-text"> NIGHT MONITORS </p>
 
-            </div>
+                        <a class="monitors-link" href="monitors.html">
+                            <button class="monitors-button"> SHOP NOW
+                            </button> </a>
 
-        </section>
+                    </div>
 
-        <section class="long-wrapper">
+                </div>
 
-            <div class="systems">
+            </section>
 
-                <p class="systems-text"> SYSTEMS </p>
+            <section class="long-wrapper">
 
-                <a class="systems-link" href="systems.html"> <button class="systems-button"
-                        style="color:gray; border-color: gray;"> SHOP NOW </button> </a>
+                <div class="systems">
 
-            </div>
+                    <p class="systems-text"> SYSTEMS </p>
 
-        </section>
+                    <a class="systems-link" href="systems.html"> <button
+                            class="systems-button"
+                            style="color:gray; border-color: gray;"> SHOP NOW
+                        </button> </a>
 
-    </main>
+                </div>
 
-    <footer class="bottom-nav-bar">
+            </section>
 
-        <p class="footer-text">
+        </main>
 
-            Contact us through our company number: (+65) 3324234234 <br />
-            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
-                nightcoreservices.abc.xyz </a>
+        <footer class="bottom-nav-bar">
 
-        </p>
+            <p class="footer-text">
 
-    </footer>
+                Contact us through our company number: (+65) 3324234234 <br />
+                Or through our email: <a class="email-link"
+                    href="mailto:nightcoreservices.abc.xyz">
+                    nightcoreservices.abc.xyz </a>
 
-</body>
+            </p>
+
+        </footer>
+
+    </body>
 
 </html>

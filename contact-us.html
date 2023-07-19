@@ -18,6 +18,10 @@
 
     <style>
 
+        body{
+            background-color: whitesmoke;
+        }
+
         .big-wrapper{
             display: grid;
         }
@@ -59,12 +63,18 @@
         .image-space {
             box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
             height: 100%;
-            width: 100%;
+            width: 120%;
         }
 
         .image-space iframe{
-            height: inherit;
-            width: inherit;
+            height:inherit;
+            width:inherit;
+
+        }
+
+        #image-space-1{
+            height: 40vh;
+            width: 80vh;
         }
 
         .small-wrapper {
@@ -78,6 +88,7 @@
             font-size: small;
             color: grey;
         }
+
     </style>
 
 </head>
@@ -107,15 +118,15 @@
 
                 <header class="header-text"> Contact Us </header>
 
-                <p class="contact-words"> For more information about our products, </p>
-                <p class="contact-words"> come ask our friendly staff at our showroom at: <a class="links"
+                <p class="contact-words" style="color:rgba(128, 128, 128, 0.894)"> For more information about our products, </p>
+                <p class="contact-words" style="color:rgba(128, 128, 128, 0.894)"> come ask our friendly staff at our showroom at: <a class="links"
                         href="#location"> mounteverest street 25 #123789 </a> </p>
 
-                <p class="contact-words">
-                    Or contact us at: <a class="links" href="tel:+6592735376"> +65 92735376 </a>
+                <p class="contact-words" style="text-decoration: underline">
+                 Or contact us at: <a class="links" href="tel:+6592735376"> +65 92735376 </a>
                 </p>
 
-                <p class="contact-words">
+                <p class="contact-words" style="text-decoration: underline">
                     Or email us at: <a class="links" href="mailto:nightcoreproducts.abc.xyz">nightcoreproducts.abc.xyz
                     </a>
                 </p>
@@ -132,12 +143,10 @@
 
                 <section class="contact-text" id="service-text">
 
-                    <p> If you have any issues with products, feel free to make an appointment with us! </p>
-
+                    <p style="color: rgba(128, 128, 128, 0.894)"> If you have any issues with products, feel free to make an appointment with us! </p>
+                    <br/>
                     <p style="grid-column: 1">
-
-                        Our email: <br/> <a class="links"
-                            href="mailto:nightcoreservices.abc.xyz">nightcoreservices.abc.xyz</a>
+                    Our email: <a class="links" href="mailto:nightcoreservices.abc.xyz">nightcoreservices.abc.xyz</a>
 
                     </p>
 
@@ -145,7 +154,7 @@
 
                         <tr>
 
-                            <td> Opening hours: </td>
+                            <td> Opening hours of service center: </td>
 
                         </tr>
 

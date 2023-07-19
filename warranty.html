@@ -34,7 +34,26 @@
 
         .wrapper{
             align-self: center;
-            width: 75vw;
+            display: grid;
+            width: 60vw;
+            margin-bottom: 4%;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        ol{
+            grid-column: 1;
+        }
+
+        .contact{
+            grid-column: 2;
+            grid-row: 1;
+            text-align: center;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>
@@ -64,7 +83,38 @@
 
         <main class="wrapper">
 
-            <img class="image" src="images/repair-pic-1.png">
+            <p class="warranty-text">
+
+                We provide 2 kinds of warranty: <br/><br/>
+
+                <ol>
+
+                    <li> Normal Warranty </li>
+                    <li> On-site Warranty </li>
+
+                </ol>
+
+            </p>
+
+            <p>
+
+                <br/> Our normal warranty runs for 3 years, <br/>starting from the day that your computer is delivered to your house.
+
+                <br/><br/> Our on-site warranty runs for 1 year, <br/> starting from the day that your computer is delivered to your house.
+
+            </p>
+
+            <div class="contact">
+
+                <p> Click here to contact us </p>
+
+            </div>
+
+            <div class="button">
+
+                <button> <a class="links" href="contact-us.html"> ffa </a> </button>
+
+            </div>
 
         </main>
 
