@@ -23,6 +23,10 @@
             overflow-y: hidden;
         }
 
+        .header-text{
+            margin-bottom: -0.5%;
+        }
+
         .wrapper {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -61,23 +65,16 @@
             display: grid;
             align-items: center;
             justify-items: center;
-
         }
 
         .monitors-wrap:hover {
             backdrop-filter: blur(8px);
+            transition: all 250ms ease;
         }
 
         .systems {
             background-color: #5E17EB;
             width: 65vw;
-        }
-
-        .peripherals:hover,
-        .monitors:hover,
-        .systems:hover {
-
-            transition: all 100ms ease-in;
         }
 
         .peripherals-text,

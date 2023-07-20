@@ -20,14 +20,14 @@
 
         .big-wrapper{
             height: fit-content;
-            margin-bottom: 4%;
+            margin-bottom: 2%;
         }
 
         .big-image-wrapper {
             display: flex;
             scroll-behavior: smooth;
             height: 60vh;
-            overflow-x: scroll;
+            overflow-x: hidden;
         }
 
         .image-wrapper{
@@ -47,6 +47,36 @@
             background-size: cover;
         }
 
+        #image-3{
+            background-image: url(images/image-carousel-3.jpg);
+            background-size: cover;
+        }
+
+        #image-4{
+            background-image: url(images/image-carousel-4.jpg);
+            background-size: cover;
+        }
+
+        #image-5{
+            background-image: url(images/image-carousel-5.jpg);
+            background-size: cover;
+        }
+
+        #image-6{
+            background-image: url(images/image-carousel-6.jpg);
+            background-size: cover;
+        }
+
+        #image-7{
+            background-image: url(images/image-carousel-7.jpg);
+            background-size: cover;
+        }
+
+        #image-8{
+            background-image: url(images/image-carousel-8.jpg);
+            background-size: cover;
+        }
+
         .next,
         .prev {
             font-size: xxx-large;
@@ -54,6 +84,14 @@
             border: none;
             background: none;
             height: fit-content;
+        }
+
+        .prev{
+            margin-left: 1.5%;
+        }
+
+        .next{
+            margin-right: 1.5%;
         }
             /*
 
@@ -114,6 +152,48 @@
 
                 <button class="prev"> <a href="#image-1"> &larr; </a> </button>
                 <button class="next"> <a href="#image-3"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-3">
+
+                <button class="prev"> <a href="#image-2"> &larr; </a> </button>
+                <button class="next"> <a href="#image-4"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-4">
+
+                <button class="prev"> <a href="#image-3"> &larr; </a> </button>
+                <button class="next"> <a href="#image-5"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-5">
+
+                <button class="prev"> <a href="#image-4"> &larr; </a> </button>
+                <button class="next"> <a href="#image-6"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-6">
+
+                <button class="prev"> <a href="#image-5"> &larr; </a> </button>
+                <button class="next"> <a href="#image-7"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-7">
+
+                <button class="prev"> <a href="#image-6"> &larr; </a> </button>
+                <button class="next"> <a href="#image-8"> &rarr; </a> </button>
+
+            </div>
+
+            <div class="image-wrapper" id="image-8">
+
+                <button class="prev"> <a href="#image-7"> &larr; </a> </button>
+                <button class="next"> <a href="#image-8"> &rarr; </a> </button>
 
             </div>
 
