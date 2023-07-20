@@ -19,7 +19,7 @@
         <style>
 
         .big-wrapper{
-            height: 75vh;
+            height: 78.9vh;
             overflow-y: hidden;
         }
 
@@ -56,10 +56,11 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            background-color: black;
             width: 30vw;
         }
 
-        .monitors-wrap {
+        .wrap {
             width: 100%;
             height: 100%;
             display: grid;
@@ -67,7 +68,7 @@
             justify-items: center;
         }
 
-        .monitors-wrap:hover {
+        .wrap:hover {
             backdrop-filter: blur(8px);
             transition: all 250ms ease;
         }
@@ -145,23 +146,27 @@
 
                 <div class="peripherals">
 
-                    <p class="peripherals-text" style="text-align: center;"
-                        id="peripherals-top-text"> Quality keyboards,
-                        mice,
-                        and headphones </p>
+                    <div class="wrap" href="#">
 
-                    <p class="peripherals-text"> NIGHT PERIPHERALS</p>
+                        <p class="peripherals-text" style="text-align: center;"
+                            id="peripherals-top-text"> Quality keyboards,
+                            mice,
+                            and headphones </p>
 
-                    <a class="peripherals-link" href="peripherals.html"> <button
-                            class="peripherals-button"> SHOP NOW
-                        </button>
-                    </a>
+                        <p class="peripherals-text"> NIGHT PERIPHERALS</p>
+
+                        <a class="peripherals-link" href="peripherals.html"> <button
+                                class="peripherals-button"> SHOP NOW
+                            </button>
+                        </a>
+
+                    </div>
 
                 </div>
 
                 <div class="monitors">
 
-                    <div class="monitors-wrap" href="#">
+                    <div class="wrap" href="#">
 
                         <p class="monitors-text"> Monitors and monitor arms </p>
 
