@@ -18,34 +18,77 @@
 
     <style>
         .header-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 1%;
-            margin-bottom: 0.4%;
+            background-image: url("images/laptop-header\(edited\).png");
+            background-size: cover;
+            height: 30vh;
         }
 
-        .header-text {
-            font-size: xxx-large;
+        .header-text-wrapper {
+            display: grid;
+            height: 30vh;
+            padding-left: 15%;
+            color: whitesmoke;
+        }
+
+        .big-header-text {
+            font-size: 2.8em;
+            align-self: end;
+        }
+
+        .small-header-text {
+            font-size: 1.5em;
+            align-self: baseline;
+        }
+
+        .title-wrapper {
+            margin-top: 4%;
+            margin-bottom: 5%;
+            margin-left: 17.7%;
+        }
+
+        .title-text {
+            font-size: xx-large;
         }
 
         .big-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5%;
+        }
+
+        .wrapper {
             display: grid;
             justify-items: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 1%;
+            width: fit-content;
+            margin-left: 17.7%;
+            column-gap: 5%;
         }
 
-        .productbox {
-            height: 40vh;
+        .product-box {
+            height: 50vh;
             width: 30vh;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            background-color: gray;
         }
 
-        .productbox:hover {
+        .product-box:hover {
             opacity: 0.5;
             transition: all 0.2s ease;
+        }
+
+        .product-image {
+            object-fit: contain;
+            align-self: baseline;
+            height: 30vh;
+        }
+
+        .product-name-text {
+            font-size: x-large;
+        }
+
+        .product-name-text,
+        .product-price-text {
+            margin-left: 1%;
+            margin-right: 1%;
         }
     </style>
 
@@ -70,43 +113,84 @@
 
     <section class="header-wrapper">
 
-        <p class="header-text"> SHOP NIGHTCORE </p>
+        <div class="header-text-wrapper">
+
+            <p class="big-header-text"> NIGHT LAPTOPS </p>
+
+            <p class="small-header-text"> Quality Laptops </p>
+
+        </div>
 
     </section>
 
     <section class="big-wrapper">
 
-        <div class="productbox">
+        <section class="title-wrapper">
 
-        </div>
+            <p class="title-text"> SHOP MONITORS </p>
 
-        <div class="productbox">
+        </section>
 
-        </div>
+        <main class="wrapper">
 
-        <div class="productbox">
+            <a class="product-link" href="#product-link-1">
 
-        </div>
+                <div class="product-box" id="product-box-1">
 
-        <div class="productbox">
+                    <img class="product-image" id="product-image-1" src="images/monitor-item-1.png">
 
-        </div>
+                    <p class="product-name-text"> ElementOne Hydrogen 24HFI 24″ / 1080P / 75Hz / 1ms / IPS </p>
 
-        <div class="productbox">
+                    <p class="product-price-text"> $199 </p>
 
-        </div>
+                </div>
 
-        <div class="productbox">
+            </a>
 
-        </div>
+            <a class="product-link" href="#product-link-2">
 
-        <div class="productbox">
+                <div class="product-box" id="product-box-2">
 
-        </div>
+                    <img class="product-image" id="product-image-2" src="images/monitor-item-2.png">
 
-        <div class="productbox">
+                    <p class="product-name-text"> ElementOne Mercury 27HGCV 27" / 1080p / 240hZ / 1ms / VA Curved </p>
 
-        </div>
+                    <p class="product-price-text"> $399 </p>
+
+                </div>
+
+            </a>
+
+            <a class="product-link" href="#product-link-3">
+
+                <div class="product-box" id="product-box-3">
+
+                    <img class="product-image" id="product-image-3" src="images/monitor-item-3.png">
+
+                    <p class="product-name-text"> ElementOne Mercury 34HGCV 34" / UW / 1440P / 144Hz / 1ms / VA Curved
+                    </p>
+
+                    <p class="product-price-text"> $649 </p>
+
+                </div>
+
+            </a>
+
+            <a class="product-link" href="#product-link-4">
+
+                <div class="product-box" id="product-box-4">
+
+                    <img class="product-image" id="product-image-4" src="images/monitor-item-4.png">
+
+                    <p class="product-name-text"> GAM 284FHUE ULTRA </p>
+
+                    <p class="product-price-text"> $900 </p>
+
+                </div>
+
+            </a>
+
+        </main>
 
     </section>
 
