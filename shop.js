@@ -6,4 +6,8 @@ const itemArray = [
     monitor
 ]
 
-document.getElementsByClassName("cart-button").addEventListener("onclick", )
+function addItemCart(
+
+)
+
+document.getElementsByClassName("cart-button").addEventListener("onclick", alert("hi"))
