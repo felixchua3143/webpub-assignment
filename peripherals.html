@@ -68,17 +68,18 @@
         .product-box {
             height: 50vh;
             width: 30vh;
-        }
-
-        .product-box:hover {
-            opacity: 0.5;
-            transition: all 0.2s ease;
+            display: grid;
         }
 
         .product-image {
             object-fit: contain;
             align-self: baseline;
             height: 30vh;
+        }
+
+        .product-image:hover {
+            opacity: 0.5;
+            transition: all 0.2s ease;
         }
 
         .product-name-text {
@@ -90,6 +91,22 @@
             margin-left: 1%;
             margin-right: 1%;
         }
+
+        .cart-button{
+            border: 2px solid #5E17EB;
+            border-radius: 15px;
+            background-color: inherit;
+            height: 5vh;
+            width: 20vh;
+            cursor: pointer;
+            justify-self: center;
+        }
+
+        .cart-button:hover{
+            box-shadow: 0px 0px 15px;
+            transition: all 100ms ease-in;
+        }
+
     </style>
 
 </head>
@@ -134,20 +151,22 @@
 
         <main class="wrapper">
 
-            <a class="product-link" href="commontechg230.html">
-
                 <div class="product-box" id="product-box-1">
 
-                    <img class="product-image" id="product-image-1" src="images/peripherals-item-1.png">
+                    <a class="product-link" href="commontechg230.html">
 
-                    <p class="product-name-text"> CommonTech G230 Super Pro
-                    </p>
+                        <img class="product-image" id="product-image-1" src="images/peripherals-item-1.png">
+
+                    </a>
+
+                    <p class="product-name-text"> CommonTech G230 Super Pro </p>
 
                     <p class="product-price-text"> $100 </p>
 
+                    <button class="cart-button" > <a href="order.html"> Add To Cart </a> </button>
+
                 </div>
 
-            </a>
 
             <a class="product-link" href="#product-link-2">
 
@@ -212,121 +231,3 @@
 </body>
 
 </html>
-
-<!--
-
-    <section class="title-wrapper">
-
-        <p class="title-text"> SHOP PERIPHERALS </p>
-
-    </section>
-
-    <section class="big-wrapper">
-
-        <main class="wrapper">
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-        </main>
-
-    </section>
-
-
-    <div class="picture">
-
-        <div id="picheaderbig">
-
-            NIGHT PERIPHERALS
-
-            <div style="font-size: 0.56em;"> Quality keyboards, mice, headphones </div>
-
-        </div>
-
-    </div>
-
-    .picture{
-            display: flex;
-            height: 25vh;
-            background-image: url("images/mointor-header.jpg");
-            object-fit: cover;
-        }
-
-        #picheaderbig{
-            font-size: 2.8em;
-            margin-left: 15%;
-            margin-top:auto;
-            margin-bottom:auto;
-        }
-
-    <p style="font-size: x-large; text-align: center; padding-top: 15px;"> Shop Peripherals </p>
-
-        <table style="margin-left:auto; margin-right: auto;" cellspacing="10px">
-            <tr>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-            </tr>
-        </table>
-
--->
