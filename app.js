@@ -8,18 +8,19 @@ function renderProducts(){
                     <div class="product-image-box">
 
                         <img class="product-image" id="product-image-1"
-                        src="images/peripherals-item-1.png">
+                        src="${product.imgSrc}" alt="${product.name}">
 
                     </div>
 
                     <div class="product-description">
 
-                        <p class="product-name-text"> CommonTech G230 Super Pro </p>
-                        <p class="product-price-text"> $100 </p>
+                        <p class="product-name-text"> ${product.name} </p>
+
+                        <br/>
+
+                        <p class="product-price-text"> $${product.price} </p>
 
                     </div>
-
-                    <button class="cart-button"> Add to cart </button>
 
                 </div>
         `;
