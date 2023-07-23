@@ -25,6 +25,56 @@
             justify-content: center;
         }
 
+        .wrapper {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: fit-content;
+            margin-left: 17.7%;
+            column-gap: 5%;
+        }
+
+        .product-box {
+            height: 50vh;
+            width: 30vh;
+            display: grid;
+        }
+
+        .product-image {
+            object-fit: contain;
+            align-self: baseline;
+            height: 30vh;
+        }
+
+        .product-image:hover {
+            opacity: 0.5;
+            transition: all 0.2s ease;
+        }
+
+        .product-name-text {
+            font-size: x-large;
+        }
+
+        .product-name-text,
+        .product-price-text {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .cart-button {
+            border: 2px solid #5E17EB;
+            border-radius: 15px;
+            background-color: inherit;
+            height: 5vh;
+            width: 20vh;
+            cursor: pointer;
+            justify-self: center;
+        }
+
+        .cart-button:hover {
+            box-shadow: 0px 0px 15px;
+            transition: all 100ms ease-in;
+        }
 
     </style>
 
@@ -45,26 +95,19 @@
             <a class="nav-item" href="social-media.html"> Social Media </a>
             <a class="nav-item" href="warranty.html"> Warranty </a>
             <a class="nav-item" href="about-us.html"> About Us </a>
+            <a class="nav-item" href="order.html"> Order </a>
 
         </nav>
 
         <section class="big-wrapper">
 
-            <div class="item">
+            <section class="wrapper">
 
-                <div class="item-image">
-
-                    <img src="images/peripherals-item-1.png" alt="mouse-1">
+                <div class="cart-items">
 
                 </div>
 
-                <div class="price-text">
-
-                    <p> $100 </p>
-
-                </div>
-
-            </div>
+            </section>
 
         </section>
 
@@ -81,7 +124,7 @@
 
         </footer>
 
-        <script src="shop.js"> </script>
+        <script src="products.js"> </script>
         <script src="app.js"> </script>
 
     </body>
@@ -90,109 +133,25 @@
 
 <!--
 
-    <form class="order-form" action="#form" method="post">
-
-            <table class="order-table">
-
-                <th colspan="5"> Billing Details </th>
-
-                <tr>
-
-                    <td> <label for="first-name"> First Name*: </label> </td>
-
-                    <td> <input type="text" id="first-name" required autocomplete="on" autofocus placeholder="e.g Alan"
-                            size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="last-name"> Last Name*: </label> </td>
-
-                    <td> <input type="text" id="last-name" required autocomplete="on" placeholder="e.g Chow" size="40">
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="email"> Email*: </label> </td>
-
-                    <td> <input type="email" id="email" required autocomplete="on"
-                            placeholder="e.g Alan_chow@nyp.edu.sg" size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="phone-number"> Phone Number*: </label> </td>
-
-                    <td> <input type="tel" id="phone-number" required autocomplete="on" placeholder="e.g 96770783"
-                            size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="street-address"> Street Address*: </label> </td>
-
-                    <td> <input type="text" id="street-address" required autocomplete="on"
-                            placeholder="House number and street name" size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="town/city"> Town/City (optional): </label> </td>
-
-                    <td> <input type="text" id="town/city" autocomplete="on" placeholder="" size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="town/city"> Postal Code*: </label> </td>
-
-                    <td> <input type="text" id="town/city" required autocomplete="on" placeholder="" size="40"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="dbt-button"> Direct Bank Transfer </label> </td>
-
-                    <td> <input type="radio" name="payment-button" id="dbt-button"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="credit-button"> Credit Card </label> </td>
-
-                    <td> <input type="radio" name="payment-button" id="credit-button"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="grab-button"> Grab Pay </label> </td>
-
-                    <td> <input type="radio" name="payment-button" id="grab-button"> </td>
-
-                </tr>
-
-                <tr>
-
-                    <td> <label for="submit"> Submit / </label> <label for="reset"> Reset </label> </td>
-
-                    <td> <input type="submit" id="submit" value="Submit"> <input type="reset" id="reset" value="Reset">
-                    </td>
-
-                </tr>
-
-
-            </table>
-
-        </form>
+    id: 1,
+    name: "Shaver Naga v2 Pro",
+        price: 150,
+            instock: 100,
+                imgSrc: "images/peripherals-item-2.png",
+    },
+{
+    id: 2,
+        name: "Shaver Uwabami tenkeyless V3 Lite(Clicky)",
+            price: 250,
+                instock: 100,
+                    imgSrc: "images/peripherals-item-3.png",
+    },
+{
+    id: 3,
+        name: "Shaver BlackHunter Pro 65%",
+            price: 399,
+                instock: 100,
+                    imgSrc: "images/peripherals-item-4.png",
+    },
 
 -->
