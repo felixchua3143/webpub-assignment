@@ -1,5 +1,4 @@
 const productsEL = document.querySelector(".wrapper")
-const cartItemsEL = document.querySelector(".cart-items")
 
 function renderProducts() {
     products.forEach((product) => {
@@ -53,6 +52,8 @@ function addToCart(id) {
 
     updateCart();
 }
+
+const cartItemsEL = document.querySelector(".cart-items")
 
 function updateCart() {
     renderCartItems();
