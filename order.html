@@ -2,118 +2,151 @@
 
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> Order Form </title>
+    <title> Order Form </title>
 
-        <meta name="description" content>
+    <meta name="description" content>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="webpub.css">
+    <link rel="stylesheet" href="webpub.css">
 
-        <style>
+    <style>
 
         .big-wrapper {
             height: 85vh;
             display: grid;
+            justify-content: center;
+        }
+
+        .registration-wrapper{
+            display: grid;
+            place-items: center;
+            width: 75vw;
             grid-template-columns: 1fr 0.5fr;
         }
 
-        .registration-form{
-            display: grid;
+        .registration-form {
+            height: 50vh;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 5%;
+            background-color: gray;
+            box-shadow: 0px 0px 15px purple;
+            border-radius: 15px;
         }
 
-        .form-table{
-            display: grid;
-            height: 100%;
-            width: 100%;
+        .registration-form fieldset{
+            width: 75%;
+            height: fit-content;
+            color: black;
         }
 
+        .form-table label {
+            cursor: pointer;
+        }
 
+        .important{
+            color:red;
+        }
 
     </style>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <nav class="nav-bar">
+    <nav class="nav-bar">
 
-            <a class="logo-link" href="index.html"> <img class="logo"
-                    alt="NightCore Computers Logo"
-                    src="images/nightcore-computers-logo(v5).png"> </a>
+        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
+                src="images/nightcore-computers-logo(v5).png"> </a>
 
-            <a class="nav-item" href="index.html"> Home </a>
-            <a class="nav-item" href="shop.html"> Shop </a>
-            <a class="nav-item" href="blog.html"> Blog </a>
-            <a class="nav-item" href="contact-us.html"> Contact Us </a>
-            <a class="nav-item" href="social-media.html"> Social Media </a>
-            <a class="nav-item" href="warranty.html"> Warranty </a>
-            <a class="nav-item" href="about-us.html"> About Us </a>
-            <a class="nav-item" href="order.html"> Order </a>
+        <a class="nav-item" href="index.html"> Home </a>
+        <a class="nav-item" href="shop.html"> Shop </a>
+        <a class="nav-item" href="blog.html"> Blog </a>
+        <a class="nav-item" href="contact-us.html"> Contact Us </a>
+        <a class="nav-item" href="social-media.html"> Social Media </a>
+        <a class="nav-item" href="warranty.html"> Warranty </a>
+        <a class="nav-item" href="about-us.html"> About Us </a>
+        <a class="nav-item" href="order.html"> Order </a>
 
-        </nav>
+    </nav>
 
-        <section class="big-wrapper">
+    <section class="big-wrapper">
+
+        <main class="registration-wrapper">
 
             <form class="registration-form" action="#form" method="post">
 
-                <table class="form-table">
+                <fieldset class="personal-details">
 
-                    <tr>
+                    <legend> Personal Details </legend>
 
-                        <td> <input type="text" class="input" autocomplete="on" placeholder="Email" required>  </td>
+                    <table class="form-table">
 
-                    </tr>
+                        <tr>
 
-                    <tr>
+                            <td> <label for="first-name"> First Name:<span class="important"> * </span> </label> </td>
+                            <td> <input type="text" id="first-name" autocomplete="on" required> </td>
 
-                        <td> <input type="text" autocomplete="on" placeholder="First Name e.g Alan" required>  </td>
+                        </tr>
 
-                    </tr>
+                        <tr>
 
-                    <tr>
+                            <td> <label for="last-name"> Last Name:<span class="important"> * </span> </label> </td>
+                            <td> <input type="text" id="last-name" autocomplete="on" required> </td>
 
-                        <td> <input type="text" autocomplete="on" placeholder="Last Name e.g Chow" required>  </td>
+                        </tr>
 
-                    </tr>
+                        <tr>
 
-                    <tr>
+                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span> </label> </td>
+                            <td> <input type="text" id="phone-number" autocomplete="on" required> </td>
 
-                        <td> <input type="text" autocomplete="on" placeholder="Company (optional)">  </td>
+                        </tr>
 
-                    </tr>
+                        <tr>
 
-                    <tr>
+                            <td> <label for="email"> Email:<span class="important"> * </span> </label> </td>
+                            <td> <input type="email" id="email" autocomplete="on" required> </td>
 
-                        <td> <input type="text" autocomplete="on" placeholder="Address" required>  </td>
+                        </tr>
 
-                    </tr>
+                    </table>
 
-                    <tr>
+                </fieldset>
 
-                        <td> <input type="text" autocomplete="on" placeholder="Apartement (optional)" required>  </td>
+                <fieldset class="address-details">
 
-                    </tr>
+                    <legend> Shipping Address </legend>
 
-                    <tr>
+                    <table class="form-table">
 
-                        <td> <input type="text" autocomplete="on" placeholder="Postal Code" required>  </td>
+                        <tr>
 
-                    </tr>
+                            <td> <label for="house/street"> House Number and Street Name:<span class="important"> * </span> </label> </td>
+                            <td> <input type="text" id="house/street" autocomplete="on" required> </td>
 
-                    <tr>
+                        </tr>
 
-                        <td> <input type="text" autocomplete="on" placeholder="Phone Number" required>  </td>
+                        <tr>
 
-                    </tr>
+                            <td> <label for="town/city"> Town/City (Optional): </label> </td>
+                            <td> <input type="text" id="town/city" autocomplete="on" required> </td>
 
-                </table>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
 
             </form>
 
@@ -121,51 +154,54 @@
 
                 <!-- <div class="cart-item">
 
-                    <div class="cart-item-info">
+                        <div class="cart-item-info">
 
-                        <img src="./images/peripherals-item-1.png">
+                            <img src="./images/peripherals-item-1.png">
 
-                        <p> CommonTech G230 Super Pro </p>
+                            <p> CommonTech G230 Super Pro </p>
+
+                        </div>
+
+                        <div class="cart-item-price">
+
+                            <p> $100 </p>
+
+                        </div>
+
+                        <div class="units">
+
+                            <div class="btn-minus"> - </div>
+                            <div class="number"> 1 </div>
+                            <div class="btn-plus"> + </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="cart-item-price">
-
-                        <p> $100 </p>
-
-                    </div>
-
-                    <div class="units">
-
-                        <div class="btn-minus"> - </div>
-                        <div class="number"> 1 </div>
-                        <div class="btn-plus"> + </div>
-
-                    </div> -->
-
-                </div>
+                -->
 
             </div>
 
-        </section>
+        </main>
 
-        <footer class="bottom-nav-bar">
+    </section>
 
-            <p class="footer-text">
+    <footer class="bottom-nav-bar">
 
-                Contact us through our company number: (+65) 3324234234 <br />
-                Or through our email: <a class="email-link"
-                    href="mailto:nightcoreservices.abc.xyz">
-                    nightcoreservices.abc.xyz </a>
+        <p class="footer-text">
 
-            </p>
+            Contact us through our company number: (+65) 3324234234 <br />
+            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
+                nightcoreservices.abc.xyz </a>
 
-        </footer>
+        </p>
 
-        <script src="./products.js"> </script>
-        <script src="./app.js"> </script>
+    </footer>
 
-    </body>
+    <script src="./products.js"> </script>
+    <script src="./app.js"> </script>
+
+</body>
 
 </html>
 
