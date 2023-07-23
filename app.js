@@ -1,4 +1,5 @@
 const productsEL = document.querySelector(".wrapper")
+const cartItemsEL = document.querySelector(".cart-items")
 
 function renderProducts() {
     products.forEach((product) => {
@@ -53,8 +54,6 @@ function addToCart(id) {
     updateCart();
 }
 
-const cartItemsEL = document.querySelector(".cart-items")
-
 function updateCart() {
     renderCartItems();
     renderSubtotal();
@@ -67,7 +66,7 @@ function renderCartItems() {
 
                     <div class="cart-item-info">
 
-                        <img src="./images/peripherals-item-1.png" alt="CommonTech G230 Super Pro">
+                        <img src="${product.imgSrc}">
 
                         <p> CommonTech G230 Super Pro </p>
 
