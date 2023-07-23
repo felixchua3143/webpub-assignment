@@ -2,21 +2,23 @@
 
 <html>
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
+        <meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title> NightCore Peripherals </title>
+        <title> NightCore Peripherals </title>
 
-    <meta name="description" content>
+        <meta name="description" content>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="webpub.css">
+        <link rel="stylesheet" href="webpub.css">
 
-    <style>
+        <script src="shop.js"> document.getElementByClass("cart-button").addEventListener("click", function () {alert("Hello World!");}); </script>
+
+        <style>
         .header-wrapper {
             background-image: url("images/peripherals-header\(edited\).png");
             background-size: cover;
@@ -68,17 +70,18 @@
         .product-box {
             height: 50vh;
             width: 30vh;
-        }
-
-        .product-box:hover {
-            opacity: 0.5;
-            transition: all 0.2s ease;
+            display: grid;
         }
 
         .product-image {
             object-fit: contain;
             align-self: baseline;
             height: 30vh;
+        }
+
+        .product-image:hover {
+            opacity: 0.5;
+            transition: all 0.2s ease;
         }
 
         .product-name-text {
@@ -90,243 +93,86 @@
             margin-left: 1%;
             margin-right: 1%;
         }
+
+        .cart-button {
+            border: 2px solid #5E17EB;
+            border-radius: 15px;
+            background-color: inherit;
+            height: 5vh;
+            width: 20vh;
+            cursor: pointer;
+            justify-self: center;
+        }
+
+        .cart-button:hover {
+            box-shadow: 0px 0px 15px;
+            transition: all 100ms ease-in;
+        }
     </style>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <nav class="nav-bar">
+        <nav class="nav-bar">
 
-        <a class="logo-link" href="index.html"> <img class="logo" alt="NightCore Computers Logo"
-                src="images/nightcore-computers-logo(v5).png"> </a>
+            <a class="logo-link" href="index.html"> <img class="logo"
+                    alt="NightCore Computers Logo"
+                    src="images/nightcore-computers-logo(v5).png"> </a>
 
-        <a class="nav-item" href="index.html"> Home </a>
-        <a class="nav-item" href="shop.html"> Shop </a>
-        <a class="nav-item" href="blog.html"> Blog </a>
-        <a class="nav-item" href="contact-us.html"> Contact Us </a>
-        <a class="nav-item" href="social-media.html"> Social Media </a>
-        <a class="nav-item" href="warranty.html"> Warranty </a>
-        <a class="nav-item" href="about-us.html"> About Us </a>
+            <a class="nav-item" href="index.html"> Home </a>
+            <a class="nav-item" href="shop.html"> Shop </a>
+            <a class="nav-item" href="blog.html"> Blog </a>
+            <a class="nav-item" href="contact-us.html"> Contact Us </a>
+            <a class="nav-item" href="social-media.html"> Social Media </a>
+            <a class="nav-item" href="warranty.html"> Warranty </a>
+            <a class="nav-item" href="about-us.html"> About Us </a>
 
-    </nav>
+        </nav>
 
-    <section class="header-wrapper">
+        <section class="header-wrapper">
 
-        <div class="header-text-wrapper">
+            <div class="header-text-wrapper">
 
-            <p class="big-header-text"> NIGHT PERIPHERALS </p>
+                <p class="big-header-text"> NIGHT PERIPHERALS </p>
 
-            <p class="small-header-text"> Quality keyboards, mice,
-                headphones </p>
+                <p class="small-header-text"> Quality Keyboards, Mice,
+                    Headphones </p>
 
-        </div>
-
-    </section>
-
-    <section class="big-wrapper">
-
-        <section class="title-wrapper">
-
-            <p class="title-text"> SHOP PERIPHERALS </p>
+            </div>
 
         </section>
 
-        <main class="wrapper">
+        <section class="big-wrapper">
 
-            <a class="product-link" href="commontechg230.html">
+            <section class="title-wrapper">
 
-                <div class="product-box" id="product-box-1">
+                <p class="title-text"> SHOP PERIPHERALS </p>
 
-                    <img class="product-image" id="product-image-1" src="images/peripherals-item-1.png">
+            </section>
 
-                    <p class="product-name-text"> CommonTech G230 Super Pro
-                    </p>
+            <main class="wrapper">
 
-                    <p class="product-price-text"> $100 </p>
+            </main>
 
-                </div>
+        </section>
 
-            </a>
+        <footer class="bottom-nav-bar">
 
-            <a class="product-link" href="#product-link-2">
+            <p class="footer-text">
 
-                <div class="product-box" id="product-box-2">
+                Contact us through our company number: (+65) 3324234234 <br />
+                Or through our email: <a class="email-link"
+                    href="mailto:nightcoreservices.abc.xyz">
+                    nightcoreservices.abc.xyz </a>
 
-                    <img class="product-image" id="product-image-2" src="images/peripherals-item-2.png">
+            </p>
 
-                    <p class="product-name-text"> Shaver Naga v2 Pro </p>
+        </footer>
 
-                    <p class="product-price-text"> $150 </p>
+        <script src="./products.js"></script>
+        <script src="./app.js"></script>
 
-                </div>
-
-            </a>
-
-            <a class="product-link" href="#product-link-3">
-
-                <div class="product-box" id="product-box-3">
-
-                    <img class="product-image" id="product-image-3" src="images/peripherals-item-3.png">
-
-                    <p class="product-name-text"> Shaver Uwabami tenkeyless
-                        V3 Lite (Clicky) </p>
-
-                    <p class="product-price-text"> $250 </p>
-
-                </div>
-
-            </a>
-
-            <a class="product-link" href="#product-link-4">
-
-                <div class="product-box" id="product-box-4">
-
-                    <img class="product-image" id="product-image-4" src="images/peripherals-item-4.png">
-
-                    <p class="product-name-text"> Shaver BlackHunter Pro 65%
-                    </p>
-
-                    <p class="product-price-text"> $399 </p>
-
-                </div>
-
-            </a>
-
-        </main>
-
-    </section>
-
-    <footer class="bottom-nav-bar">
-
-        <p class="footer-text">
-
-            Contact us through our company number: (+65) 3324234234 <br />
-            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
-                nightcoreservices.abc.xyz </a>
-
-        </p>
-
-    </footer>
-
-</body>
+    </body>
 
 </html>
-
-<!--
-
-    <section class="title-wrapper">
-
-        <p class="title-text"> SHOP PERIPHERALS </p>
-
-    </section>
-
-    <section class="big-wrapper">
-
-        <main class="wrapper">
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-            <div class="productbox">
-
-            </div>
-
-        </main>
-
-    </section>
-
-
-    <div class="picture">
-
-        <div id="picheaderbig">
-
-            NIGHT PERIPHERALS
-
-            <div style="font-size: 0.56em;"> Quality keyboards, mice, headphones </div>
-
-        </div>
-
-    </div>
-
-    .picture{
-            display: flex;
-            height: 25vh;
-            background-image: url("images/mointor-header.jpg");
-            object-fit: cover;
-        }
-
-        #picheaderbig{
-            font-size: 2.8em;
-            margin-left: 15%;
-            margin-top:auto;
-            margin-bottom:auto;
-        }
-
-    <p style="font-size: x-large; text-align: center; padding-top: 15px;"> Shop Peripherals </p>
-
-        <table style="margin-left:auto; margin-right: auto;" cellspacing="10px">
-            <tr>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-                <td>
-                    <div class="productbox">
-                    </div>
-                </td>
-            </tr>
-        </table>
-
--->

@@ -19,7 +19,8 @@
     <style>
 
         .big-wrapper{
-            height: 85vh;;
+            height: 85vh;
+            display: grid;
         }
 
         .big-image-wrapper {
@@ -79,10 +80,15 @@
         .next,
         .prev {
             font-size: xxx-large;
-            color: rgb(255, 0, 255);
+            color: #5E17EB;
             border: none;
             background: none;
             height: fit-content;
+        }
+
+        .next:hover, .prev:hover{
+            color: #5c4094;
+            transition: all 250ms ease;
         }
 
         .prev{
@@ -100,10 +106,21 @@
 
              */
 
-        .small-wrapper {
+        .wrapper{
             display: flex;
             justify-content: center;
-            margin-top: 1%;
+            height: max-content;
+        }
+
+        .small-wrapper {
+            display: flex;
+            justify-self: center;
+            width: 22%;
+            height: fit-content;
+            margin-top: -2%;
+            overflow: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
         }
 
         .category {
@@ -111,10 +128,23 @@
             cursor: pointer;
         }
 
-        .category:hover {
+        .small-image:hover {
             opacity: 0.5;
             transition: all 100ms ease-in;
         }
+
+        .category-text{
+            text-align: center;
+        }
+
+        #new-prev, #new-next{
+            margin: 0%;
+        }
+
+        #new-next{
+            margin-left: 0.5%;
+        }
+
     </style>
 
 </head>
@@ -133,6 +163,7 @@
         <a class="nav-item" href="social-media.html"> Social Media </a>
         <a class="nav-item" href="warranty.html"> Warranty </a>
         <a class="nav-item" href="about-us.html"> About Us </a>
+        <a class="nav-item" href="order.html"> Order </a>
 
     </nav>
 
@@ -198,39 +229,51 @@
 
         </main>
 
-        <section class="small-wrapper">
+        <section class="wrapper">
 
-            <div class="small-image">
+            <button class="prev" id="new-prev"> <a class="" href="#workstations"> &larr; </a> </button>
 
-                <a class="category-links" href="index.html"> <img class="category" src="images/night-builds.png"> </a>
+                <section class="small-wrapper">
 
-            </div>
+                <div class="small-image">
 
-            <div class="small-image">
+                    <a class="category-links" href="systems.html"> <img class="category" src="images/workstations.png" id="workstations"> </a>
 
-                <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png"> </a>
+                    <p class="category-text"> SYSTEMS </p>
 
-            </div>
+                </div>
 
-            <div class="small-image">
+                <div class="small-image">
 
-                <a class="category-links" href="systems.html"> <img class="category" src="images/workstations.png"> </a>
+                    <a class="category-links" href="laptops.html"> <img class="category" src="images/laptops.png" id="laptops"> </a>
 
-            </div>
+                    <p class="category-text"> LAPTOPS </p>
 
-            <div class="small-image">
+                </div>
 
-                <a class="category-links" href="monitors.html"> <img class="category" src="images/monitors.png"> </a>
+                <div class="small-image">
 
-            </div>
+                    <a class="category-links" href="monitors.html"> <img class="category" src="images/monitors.png" id="monitors"> </a>
 
-            <div class="small-image">
+                    <p class="category-text"> MONITORS </p>
 
-                <a class="category-links" href="peripherals.html"> <img class="category" src="images/peripherals.png"> </a>
+                </div>
 
-            </div>
+                <div class="small-image">
+
+                    <a class="category-links" href="peripherals.html"> <img class="category" src="images/peripherals.png" id="peripherals"> </a>
+
+                    <p class="category-text"> PERIPHERALS </p>
+
+                </div>
+
+                </section>
+
+            <button class="next" id="new-next"> <a href="#peripherals"> &rarr; </a> </button>
+
 
         </section>
+
 
     </section>
 
