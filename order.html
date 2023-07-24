@@ -17,34 +17,36 @@
     <link rel="stylesheet" href="webpub.css">
 
     <style>
-
         .big-wrapper {
             height: 85vh;
             display: grid;
             justify-content: center;
+            margin-bottom: 1%;
         }
 
-        .registration-wrapper{
+        .registration-wrapper {
             display: grid;
-            place-items: center;
+            justify-content: center;
             width: 75vw;
-            grid-template-columns: 1fr 0.5fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         .registration-form {
             height: 50vh;
             width: fit-content;
+            justify-self: center;
+            align-self: center;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             row-gap: 5%;
             background-color: gray;
-            box-shadow: 0px 0px 15px purple;
+            box-shadow: 0px 0px 15px #5E17EB;
             border-radius: 15px;
         }
 
-        .registration-form fieldset{
+        .registration-form fieldset {
             width: 75%;
             height: fit-content;
             color: black;
@@ -54,10 +56,73 @@
             cursor: pointer;
         }
 
-        .important{
-            color:red;
+        .important {
+            color: red;
         }
 
+        .heading {
+            display: grid;
+            place-items: center;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        .cart-box {
+            display: grid;
+        }
+
+        .cart-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 60vh;
+            overflow: hidden scroll;
+        }
+
+        .cart-item {
+            height: 10%;
+            display: grid;
+            row-gap: 5%;
+        }
+
+        .cart-item-info {
+            display: grid;
+        }
+
+        .cart-item-info img {
+            height: 10vh;
+            justify-self: center;
+        }
+
+        .units {
+            display: flex;
+            justify-content: center;
+            column-gap: 5%;
+        }
+
+        .minus,
+        .plus {
+            width: 10%;
+            color: #5E17EB;
+        }
+
+        .cart-buttons {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+        }
+
+        .cart-button {
+            height: 50%;
+            width: 30%;
+            align-self: center;
+        }
+
+        .form-button {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
 </head>
@@ -84,7 +149,7 @@
 
         <main class="registration-wrapper">
 
-            <form class="registration-form" action="#form" method="post">
+            <form class="registration-form">
 
                 <fieldset class="personal-details">
 
@@ -108,7 +173,8 @@
 
                         <tr>
 
-                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span> </label> </td>
+                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span> </label>
+                            </td>
                             <td> <input type="text" id="phone-number" autocomplete="on" required> </td>
 
                         </tr>
@@ -132,7 +198,8 @@
 
                         <tr>
 
-                            <td> <label for="house/street"> House Number and Street Name:<span class="important"> * </span> </label> </td>
+                            <td> <label for="house/street"> House Number and Street Name:<span class="important"> *
+                                    </span> </label> </td>
                             <td> <input type="text" id="house/street" autocomplete="on" required> </td>
 
                         </tr>
@@ -148,37 +215,31 @@
 
                 </fieldset>
 
+                <button class="clear-button" type="reset"> Clear Details </button>
+
             </form>
 
-            <div class="cart-items">
+            <div class="cart-box">
 
-                <!-- <div class="cart-item">
+                <div class="heading">
 
-                        <div class="cart-item-info">
+                    <p class="heading-text"> Items in Cart </p>
 
-                            <img src="./images/peripherals-item-1.png">
+                </div>
 
-                            <p> CommonTech G230 Super Pro </p>
+                <div class="cart-items">
 
-                        </div>
+                </div>
 
-                        <div class="cart-item-price">
+                <form class="cart-buttons" action="#form" method="post">
 
-                            <p> $100 </p>
+                    <button class="cart-button" type="button" id="clear-cart" onclick="clearCart()"> Clear Cart </button>
 
-                        </div>
+                    <button class="cart-button" type="submit" id="submit-cart" type="submit"> Order Cart </button>
 
-                        <div class="units">
+                </form>
 
-                            <div class="btn-minus"> - </div>
-                            <div class="number"> 1 </div>
-                            <div class="btn-plus"> + </div>
-
-                        </div>
-
-                    </div>
-
-                -->
+            </div>
 
             </div>
 
@@ -199,7 +260,7 @@
     </footer>
 
     <script src="./products.js"> </script>
-    <script src="./app.js"> </script>
+    <script src="./order.js"> </script>
 
 </body>
 

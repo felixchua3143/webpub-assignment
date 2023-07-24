@@ -1,5 +1,37 @@
 const productsEl = document.querySelector(".wrapper");
-const cartItemsEl = document.querySelector(".cart-items");
+
+const KeyName = "CART";
+
+function addToCart(id) {
+    // gets cart items from the browser's local storage
+    let cartItemsRaw = localStorage.getItem(KeyName);
+
+    // creates a variable to an empty set of cart items
+    let cartItems = [];
+
+    // check if there are cart items in the browser's local storage
+    if (cartItemsRaw) {
+      // convert the cart items from a string to a set of cart items
+        cartItems = JSON.parse(cartItemsRaw);
+    }
+
+    // check if the cart items already contains the product
+    const productExists = cartItems.find((p) => p.id === id);
+    if (productExists) {
+        alert("Product already in cart");
+        return;
+    }
+
+    // add a new cart item to the set of cart items
+    const product = products.find((p) => p.id === id);
+    cartItems.push(product);
+
+    // convert the set of cart items to a string
+    cartItemsRaw = JSON.stringify(cartItems);
+
+    // save the cart items to the browser's local storage
+    localStorage.setItem(KeyName, cartItemsRaw);
+}
 
 function renderProducts() {
 
@@ -37,65 +69,3 @@ function renderProducts() {
 }
 
 renderProducts();
-
-
-// cart array
-let cart = []
-updateCart();
-
-
-// add to cart
-function addToCart(id) {
-
-    // check if product already exists
-
-    if (cart.some((item) => item.id === id)) {
-        alert("Product");
-    }
-    else {
-        const item = products.find((product) => product.id === id);
-
-        cart.push({
-            ...item,
-            numberOfUnits: 1,
-        });
-    }
-
-    updateCart();
-}
-
-// update cart
-function updateCart(){
-    renderCartItems();
-    renderSubtotal();
-    localStorage.setItem("CART", JSON.stringify(cart));
-}
-
-// render cart items
-function renderCartItems(){
-    cart.forEach(() => {
-        cartItemsEl.innerHTML += `
-            <div class="cart-item">
-
-                        <div class="cart-item-info">
-
-                            <img src="./images/peripherals-item-1.png">
-
-                            <p style="text-align: center;"> CommonTech G230 Super Pro </p>
-
-                            <p style="text-align: center;"> $100 </p>
-
-                        </div>
-
-                        <div class="units">
-
-                            <button class="minus"> - </button>
-                            <div class="number"> 1 </div>
-                            <button class="plus"> + </button>
-
-                        </div>
-
-                    </div>
-        `
-    });
-}
