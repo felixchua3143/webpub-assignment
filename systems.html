@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -18,7 +18,7 @@
 
     <style>
         .header-wrapper {
-            background-image: url("images/system-header\(edited\)\(v2\).png");
+            background-image: url("images/peripherals-header\(edited\).png");
             background-size: cover;
             height: 30vh;
         }
@@ -52,33 +52,34 @@
 
         .big-wrapper {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 2%;
         }
 
         .wrapper {
             display: grid;
             justify-items: center;
-            width: 65vw;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin-bottom: 3%;
+            width: fit-content;
+            margin-left: 17.7%;
+            column-gap: 5%;
         }
 
         .product-box {
             height: 50vh;
             width: 30vh;
-            margin-top: 2%;
-            margin-bottom: 2%;
-        }
-
-        .product-box:hover {
-            opacity: 0.5;
-            transition: all 0.2s ease;
+            display: grid;
         }
 
         .product-image {
             object-fit: contain;
             align-self: baseline;
             height: 30vh;
+        }
+
+        .product-image:hover {
+            opacity: 0.5;
+            transition: all 0.2s ease;
         }
 
         .product-name-text {
@@ -89,6 +90,21 @@
         .product-price-text {
             margin-left: 1%;
             margin-right: 1%;
+        }
+
+        .cart-button {
+            border: 2px solid #5E17EB;
+            border-radius: 15px;
+            background-color: inherit;
+            height: 5vh;
+            width: 20vh;
+            cursor: pointer;
+            justify-self: center;
+        }
+
+        .cart-button:hover {
+            box-shadow: 0px 0px 15px;
+            transition: all 100ms ease-in;
         }
     </style>
 
@@ -180,7 +196,8 @@
                         <img class="product-image" id="product-image-3" src="images/systems-item-3.png">
 
                         <p class="product-name-text"> NightCore Ghost
-                            <div style="font-size: small; padding-top: 15px; padding-bottom: 20px;"> Our Custom PC that is perfect as your essential battlestation. Our best selling custom PC.</div>
+                        <div style="font-size: small; padding-top: 15px; padding-bottom: 20px;"> Our Custom PC that is
+                            perfect as your essential battlestation. Our best selling custom PC.</div>
                         </p>
 
                         <p class="product-price-text"> $2000 </p>
@@ -225,8 +242,8 @@
 
     </footer>
 
-    <script src="./system-products.js"></script>
-    <script src="./shop.js"></script>
+    <script src="./javascript files/system-products.js"> </script>
+    <script src="./javascript files/shop.js"> </script>
 
 </body>
 
