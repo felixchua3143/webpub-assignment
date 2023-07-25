@@ -41,7 +41,7 @@
             align-items: center;
             flex-direction: column;
             row-gap: 5%;
-            background-color: gray;
+            background-color: black;
             box-shadow: 0px 0px 15px #5E17EB;
             border-radius: 15px;
         }
@@ -49,10 +49,10 @@
         .registration-form fieldset {
             width: 75%;
             height: fit-content;
-            color: black;
+            color: whitesmoke
         }
 
-        .form-table{
+        .form-table {
             width: 100%;
         }
 
@@ -62,6 +62,26 @@
 
         .important {
             color: red;
+        }
+
+        .form-table input{
+            color: black;
+        }
+
+        .payment-click{
+            list-style: none;
+            width: fit-content;
+            margin-left: 5%;
+            cursor: pointer;
+        }
+
+        .payment-click:hover{
+            color: #5E17EB;
+            transition: all 100ms ease;
+        }
+
+        .payment-text{
+            margin-left: 10%;
         }
 
         .clear-button {
@@ -94,7 +114,8 @@
             row-gap: 5%;
         }
 
-        .cart-item-info, .cart-image {
+        .cart-item-info,
+        .cart-image {
             display: grid;
         }
 
@@ -130,7 +151,7 @@
 
         .price {
             display: flex;
-            justify-content:center ;
+            justify-content: center;
         }
     </style>
 
@@ -168,21 +189,24 @@
 
                         <tr>
 
-                            <td> <label for="first-name"> First Name:<span class="important"> * </span> </label> </td>
+                            <td> <label for="first-name"> First Name:<span class="important"> * </span>
+                                </label> </td>
                             <td> <input type="text" id="first-name" autocomplete="on" required> </td>
 
                         </tr>
 
                         <tr>
 
-                            <td> <label for="last-name"> Last Name:<span class="important"> * </span> </label> </td>
+                            <td> <label for="last-name"> Last Name:<span class="important"> * </span>
+                                </label> </td>
                             <td> <input type="text" id="last-name" autocomplete="on" required> </td>
 
                         </tr>
 
                         <tr>
 
-                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span> </label>
+                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span>
+                                </label>
                             </td>
                             <td> <input type="text" id="phone-number" autocomplete="on" required> </td>
 
@@ -190,7 +214,8 @@
 
                         <tr>
 
-                            <td> <label for="email"> Email:<span class="important"> * </span> </label> </td>
+                            <td> <label for="email"> Email:<span class="important"> * </span>
+                                </label> </td>
                             <td> <input type="email" id="email" autocomplete="on" required> </td>
 
                         </tr>
@@ -207,7 +232,8 @@
 
                         <tr>
 
-                            <td> <label for="house/street"> House Number and Street Name:<span class="important"> *
+                            <td> <label for="house/street"> House Number and
+                                    Street Name:<span class="important"> *
                                     </span> </label> </td>
                             <td> <input type="text" id="house/street" autocomplete="on" required> </td>
 
@@ -215,7 +241,8 @@
 
                         <tr>
 
-                            <td> <label for="town/city"> Town/City (Optional): </label> </td>
+                            <td> <label for="town/city"> Town/City
+                                    (Optional): </label> </td>
                             <td> <input type="text" id="town/city" autocomplete="on" required> </td>
 
                         </tr>
@@ -232,22 +259,33 @@
 
                         <tr>
 
-                            <td> <label for="dbt-payment"> Direct Bank Transfer: </label> </td>
-                            <td> <input type="radio" name="payment-input" id="dbt-payment"> </td>
+                            <td>
+
+                                <label for="dbt-payment"> Direct Bank Transfer </label>
+
+                            </td>
+
+                            <td>
+
+                                <input type="radio" name="payment-input" id="dbt-payment">
+
+                            </td>
 
                         </tr>
 
                         <tr>
 
-                            <td> <label for="debit-payment"> Debit Card: </label> </td>
-                            <td> <input type="radio" name="payment-input" id="debit-payment"> </td>
+                            <td>
 
-                        </tr>
+                                <details class="payment-info">
 
-                        <tr>
+                                    <summary class="payment-click"> Learn More </summary>
 
-                            <td> <label for="credit-payment"> Credit Card: </label> </td>
-                            <td> <input type="radio" name="payment-input" id="credit-payment"> </td>
+                                    <p class="payment-text"> dasd </p>
+
+                                </details>
+
+                            </td>
 
                         </tr>
 
@@ -255,7 +293,8 @@
 
                 </fieldset>
 
-                <button class="clear-button" type="reset"> Clear Details </button>
+                <button class="clear-button" type="reset"> Clear Details
+                </button>
 
             </form>
 
@@ -273,16 +312,19 @@
 
                 <div class="price">
 
-                    <p> Total Price: &nbsp </p> <p id="subtotal"></p>
+                    <p> Total Price: &nbsp </p>
+                    <p id="subtotal"></p>
 
                 </div>
 
                 <form class="cart-buttons" action="#form" method="post">
 
-                    <button class="cart-button" type="button" id="clear-cart" onclick="clearCart()"> Clear Cart
+                    <button class="cart-button" type="button" id="clear-cart" onclick="clearCart()"> Clear
+                        Cart
                     </button>
 
-                    <button class="cart-button" type="submit" id="submit-cart" type="submit"> Order Cart </button>
+                    <button class="cart-button" type="submit" id="submit-cart" type="submit"> Order Cart
+                    </button>
 
                 </form>
 
@@ -311,3 +353,21 @@
 </body>
 
 </html>
+
+<!--
+
+                        <tr>
+
+                            <td> <label for="debit-payment"> Debit Card: </label> </td>
+                            <td> <input type="radio" name="payment-input" id="debit-payment"> </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td> <label for="credit-payment"> Credit Card: </label> </td>
+                            <td> <input type="radio" name="payment-input" id="credit-payment"> </td>
+
+                        </tr>
+
+-->

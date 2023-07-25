@@ -19,7 +19,6 @@
     <style>
 
         .big-wrapper{
-            height: 85vh;
             display: grid;
         }
 
@@ -109,7 +108,7 @@
         .medium-wrapper{
             display: flex;
             justify-content: center;
-            margin-bottom: -1.2%;
+            margin-top: 3.5%;
         }
 
         .small-wrapper {
@@ -146,13 +145,20 @@
             margin-left: 0.5%;
         }
 
+        .popular-text{
+            text-align: center;
+            margin-top: 3.5%;
+            font-size: xx-large;
+        }
+
         .wrapper {
             display: grid;
+            width: 50vw;
             justify-items: center;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            width: fit-content;
-            margin-left: 17.7%;
+            justify-self: center;
+            margin-top: 3.5%;
             column-gap: 5%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
 
         .product-box {
@@ -194,7 +200,7 @@
 
         .cart-button:hover {
             box-shadow: 0px 0px 15px;
-            transition: all 100ms ease-in;
+            transition: all 100ms ease;
         }
 
     </style>
@@ -325,23 +331,13 @@
 
         </section>
 
+        <p class="popular-text"> Our Most Popular Items </p>
+
         <main class="wrapper">
 
         </main>
 
     </section>
-
-    <footer class="bottom-nav-bar">
-
-        <p class="footer-text">
-
-            Contact us through our company number: (+65) 3324234234 <br />
-            Or through our email: <a class="email-link" href="mailto:nightcoreservices.abc.xyz">
-                nightcoreservices.abc.xyz </a>
-
-        </p>
-
-    </footer>
 
     <script src="./javascript files/index-products.js"> </script>
     <script src="./javascript files/shop.js"> </script>
