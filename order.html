@@ -86,12 +86,12 @@
         }
 
         .cart-item {
-            height: 10%;
+            height: fit-content;
             display: grid;
             row-gap: 5%;
         }
 
-        .cart-item-info {
+        .cart-item-info, .cart-image {
             display: grid;
         }
 
@@ -123,6 +123,11 @@
             width: 30%;
             align-self: center;
             cursor: pointer;
+        }
+
+        .price {
+            display: flex;
+            justify-content:center ;
         }
     </style>
 
@@ -229,6 +234,12 @@
                 </div>
 
                 <div class="cart-items">
+
+                </div>
+
+                <div class="price">
+
+                    <p> Total Price: &nbsp </p> <p id="subtotal"></p>
 
                 </div>
 
