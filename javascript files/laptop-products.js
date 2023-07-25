@@ -1,27 +1,27 @@
 const products = [
     {
-        id: 41,
+        id: 101,
         name: "LaterShock Fast AE- Sports Battlestation",
         price: 1899,
         instock: 100,
         imgSrc: "images/laptop-item-1.png",
     },
     {
-        id: 42,
+        id: 102,
         name: "NightCore Onion",
         price: 1650,
         instock: 100,
         imgSrc: "images/laptop-item-2.png",
     },
     {
-        id: 43,
+        id: 103,
         name: "NightCore Ghost",
         price: 2000,
         instock: 100,
         imgSrc: "images/laptop-item-3.png",
     },
     {
-        id: 44,
+        id: 104,
         name: "LaterShock Chewing Gum",
         price: 100,
         instock: 2100,
