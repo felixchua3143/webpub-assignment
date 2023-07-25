@@ -44,6 +44,8 @@
             background-color: black;
             box-shadow: 0px 0px 15px #5E17EB;
             border-radius: 15px;
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
 
         .registration-form fieldset {
@@ -76,7 +78,7 @@
         }
 
         .payment-click:hover{
-            color: #5E17EB;
+            color: #ae8bf8;
             transition: all 100ms ease;
         }
 
@@ -257,11 +259,11 @@
 
                     <table class="form-table">
 
-                        <tr>
+                        <tr class="dbt-row">
 
                             <td>
 
-                                <label for="dbt-payment"> Direct Bank Transfer </label>
+                                <label for="dbt-payment">Direct Bank Transfer</label>
 
                             </td>
 
@@ -273,15 +275,79 @@
 
                         </tr>
 
-                        <tr>
+                        <tr class="dbt-row">
 
                             <td>
 
                                 <details class="payment-info">
 
-                                    <summary class="payment-click"> Learn More </summary>
+                                    <summary class="payment-click">Learn More</summary>
 
-                                    <p class="payment-text"> dasd </p>
+                                    <p class="payment-text">dasd</p>
+
+                                </details>
+
+                            </td>
+
+                        </tr>
+
+                        <tr class="debit-row">
+
+                            <td>
+
+                                <label for="debit-payment">Debit Card</label>
+
+                            </td>
+
+                            <td>
+
+                                <input type="radio" name="payment-input" id="debit-payment">
+
+                            </td>
+
+                        </tr>
+
+                        <tr class="debit-row">
+
+                            <td>
+
+                                <details class="payment-info">
+
+                                    <summary class="payment-click">Learn More</summary>
+
+                                    <p class="payment-text">dasd</p>
+
+                                </details>
+
+                            </td>
+
+                        </tr>
+
+                        <tr class="credit-row">
+
+                            <td>
+
+                                <label for="credit-payment">Credit Card</label>
+
+                            </td>
+
+                            <td>
+
+                                <input type="radio" name="payment-input" id="credit-payment">
+
+                            </td>
+
+                        </tr>
+
+                        <tr class="credit-row">
+
+                            <td>
+
+                                <details class="payment-info">
+
+                                    <summary class="payment-click">Learn More</summary>
+
+                                    <p class="payment-text">dasd</p>
 
                                 </details>
 
@@ -353,21 +419,3 @@
 </body>
 
 </html>
-
-<!--
-
-                        <tr>
-
-                            <td> <label for="debit-payment"> Debit Card: </label> </td>
-                            <td> <input type="radio" name="payment-input" id="debit-payment"> </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td> <label for="credit-payment"> Credit Card: </label> </td>
-                            <td> <input type="radio" name="payment-input" id="credit-payment"> </td>
-
-                        </tr>
-
--->

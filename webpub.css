@@ -45,7 +45,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #5E17EB;
+    color: #ae8bf8;
     transition: all 250ms ease;
 }
 
@@ -65,13 +65,12 @@ body {
 .footer-text {
     text-align: center;
     font-family: inherit;
-    color: grey;
+    color: whitesmoke;
 }
 
 .phone-link:hover, .email-link:hover {
-    color: white;
+    color: #ae8bf8;
     text-decoration: underline;
-    text-decoration-color: white;
     text-decoration-thickness: 2px;
-    transition: all 250ms ease;
+    transition: all 100ms ease;
 }
