@@ -108,7 +108,7 @@ function increaseByOne(elementId, index) {
     // sets the number of orders for that item to the value
     cart[index].orders = value;
 
-    // increases the value by 1 and then sets the inner HTML to the value
+    // Set the inner HTML to the value
     element.innerHTML = value;
 
     insertNewCartDataIntoLocalStorage();
@@ -130,7 +130,7 @@ function decreaseByOne(elementId, index) {
     // checks if the value is 0
     if(value === 0) {
         // checks with the customer if they want to remove the item from the cart
-        const didCustomerSayYes = confirm("Are you sure???");
+        const didCustomerSayYes = confirm("Are you sure you want to remove this item from your cart?");
         if (didCustomerSayYes) {
             // removes the item from the cart
             cart.splice(

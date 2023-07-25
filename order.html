@@ -52,6 +52,10 @@
             color: black;
         }
 
+        .form-table{
+            width: 100%;
+        }
+
         .form-table label {
             cursor: pointer;
         }
@@ -64,7 +68,6 @@
             width: 25%;
             height: 10%;
             cursor: pointer;
-            margin-top: 10%;
         }
 
         .heading {
@@ -221,6 +224,37 @@
 
                 </fieldset>
 
+                <fieldset class="payment-details">
+
+                    <legend> Payment Details </legend>
+
+                    <table class="form-table">
+
+                        <tr>
+
+                            <td> <label for="dbt-payment"> Direct Bank Transfer: </label> </td>
+                            <td> <input type="radio" name="payment-input" id="dbt-payment"> </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td> <label for="debit-payment"> Debit Card: </label> </td>
+                            <td> <input type="radio" name="payment-input" id="debit-payment"> </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td> <label for="credit-payment"> Credit Card: </label> </td>
+                            <td> <input type="radio" name="payment-input" id="credit-payment"> </td>
+
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
                 <button class="clear-button" type="reset"> Clear Details </button>
 
             </form>
@@ -277,28 +311,3 @@
 </body>
 
 </html>
-
-<!--
-
-    id: 1,
-    name: "Shaver Naga v2 Pro",
-        price: 150,
-            instock: 100,
-                imgSrc: "images/peripherals-item-2.png",
-    },
-{
-    id: 2,
-        name: "Shaver Uwabami tenkeyless V3 Lite(Clicky)",
-            price: 250,
-                instock: 100,
-                    imgSrc: "images/peripherals-item-3.png",
-    },
-{
-    id: 3,
-        name: "Shaver BlackHunter Pro 65%",
-            price: 399,
-                instock: 100,
-                    imgSrc: "images/peripherals-item-4.png",
-    },
-
--->
