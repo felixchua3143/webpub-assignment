@@ -20,10 +20,9 @@
 
         .big-wrapper{
             height: fit-content;
-            display: flex;
+            display: grid;
             justify-content: center;
-            flex-direction: column;
-            margin-bottom: 0.5%;
+            margin-bottom: 2%;
         }
 
         .wrapper{
@@ -73,6 +72,23 @@
             margin-top: 3%;
         }
 
+        .reviews{
+            height: 50vh;
+            width: 25vw;
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            column-gap: 5%;
+        }
+
+        .review{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+        }
+
     </style>
 
 </head>
@@ -95,11 +111,11 @@
 
     </nav>
 
-    <section class="big-wrapper">
+    <main class="big-wrapper">
 
         <header class="header-text"> NightCore Warranty </header>
 
-        <main class="wrapper">
+        <section class="wrapper">
 
             <p class="warranty-text">
 
@@ -140,9 +156,31 @@
 
             </section>
 
-        </main>
+        </section>
 
-    </section>
+        <section class="reviews">
+
+            <div class="review">
+
+                faf
+
+            </div>
+
+            <div class="review">
+
+                faf
+
+            </div>
+
+            <div class="review">
+
+                faf
+
+            </div>
+
+        </section>
+
+    </main>
 
 
 

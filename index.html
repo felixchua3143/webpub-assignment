@@ -87,7 +87,7 @@
         }
 
         .next:hover, .prev:hover{
-            color: #5c4094;
+            opacity: 0.5;
             transition: all 250ms ease;
         }
 
@@ -98,13 +98,28 @@
         .next{
             margin-right: 1.5%;
         }
-            /*
 
-                there is an awkward space between the scroll bar and the image,
-                i think i know a better way to do this, you can ask me if you want
-                my version of your carousel.
+        .dots{
+            display: flex;
+            justify-content: center;
+            column-gap: 2%;
+            margin-top: -2%;
+            margin-left: 88.5%;
+        }
 
-             */
+        .dot{
+            height: 2vh;
+            width: 1vw;
+            cursor: pointer;
+            border: 0px solid;
+            border-radius: 10px;
+            background-color: #5E17EB;
+        }
+
+        .dot:hover{
+            opacity: 0.5;
+            transition: all 250ms ease;
+        }
 
         .medium-wrapper{
             display: flex;
@@ -287,6 +302,42 @@
             </div>
 
         </main>
+
+            <div class="dots">
+
+                <a href="#image-1">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-2">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-3">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-4">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-5">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-6">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-7">
+                    <button class="dot">  </button>
+                </a>
+
+                <a href="#image-8">
+                    <button class="dot">  </button>
+                </a>
+
+            </div>
 
         <section class="medium-wrapper">
 

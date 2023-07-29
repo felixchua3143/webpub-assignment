@@ -18,7 +18,7 @@ function addToCart(id) {
     // check if the cart items already contains the product
     const productExists = cartItems.find((p) => p.id === id);
     if (productExists) {
-        alert("Product already in cart");
+        alert("Product is already in cart!");
         return;
     }
 
