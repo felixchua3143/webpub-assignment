@@ -23,6 +23,7 @@ const products = [
     {
         id: 154,
         name: "LaterShock Chewing Gum",
+        price: 1000,
         instock: 2100,
         imgSrc: "images/system-item-4.jpg",
     },

@@ -32,8 +32,8 @@
         }
 
         .registration-form {
-            height: 50vh;
-            width: fit-content;
+            height: 60vh;
+            width: 30   vw;
             justify-self: center;
             align-self: center;
             display: flex;
@@ -42,14 +42,12 @@
             flex-direction: column;
             row-gap: 5%;
             background-color: black;
-            box-shadow: 0px 0px 15px #5E17EB;
             border-radius: 15px;
-            padding-top: 5%;
-            padding-bottom: 5%;
+            padding: 25px;
         }
 
         .registration-form fieldset {
-            width: 75%;
+            width: 100%;
             height: fit-content;
             color: whitesmoke
         }
@@ -68,22 +66,11 @@
 
         .form-table input{
             color: black;
+            width: 95%;
         }
 
-        .payment-click{
-            list-style: none;
-            width: fit-content;
-            margin-left: 5%;
+        .payment-input{
             cursor: pointer;
-        }
-
-        .payment-click:hover{
-            color: #ae8bf8;
-            transition: all 100ms ease;
-        }
-
-        .payment-text{
-            margin-left: 10%;
         }
 
         .clear-button {
@@ -181,7 +168,7 @@
 
         <main class="registration-wrapper">
 
-            <form class="registration-form" action="#form" method="post">
+            <form class="registration-form">
 
                 <fieldset class="personal-details">
 
@@ -191,36 +178,41 @@
 
                         <tr>
 
-                            <td> <label for="first-name"> First Name:<span class="important"> * </span>
-                                </label> </td>
-                            <td> <input type="text" id="first-name" autocomplete="on" required> </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td> <label for="last-name"> Last Name:<span class="important"> * </span>
-                                </label> </td>
-                            <td> <input type="text" id="last-name" autocomplete="on" required> </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td> <label for="phone-number"> Phone Number:<span class="important"> * </span>
-                                </label>
+                            <td>
+                                <label for="first-name"> First Name:<span class="important"> * </span></label>
                             </td>
-                            <td> <input type="text" id="phone-number" autocomplete="on" required> </td>
-
+                            <td>
+                                <input type="textbox" id="first-name" autocomplete="on" required>
+                            </td>
                         </tr>
 
                         <tr>
-
-                            <td> <label for="email"> Email:<span class="important"> * </span>
-                                </label> </td>
-                            <td> <input type="email" id="email" autocomplete="on" required> </td>
-
+                            <td>
+                                <label for="last-name"> Last Name:<span class="important"> * </span></label>
+                            </td>
+                            <td>
+                                <input type="text" id="last-name" autocomplete="on" required>
+                            </td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <label for="phone-number"> Phone Number:<span class="important"> * </span></label>
+                            </td>
+                            <td>
+                                <input type="text" id="phone-number" autocomplete="on" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email"> Email:<span class="important"> * </span></label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" autocomplete="on" required>
+                            </td>
+                        </tr>
+                    </table>
 
                     </table>
 
@@ -234,7 +226,7 @@
 
                         <tr>
 
-                            <td> <label for="house/street"> House Number and
+                            <td> <label for="house/street"> House Number<br/> and
                                     Street Name:<span class="important"> *
                                     </span> </label> </td>
                             <td> <input type="text" id="house/street" autocomplete="on" required> </td>
@@ -259,35 +251,27 @@
 
                     <table class="form-table">
 
-                        <tr class="dbt-row">
+                        <tr class="debit-row">
 
-                            <td>
+                            <td><label for="db/cr-payment">Debit/Credit Card number</label></td>
 
-                                <label for="dbt-payment">Direct Bank Transfer</label>
-
-                            </td>
-
-                            <td>
-
-                                <input type="radio" name="payment-input" id="dbt-payment">
-
-                            </td>
+                            <td> <input type="textbox" id="cardnumber" placeholder="123456789102"></td>
 
                         </tr>
 
-                        <tr class="dbt-row">
+                        <tr>
 
-                            <td>
+                            <td> CVS number </td>
 
-                                <details class="payment-info">
+                            <td><input type="textbox" id="cvs" placeholder="123"></td>
 
-                                    <summary class="payment-click">Learn More</summary>
+                        </tr>
 
-                                    <p class="payment-text">dasd</p>
+                        <tr>
 
-                                </details>
+                            <td> Expiry date </td>
 
-                            </td>
+                            <td><input type="expiry date" id="expiry date" placeholder="12/34"></td>
 
                         </tr>
 
@@ -295,29 +279,7 @@
 
                             <td>
 
-                                <label for="debit-payment">Debit Card</label>
-
-                            </td>
-
-                            <td>
-
-                                <input type="radio" name="payment-input" id="debit-payment">
-
-                            </td>
-
-                        </tr>
-
-                        <tr class="debit-row">
-
-                            <td>
-
-                                <details class="payment-info">
-
-                                    <summary class="payment-click">Learn More</summary>
-
-                                    <p class="payment-text">dasd</p>
-
-                                </details>
+                                <p> </p>
 
                             </td>
 
@@ -327,13 +289,13 @@
 
                             <td>
 
-                                <label for="credit-payment">Credit Card</label>
+                                <label for="credit-payment">PayNow</label>
+
 
                             </td>
 
                             <td>
 
-                                <input type="radio" name="payment-input" id="credit-payment">
 
                             </td>
 
@@ -343,13 +305,6 @@
 
                             <td>
 
-                                <details class="payment-info">
-
-                                    <summary class="payment-click">Learn More</summary>
-
-                                    <p class="payment-text">dasd</p>
-
-                                </details>
 
                             </td>
 
@@ -383,13 +338,13 @@
 
                 </div>
 
-                <form class="cart-buttons" action="#form" method="post">
+                <form class="cart-buttons">
 
-                    <button class="cart-button" type="button" id="clear-cart" onclick="clearCart()"> Clear
+                    <button class="cart-button" type="button" id="clear-cart" onclick="clearCart()"> Clear cart
                         Cart
                     </button>
 
-                    <button class="cart-button" type="submit" id="submit-cart" type="submit"> Order Cart
+                    <button class="cart-button" type="submit" id="submit-cart" onclick="productOrdered()"> Order
                     </button>
 
                 </form>
@@ -414,8 +369,67 @@
 
     </footer>
 
-    <script src="./javascript files/order.js"> </script>
+    <script src="./javascript files/order.js">
+
+    </script>
+
+    <script>
+
+        function productOrdered() {
+            let cart = []
+            updateCart();
+            // gets cart items from the browser's local storage
+                const cartItemsRaw = localStorage.getItem(KeyName);
+
+                // check if there are cart items in the browser's local storage
+                if (cartItemsRaw) {
+                    // convert the cart items from a string to a set of cart items
+                    cart = JSON.parse(cartItemsRaw);
+                    alert("You have no items in your cart. Go add some! :)");
+                }
+                else{
+                alert("Product has been ordered! A shipping number will be sent to your email!");
+                }
+            }
+    </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+<td> <label for="first-name"> First Name:<span class="important"> * </span>
+</label> </td>
+<td> <input type="text" id="first-name" autocomplete="on" required> </td>
+
+</tr>
+
+<tr>
+
+<td> <label for="last-name"> Last Name:<span class="important"> * </span>
+</label> </td>
+<td> <input type="text" id="last-name" autocomplete="on" required> </td>
+
+</tr>
+
+<tr>
+
+<td> <label for="phone-number"> Phone Number:<span class="important"> * </span>
+</label>
+</td>
+<td> <input type="text" id="phone-number" autocomplete="on" required> </td>
+
+</tr>
+
+<tr>
+
+<td> <label for="email"> Email:<span class="important"> * </span>
+</label> </td>
+<td> <input type="email" id="email" autocomplete="on" required> </td>
+
+</tr>
