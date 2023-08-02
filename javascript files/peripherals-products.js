@@ -1,8 +1,8 @@
 const products = [
     {
-        id: 0, 
+        id: 0,
         name: "CommonTech G230 Super Pro",
-        price: 109.99,
+        price: 99.99,
         instock: 98,
         imgSrc: "images/peripherals-item-1.png",
     },
@@ -16,14 +16,14 @@ const products = [
     {
         id: 2,
         name: "Shaver Uwabami tenkeyless V3 Lite(Clicky)",
-        price: 94.99,
+        price: 129.99,
         instock: 102,
         imgSrc: "images/peripherals-item-3.png",
     },
     {
         id: 3,
         name: "Shaver BlackHunter Pro 65",
-        price: 98.99,
+        price: 149.99,
         instock: 100,
         imgSrc: "images/peripherals-item-4.png",
     },
